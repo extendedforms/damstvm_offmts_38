@@ -2,8 +2,6 @@
 // Format: { id, image?, question, options[], answerIndex, correctAnswerText }
 
 window.questions = [
-  // ===== Set 1 =====
-
   {
     id: 1,
     image: "images/IMG_3894.jpeg",
@@ -987,8 +985,6 @@ window.questions = [
     answerIndex: 2,
     correctAnswerText: "Type C"
   },
-
-const questions = [
   {
     id: 71,
     image: "",
@@ -2539,7 +2535,6 @@ const questions = [
       "Double bubble sign"
     ],
     answerIndex: 0,
-    correctAnswerText: "Mercedes-Benz cap"
-  },
-  
+    correctAnswerText: "Mercedes-Benz sign"
+  }
 ];
