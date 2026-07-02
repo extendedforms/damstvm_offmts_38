@@ -1,163 +1,504 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZENITH HIGH CBT Exam</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #eef3f9;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
     }
 
     .topbar {
-      background: #0b2c66;
+      background: #003b66;
       color: white;
-      padding: 14px 18px;
+      height: 36px;
+      padding: 8px 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 14px;
       font-weight: bold;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      padding: 24px;
-      border-radius: 14px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      min-height: calc(100vh - 36px);
+    }
+
+    .main {
+      padding: 16px 45px;
+      background: #ffffff;
+    }
+
+    .qbox {
+      max-width: 950px;
+    }
+
+    .student-info {
+      font-size: 13px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      color: #333;
     }
 
     .question-number {
-      font-size: 20px;
+      font-size: 15px;
       font-weight: bold;
-      color: #0b2c66;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      color: #111;
     }
 
     .question-text {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 18px;
+      background: #f7f7f7;
+      padding: 12px;
+      border-radius: 4px;
+      line-height: 1.45;
+      font-size: 15px;
+      margin-bottom: 14px;
+      white-space: pre-wrap;
     }
 
     .question-img {
-      max-width: 100%;
-      max-height: 350px;
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
       display: block;
-      margin: 15px auto;
-      border-radius: 8px;
+      margin: 12px auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: zoom-in;
     }
 
     .option {
-      border: 1px solid #ccc;
-      padding: 12px;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      background: white;
       cursor: pointer;
-      font-size: 17px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .option:hover {
+      background: #f6f8fb;
     }
 
     .option.selected {
       background: #dbeafe;
-      border-color: #0b2c66;
+      border-color: #003b66;
       font-weight: bold;
     }
 
-    .nav-buttons {
+    .radio-circle {
+      width: 13px;
+      height: 13px;
+      min-width: 13px;
+      border-radius: 50%;
+      border: 2px solid #8a8a8a;
+      display: inline-block;
+      position: relative;
+    }
+
+    .option.selected .radio-circle {
+      border-color: #0057d9;
+    }
+
+    .option.selected .radio-circle::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #0057d9;
+      border-radius: 50%;
+      position: absolute;
+      left: 1px;
+      top: 1px;
+    }
+
+    .actions {
       display: flex;
-      gap: 10px;
-      margin-top: 20px;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
     }
 
     button {
-      padding: 12px 18px;
-      background: #0b2c66;
+      background: #003b66;
       color: white;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
+      border-radius: 5px;
+      padding: 9px 14px;
       font-weight: bold;
+      cursor: pointer;
+      font-size: 13px;
     }
 
-    button.secondary {
-      background: #555;
+    button:hover {
+      opacity: 0.9;
     }
 
-    button.submit {
-      background: #0b7a32;
-      margin-left: auto;
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
     }
 
-    .student-info {
-      font-size: 14px;
+    button.danger {
+      background: #c40035;
+    }
+
+    .palette {
+      background: #f3f5fa;
+      border-left: 1px solid #d6dce5;
+      padding: 25px 18px;
+      min-height: calc(100vh - 36px);
+    }
+
+    .palette h3 {
+      margin: 0 0 16px 0;
+      font-size: 20px;
+    }
+
+    #pal {
+      display: grid;
+      grid-template-columns: repeat(6, 38px);
+      gap: 10px;
+      align-items: center;
+    }
+
+    #pal button {
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 13px;
+      font-weight: bold;
+      color: #111;
+      background: #dbe3e7;
+    }
+
+    #pal button.current {
+      outline: 3px solid #000;
+      outline-offset: 2px;
+    }
+
+    #pal button.unanswered {
+      background: #dbe3e7;
+      color: #111;
+    }
+
+    #pal button.answered {
+      background: #2e7d32;
+      color: white;
+    }
+
+    #pal button.review {
+      background: #7b1fa2;
+      color: white;
+    }
+
+    #pal button.ansreview {
+      background: #0d70b7;
+      color: white;
+    }
+
+    .legend {
+      margin-top: 16px;
+      font-size: 13px;
+    }
+
+    .legend div {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      border-radius: 3px;
+    }
+
+    .dot.unanswered {
+      background: #dbe3e7;
+    }
+
+    .dot.answered {
+      background: #2e7d32;
+    }
+
+    .dot.review {
+      background: #7b1fa2;
+    }
+
+    .dot.ansreview {
+      background: #0d70b7;
     }
 
     .warning {
-      color: red;
+      color: #c62828;
       font-weight: bold;
-      margin-top: 15px;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .img-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 9999;
+    }
+
+    .img-modal.show {
+      display: block;
+    }
+
+    .img-modal-top {
+      height: 55px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .img-modal-body {
+      height: calc(100vh - 55px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+    }
+
+    .img-modal-body img {
+      max-width: 95%;
+      max-height: 95%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        height: auto;
+        min-height: 36px;
+        font-size: 13px;
+        padding: 8px 10px;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      .main {
+        padding: 12px;
+      }
+
+      .question-text {
+        font-size: 14px;
+      }
+
+      .question-img {
+        max-height: 360px;
+      }
+
+      .option {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .actions {
+        gap: 6px;
+      }
+
+      .actions button {
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+
+      .palette {
+        border-left: none;
+        border-top: 1px solid #d6dce5;
+        min-height: auto;
+        padding: 18px 12px;
+      }
+
+      #pal {
+        grid-template-columns: repeat(6, 42px);
+        gap: 9px;
+      }
+
+      #pal button {
+        width: 42px;
+        height: 42px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      #pal {
+        grid-template-columns: repeat(5, 42px);
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="topbar">
+  <header class="topbar">
     <div>ZENITH HIGH CBT</div>
-    <div id="timer">Time: 180:00</div>
-  </div>
-
-  <div class="container">
-    <div class="student-info" id="studentInfo"></div>
-
-    <div class="question-number" id="questionNumber"></div>
-    <div class="question-text" id="questionText"></div>
-    <img id="questionImage" class="question-img" style="display:none;">
-
-    <div id="optionsBox"></div>
-
-    <div class="nav-buttons">
-      <button class="secondary" onclick="prevQuestion()">Previous</button>
-      <button onclick="nextQuestion()">Next</button>
-      <button class="submit" onclick="confirmSubmit()">Submit Exam</button>
+    <div>
+      Time Left: <span id="timer">180:00</span>
+      &nbsp; | &nbsp;
+      Violations: <span id="vio">0</span>
     </div>
+  </header>
 
-    <div class="warning" id="warning"></div>
+  <div class="layout">
+    <main class="main">
+      <div class="qbox">
+        <div class="student-info" id="studentInfo"></div>
+
+        <div class="question-number" id="questionNumber"></div>
+
+        <div class="question-text" id="questionText"></div>
+
+        <img id="questionImage" class="question-img" style="display:none;" alt="Question image" />
+
+        <div id="optionsBox"></div>
+
+        <div class="actions">
+          <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+          <button onclick="clearResponse()">Clear Response</button>
+          <button onclick="markForReview()">Mark for Review</button>
+          <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <div class="actions">
+          <button class="danger" onclick="confirmSubmit()">Submit</button>
+        </div>
+
+        <div class="warning" id="warning"></div>
+      </div>
+    </main>
+
+    <aside class="palette">
+      <h3>Questions</h3>
+      <div id="pal"></div>
+
+      <div class="legend">
+        <div><span class="dot unanswered"></span> Unanswered</div>
+        <div><span class="dot answered"></span> Answered</div>
+        <div><span class="dot review"></span> Marked</div>
+        <div><span class="dot ansreview"></span> Answered + Marked</div>
+      </div>
+    </aside>
   </div>
 
+  <div id="imgModal" class="img-modal">
+    <div class="img-modal-top">
+      <button onclick="openImageFullscreen()">⛶ Fullscreen</button>
+      <button class="danger" onclick="closeImageModal()">✕ Close</button>
+    </div>
+    <div class="img-modal-body">
+      <img id="imgModalPic" alt="Question image enlarged" />
+    </div>
+  </div>
+
+  <script src="config.js"></script>
   <script src="questions.js"></script>
 
   <script>
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwWqrXYBHFoZJCohBix9FXKP4BMkZym-r4arYbybFiXLAf78aBQmQSMFSEAp5okNLJs/exec";
+    const DEFAULT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwWqrXYBHFoZJCohBix9FXKP4BMkZym-r4arYbybFiXLAf78aBQmQSMFSEAp5okNLJs/exec";
+    const API_URL = window.API_URL || window.SCRIPT_URL || DEFAULT_SCRIPT_URL;
 
-    const EXAM_DURATION_SECONDS = 180 * 60;
+    const EXAM_DURATION_SECONDS = window.EXAM_DURATION_SECONDS || (180 * 60);
 
     let currentIndex = 0;
     let userAnswers = {};
+    let markedQuestions = {};
     let startedAt = new Date();
-    let timerInterval = null;
     let submitted = false;
+    let violationCount = 0;
+    let timerInterval = null;
 
-    const candidateId = localStorage.getItem("candidateId") || "";
-    const token = localStorage.getItem("token") || "";
-    const candidateName = localStorage.getItem("candidateName") || "";
-    const candidatePhone = localStorage.getItem("candidatePhone") || "";
-    const candidateEmail = localStorage.getItem("candidateEmail") || "";
+    function safeParse(s) {
+      try {
+        return JSON.parse(s);
+      } catch {
+        return null;
+      }
+    }
 
-    if (!candidateId || !token) {
+    const candidate = safeParse(localStorage.getItem("neet_candidate") || "");
+
+    if (!candidate || !candidate.token) {
       alert("Please login first");
-      window.location.href = "login.html";
+      window.location.replace("login.html");
+      throw new Error("Login required");
+    }
+
+    const candidateId = candidate.candidateId || "";
+    const token = candidate.token || "";
+    const candidateName = candidate.name || "";
+    const candidatePhone = candidate.phone || "";
+    const candidateEmail = candidate.email || "";
+
+    if (!window.questions || !Array.isArray(window.questions) || window.questions.length === 0) {
+      alert("Questions not loaded. Please check questions.js");
+      throw new Error("Questions not loaded");
+    }
+
+    const stateKey = "neet_exam_state_" + candidateId;
+
+    function saveState() {
+      localStorage.setItem(stateKey, JSON.stringify({
+        currentIndex,
+        userAnswers,
+        markedQuestions,
+        startedAt: startedAt.toISOString(),
+        violationCount
+      }));
+    }
+
+    function loadState() {
+      const saved = safeParse(localStorage.getItem(stateKey) || "");
+      if (!saved) return;
+
+      if (typeof saved.currentIndex === "number") currentIndex = saved.currentIndex;
+      if (saved.userAnswers && typeof saved.userAnswers === "object") userAnswers = saved.userAnswers;
+      if (saved.markedQuestions && typeof saved.markedQuestions === "object") markedQuestions = saved.markedQuestions;
+      if (saved.startedAt) startedAt = new Date(saved.startedAt);
+      if (typeof saved.violationCount === "number") violationCount = saved.violationCount;
+
+      document.getElementById("vio").textContent = violationCount;
     }
 
     document.getElementById("studentInfo").innerHTML =
-      "<b>Name:</b> " + candidateName +
-      " | <b>ID:</b> " + candidateId +
-      " | <b>Email:</b> " + candidateEmail;
+      "<b>Name:</b> " + escapeHtml(candidateName) +
+      " | <b>ID:</b> " + escapeHtml(candidateId) +
+      " | <b>Email:</b> " + escapeHtml(candidateEmail);
+
+    function escapeHtml(text) {
+      return String(text || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
 
     function renderQuestion() {
       const q = window.questions[currentIndex];
@@ -165,38 +506,84 @@
       document.getElementById("questionNumber").textContent =
         "Question " + (currentIndex + 1) + " of " + window.questions.length;
 
-      document.getElementById("questionText").textContent = q.question;
+      document.getElementById("questionText").textContent = q.question || "";
 
       const img = document.getElementById("questionImage");
 
-      if (q.image && q.image.trim() !== "") {
+      if (q.image && String(q.image).trim() !== "") {
         img.src = q.image;
         img.style.display = "block";
       } else {
         img.style.display = "none";
+        img.removeAttribute("src");
       }
 
       const optionsBox = document.getElementById("optionsBox");
       optionsBox.innerHTML = "";
 
-      q.options.forEach(function(option, index) {
+      (q.options || []).forEach(function(option, index) {
         const div = document.createElement("div");
         div.className = "option";
 
-        if (userAnswers[q.id] === index) {
+        if (Number(userAnswers[q.id]) === index) {
           div.classList.add("selected");
         }
 
-        const label = ["A- 1", "B- 2", "C- 3", "D- 4"][index];
+        const radio = document.createElement("span");
+        radio.className = "radio-circle";
 
-        div.textContent = label + ". " + option;
+        const text = document.createElement("span");
+        text.textContent = option;
+
+        div.appendChild(radio);
+        div.appendChild(text);
 
         div.onclick = function() {
           userAnswers[q.id] = index;
+          saveState();
           renderQuestion();
         };
 
         optionsBox.appendChild(div);
+      });
+
+      document.getElementById("prevBtn").disabled = currentIndex === 0;
+
+      renderPalette();
+      saveState();
+    }
+
+    function renderPalette() {
+      const pal = document.getElementById("pal");
+      pal.innerHTML = "";
+
+      window.questions.forEach(function(q, index) {
+        const btn = document.createElement("button");
+        btn.textContent = index + 1;
+
+        const answered = userAnswers[q.id] !== undefined && userAnswers[q.id] !== null;
+        const marked = markedQuestions[q.id] === true;
+
+        if (answered && marked) {
+          btn.className = "ansreview";
+        } else if (answered) {
+          btn.className = "answered";
+        } else if (marked) {
+          btn.className = "review";
+        } else {
+          btn.className = "unanswered";
+        }
+
+        if (index === currentIndex) {
+          btn.classList.add("current");
+        }
+
+        btn.onclick = function() {
+          currentIndex = index;
+          renderQuestion();
+        };
+
+        pal.appendChild(btn);
       });
     }
 
@@ -214,8 +601,39 @@
       }
     }
 
+    function clearResponse() {
+      const q = window.questions[currentIndex];
+      delete userAnswers[q.id];
+      saveState();
+      renderQuestion();
+    }
+
+    function markForReview() {
+      const q = window.questions[currentIndex];
+      markedQuestions[q.id] = true;
+      saveState();
+
+      if (currentIndex < window.questions.length - 1) {
+        currentIndex++;
+      }
+
+      renderQuestion();
+    }
+
     function confirmSubmit() {
-      const ok = confirm("Are you sure you want to submit the exam?");
+      const totalQuestions = window.questions.length;
+      const answeredCount = Object.keys(userAnswers).length;
+      const unansweredCount = totalQuestions - answeredCount;
+      const markedCount = Object.values(markedQuestions).filter(Boolean).length;
+
+      const ok = confirm(
+        "Are you sure you want to submit the exam?\n\n" +
+        "Total Questions: " + totalQuestions + "\n" +
+        "Answered: " + answeredCount + "\n" +
+        "Unanswered: " + unansweredCount + "\n" +
+        "Marked for Review: " + markedCount
+      );
+
       if (ok) {
         submitExam("manual", false);
       }
@@ -225,57 +643,77 @@
       if (submitted) return;
       submitted = true;
 
+      clearInterval(timerInterval);
+
       const endedAt = new Date();
       const timeTakenSec = Math.floor((endedAt - startedAt) / 1000);
-
       const qOrder = window.questions.map(q => q.id);
 
       try {
-        const res = await fetch(SCRIPT_URL, {
+        const res = await fetch(API_URL, {
           method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify({
             action: "submit",
             candidateId: candidateId,
             token: token,
             responses: userAnswers,
+            markedQuestions: markedQuestions,
             qOrder: qOrder,
             startedAtIST: formatLocalDate(startedAt),
             endedAtIST: formatLocalDate(endedAt),
             timeTakenSec: timeTakenSec,
+            violationCount: violationCount,
             userAgent: navigator.userAgent,
             reason: reason,
             isAuto: isAuto
-          })
+          }),
+          cache: "no-store"
         });
 
-        const result = await res.json();
+        const raw = await res.text();
+        const result = safeParse(raw);
 
-        if (result.status === "success") {
-          alert("Exam submitted successfully");
-          localStorage.removeItem("token");
-          window.location.href = "thankyou.html";
-        } else {
-          alert(result.message || "Submission failed");
+        if (!result) {
+          alert("Invalid server response. Submission not confirmed.");
           submitted = false;
+          startTimer();
+          return;
+        }
+
+        if (result.ok === true || result.status === "success") {
+          localStorage.setItem("neet_submitted", "yes");
+          localStorage.setItem("neet_result", JSON.stringify(result));
+          localStorage.removeItem(stateKey);
+
+          alert("Exam submitted successfully");
+          window.location.replace("result.html");
+        } else {
+          alert(result.error || result.message || "Submission failed");
+          submitted = false;
+          startTimer();
         }
 
       } catch (error) {
         alert("Submission failed. Please check internet and try again.");
         submitted = false;
+        startTimer();
       }
     }
 
     function startTimer() {
-      let remaining = EXAM_DURATION_SECONDS;
+      clearInterval(timerInterval);
 
       timerInterval = setInterval(function() {
-        remaining--;
+        const now = new Date();
+        const elapsed = Math.floor((now - startedAt) / 1000);
+        const remaining = Math.max(EXAM_DURATION_SECONDS - elapsed, 0);
 
         const min = Math.floor(remaining / 60);
         const sec = remaining % 60;
 
         document.getElementById("timer").textContent =
-          "Time: " + min + ":" + String(sec).padStart(2, "0");
+          min + ":" + String(sec).padStart(2, "0");
 
         if (remaining <= 0) {
           clearInterval(timerInterval);
@@ -287,16 +725,24 @@
     function sendViolation(type, details) {
       if (!candidateId || !token || submitted) return;
 
-      fetch(SCRIPT_URL, {
+      violationCount++;
+      document.getElementById("vio").textContent = violationCount;
+      saveState();
+
+      fetch(API_URL, {
         method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({
           action: "violation",
           candidateId: candidateId,
           token: token,
           type: type,
-          details: details || ""
-        })
-      });
+          details: details || "",
+          timeIST: formatLocalDate(new Date()),
+          userAgent: navigator.userAgent
+        }),
+        cache: "no-store"
+      }).catch(function() {});
     }
 
     document.addEventListener("visibilitychange", function() {
@@ -323,7 +769,7 @@
 
     window.addEventListener("beforeunload", function() {
       if (!submitted) {
-        sendViolation("Page refreshed", "Student refreshed, closed, or left page");
+        sendViolation("Page refreshed/closed", "Student refreshed, closed, or left page");
       }
     });
 
@@ -334,6 +780,34 @@
       });
     }
 
+    const questionImage = document.getElementById("questionImage");
+    const imgModal = document.getElementById("imgModal");
+    const imgModalPic = document.getElementById("imgModalPic");
+
+    questionImage.onclick = function() {
+      if (!questionImage.src) return;
+      imgModalPic.src = questionImage.src;
+      imgModal.classList.add("show");
+    };
+
+    function closeImageModal() {
+      imgModal.classList.remove("show");
+      imgModalPic.removeAttribute("src");
+    }
+
+    function openImageFullscreen() {
+      if (imgModal.requestFullscreen) {
+        imgModal.requestFullscreen();
+      }
+    }
+
+    imgModal.onclick = function(e) {
+      if (e.target === imgModal) {
+        closeImageModal();
+      }
+    };
+
+    loadState();
     renderQuestion();
     startTimer();
   </script>
