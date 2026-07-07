@@ -1,1454 +1,2342 @@
-// questions.js
 // Format: { id, image?, question, options[], answerIndex, correctAnswerText }
 window.questions = [
   {
     id: 1,
-    image: "images/IMG_8955.jpeg",
-    question: "A 28-year-old man presents with foul-smelling diarrhea, abdominal bloating, flatulence, and weight loss after drinking untreated water during travel. Stool examination shows a pear-shaped, flagellated trophozoite with two nuclei, giving a “face-like” appearance. The organism is known to inhabit the lumen of the duodenum and upper jejunum. Which of the following protozoa is the only protozoan parasite found in the lumen of the human small intestine?",
-    options: ["Giardia lamblia", "Cryptosporidium parvum", "Cyclospora cayetanensis", "Isospora belli"],
+    image: "images/IMG_9093.jpeg",
+    question: "A 7-year-old unimmunized child is brought with high-grade fever, cough, coryza, conjunctival congestion, and marked photophobia. On oral examination, multiple tiny bluish-white lesions surrounded by an erythematous halo are seen on the buccal mucosa opposite the molar teeth. Two days later, a maculopapular rash appears behind the ears and spreads downward.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Measles",
+      "Rubella",
+      "Scarlet fever",
+      "Varicella"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Giardia lamblia"
+    correctAnswerText: "Measles"
   },
   {
     id: 2,
-    image: "images/IMG_8956.jpeg",
-    question: "A 35-year-old diabetic woman presents with thick, curdy white vaginal discharge and intense vulval itching. Microscopy shows oval budding yeast cells with pseudohyphae. The isolate is incubated in serum at 37°C for 90 minutes, after which tube-like outgrowths are seen from the yeast cells. Which of the following is the most likely test demonstrated?",
-    options: ["India ink preparation", "Germ tube test", "Urease test", "Lactophenol cotton blue mount"],
+    image: "images/IMG_ 9094.jpeg",
+    question: "A 9-year-old girl is brought with difficulty climbing stairs, getting up from the floor, and combing her hair for the past 2 months. Examination shows symmetrical proximal muscle weakness. A violaceous rash is present over the eyelids, and erythematous scaly papules are seen over the metacarpophalangeal and interphalangeal joints.\nWhat is the most appropriate next investigation?",
+    options: [
+      "Muscle biopsy",
+      "Serum creatine kinase",
+      "Nerve conduction study",
+      "Skin biopsy"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Germ tube test"
+    correctAnswerText: "Serum creatine kinase"
   },
   {
     id: 3,
-    image: "images/IMG_8957.jpeg",
-    question: "A 24-year-old man presents with high-grade fever, chills, fatigue, hypotension, and tachycardia after returning from a malaria-endemic region. Peripheral blood smear shows multiple delicate ring forms within red blood cells, some with double chromatin dots resembling stereo headphones. Which of the following is the most likely causative organism?",
-    options: ["Plasmodium vivax", "Plasmodium malariae", "Plasmodium falciparum", "Plasmodium ovale"],
+    image: "images/IMG_ 9095.jpeg",
+    question: "A 3-year-old boy is brought with fever for 7 days, not responding to antipyretics. Examination shows bilateral non-purulent conjunctival congestion with limbal sparing, cracked red lips, strawberry tongue, polymorphous rash, and swelling of hands and feet. The pediatrician is worried about a silent but life-threatening vascular complication that usually appears in the 2nd to 3rd week of illness.\nWhich of the following is the most appropriate first-line treatment?",
+    options: [
+      "Oral corticosteroids",
+      "Intravenous ceftriaxone",
+      "Intravenous immunoglobulin",
+      "Methotrexate"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Plasmodium falciparum"
+    correctAnswerText: "Intravenous immunoglobulin"
   },
   {
     id: 4,
-    image: "images/IMG_8958.jpeg",
-    question: "A 42-year-old man from North India presents with chronic nasal obstruction, foul-smelling nasal discharge, and progressive hypertrophic swelling of the nose. Biopsy from the nasal lesion shows large foamy macrophages with vacuolated cytoplasm containing bacilli and eosinophilic inclusion bodies in plasma cells. Which of the following organisms is the most likely causative agent?",
-    options: ["Klebsiella pneumoniae", "Klebsiella granulomatis", "Mycobacterium leprae", "Klebsiella rhinoscleromatis"],
+    image: "images/IMG_ 9096.jpeg",
+    question: "A 6-year-old child develops low-grade fever and malaise followed by intense erythema over both cheeks. Two days later, a lacy macular rash appears over the trunk and proximal extremities. His younger sibling has sickle cell disease and develops sudden pallor, tachycardia, tachypnea, and marked reticulocytopenia after contact with him.\nWhich of the following is the most likely causative organism?",
+    options: [
+      "Human herpesvirus 6",
+      "Rubella virus",
+      "Measles virus",
+      "Parvovirus B19"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Klebsiella rhinoscleromatis"
+    correctAnswerText: "Parvovirus B19"
   },
   {
     id: 5,
-    image: "images/IMG_8959.jpeg",
-    question: "A 16-year-old boy presents with painless terminal hematuria and increased frequency of micturition. Urine microscopy shows a non-operculated egg with a prominent terminal spine at one pole. Which of the following parasites is most likely responsible for this condition?",
-    options: ["Schistosoma haematobium", "Schistosoma mansoni", "Schistosoma japonicum", "Fasciola hepatica"],
+    image: "images/IMG_ 9097.jpeg",
+    question: "A 13-year-old boy is brought with progressive difficulty in lifting his arms above the head. His parents also notice that he sleeps with partially open eyes and cannot whistle properly. On examination, there is asymmetric weakness of facial muscles and shoulder girdle muscles, prominent scapular winging, wasting of biceps and triceps, and a puckered appearance of the mouth.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Facioscapulohumeral muscular dystrophy",
+      "Long thoracic nerve palsy",
+      "Klippel-Feil syndrome",
+      "Myotonic dystrophy"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Schistosoma haematobium"
+    correctAnswerText: "Facioscapulohumeral muscular dystrophy"
   },
   {
     id: 6,
-    image: "images/IMG_8960.jpeg",
-    question: "A 7-year-old child presents with fever, malaise, cough, coryza, conjunctival congestion, and bluish-white lesions on the buccal mucosa. After a few days, an erythematous maculopapular rash starts behind the ears and spreads to the face and trunk. Histopathology of lymphoid tissue shows multinucleated giant cells with nuclear and cytoplasmic inclusions. Which of the following is the most likely causative agent?",
-    options: ["Rubella virus", "Measles virus", "Varicella-zoster virus", "Parvovirus B19"],
-    answerIndex: 1,
-    correctAnswerText: "Measles virus"
+    image: "images/IMG_ 9098.jpeg",
+    question: "A 4-year-old neglected child from a poor socioeconomic background is brought with irritability, refusal to walk, and pain in both lower limbs. Examination shows swollen costochondral junctions and tenderness over long bones. X-ray of the knee shows dense metaphyseal white lines, sclerotic rings around the epiphysis, and a cortical spur at the metaphyseal margin.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Scurvy",
+      "Rickets",
+      "Osteogenesis imperfecta",
+      "Juvenile idiopathic arthritis"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Scurvy"
   },
   {
     id: 7,
-    image: "images/IMG_8961.jpeg",
-    question: "A 32-year-old immunocompromised patient presents with prolonged watery diarrhea, abdominal pain, nausea, and vomiting after consuming contaminated food. Stool wet mount shows round oocysts that stain as red spheres on modified acid-fast staining. The oocysts measure 8–10 μm and contain 2 sporocysts, each with 2 sporozoites. Which of the following organisms is most likely responsible?",
-    options: ["Isospora belli", "Cryptosporidium parvum", "Cyclospora cayetanensis", "Entamoeba histolytica"],
-    answerIndex: 2,
-    correctAnswerText: "Cyclospora cayetanensis"
+    image: "images/IMG_ 9099.jpeg",
+    question: "A 5-year-old child is brought with persistent scalp swelling and localized skull tenderness. X-ray skull shows a well-defined punched-out lytic lesion without a sclerotic rim. CT shows asymmetrical involvement of the inner and outer tables, giving a “hole within a hole” appearance. Examination also reveals seborrhea-like scalp lesions and mild hepatosplenomegaly.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Multiple myeloma",
+      "Langerhans cell histiocytosis",
+      "Metastatic neuroblastoma",
+      "Osteogenesis imperfecta"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Langerhans cell histiocytosis"
   },
   {
     id: 8,
-    image: "images/IMG_8962.jpeg",
-    question: "A boy presents with a history of acute febrile illness followed by asymmetric flaccid paralysis of the lower limb. On examination, there is muscle wasting and deformity of the right lower limb with hyperextension at the knee joint. The suspected virus belongs to the Picornaviridae family and is transmitted by the fecal–oral route. Which of the following is the most common presentation of this infection?",
-    options: ["Aseptic meningitis", "Paralytic poliomyelitis", "Bulbar poliomyelitis", "Inapparent infection"],
-    answerIndex: 3,
-    correctAnswerText: "Inapparent infection"
+    image: "images/IMG_ 9100.jpeg",
+    question: "A 2-year-old child is brought with delayed walking, widening of wrists and ankles, and progressive deformity of both lower limbs. On standing, one lower limb shows valgus angulation while the other shows varus angulation, giving an asymmetric lower-limb posture. Examination also shows anterior bowing of the tibia and widening of costochondral junctions.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Scurvy",
+      "Rickets",
+      "Osteogenesis imperfecta",
+      "Juvenile idiopathic arthritis"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Rickets"
   },
   {
     id: 9,
-    image: "images/IMG_8963.jpeg",
-    question: "A 9-year-old child presents with colicky abdominal pain, vomiting, abdominal distension, and constipation. X-ray abdomen shows multiple air-fluid levels suggestive of intestinal obstruction. Stool examination shows bile-stained mammillated eggs. Which of the following is the infective form of the causative parasite?",
-    options: ["Embryonated egg containing L3 larva", "Rhabditiform larva", "Filariform larva", "Adult worm"],
-    answerIndex: 0,
-    correctAnswerText: "Embryonated egg containing L3 larva"
+    image: "images/IMG_ 9101.jpeg",
+    question: "A 2-month-old infant is brought with poor feeding, excessive sleepiness, constipation not responding to usual treatment, and prolonged neonatal jaundice. Examination shows a protuberant abdomen, umbilical hernia, macroglossia, puffy facies, hypotonia, wide-open fontanelles, and slow relaxation of deep tendon reflexes.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Down syndrome",
+      "Congenital adrenal hyperplasia",
+      "Congenital hypothyroidism",
+      "Glycogen storage disease"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Congenital hypothyroidism"
   },
   {
     id: 10,
-    image: "images/IMG_8964.jpeg",
-    question: "A 5-year-old child presents with fever, sore throat, dysphagia, and painful oral lesions. Examination shows grayish-white papulovesicular lesions on an erythematous base over the soft palate, uvula, anterior tonsillar pillars, and posterior oropharynx. The lesions later ulcerate. Which of the following viruses is the most common cause of this condition?",
-    options: ["Herpes simplex virus type 1", "Coxsackievirus A", "Epstein–Barr virus", "Adenovirus"],
-    answerIndex: 1,
-    correctAnswerText: "Coxsackievirus A"
+    image: "images/IMG_ 9102.jpeg",
+    question: "A 6-year-old child presents with fever, sore throat, painful swallowing, and tender anterior cervical lymph nodes. After 24 hours, he develops a diffuse erythematous papular rash that begins around the neck and spreads to the trunk and extremities, sparing the palms and soles. The rash blanches on pressure. Examination shows circumoral pallor and a coated tongue with swollen papillae, later giving a red “strawberry” appearance.\nWhich of the following is responsible for this condition?",
+    options: [
+      "Endotoxin produced by Haemophilus influenzae",
+      "Exfoliative toxin produced by Staphylococcus aureus",
+      "Enterotoxin produced by Staphylococcus aureus",
+      "Pyrogenic exotoxin produced by Group A Streptococcus"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Pyrogenic exotoxin produced by Group A Streptococcus"
   },
   {
     id: 11,
-    image: "images/IMG_8965.jpeg",
-    question: "A 32-year-old man presents with recurrent fever, lymphangitis, and scrotal swelling. Peripheral blood smear collected at night shows sheathed microfilariae with a pointed tail free of nuclei. The infection is transmitted by mosquito bite. Which of the following is the infective form of the causative parasite?",
-    options: ["Microfilaria", "Adult worm", "Third-stage filariform larva", "Egg containing larva"],
-    answerIndex: 2,
-    correctAnswerText: "Third-stage filariform larva"
+    image: "images/IMG_ 9103.jpeg",
+    question: "A 10-year-old child is brought for evaluation of multiple light-brown macules over the trunk. Examination shows axillary freckling, several soft rubbery skin nodules, and pigmented iris hamartomas on slit-lamp examination. His father has similar skin lesions. MRI brain shows an optic pathway glioma.\nWhich chromosome carries the gene most commonly involved in this disorder?",
+    options: [
+      "Chromosome 17",
+      "Chromosome 22",
+      "Chromosome 7",
+      "Chromosome 11"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Chromosome 17"
   },
   {
     id: 12,
-    image: "images/IMG_8966.jpeg",
-    question: "A 24-year-old sexually active man presents with dysuria and purulent urethral discharge. Gram staining of the urethral discharge shows gram-negative intracellular diplococci within neutrophils. Culture is done on selective media. Which of the following drugs is used in the syndromic management of urethral discharge along with azithromycin?",
-    options: ["Doxycycline 100 mg BD for 7 days", "Metronidazole 2 g stat", "Acyclovir 400 mg TDS", "Cefixime 800 mg stat"],
-    answerIndex: 3,
-    correctAnswerText: "Cefixime 800 mg stat"
+    image: "images/IMG_ 9104.jpeg",
+    question: "A 14-year-old phenotypic female is brought for evaluation of short stature and primary amenorrhea. Examination shows webbed neck, shield chest, widely spaced nipples, cubitus valgus, and short fourth metacarpal. Ultrasound abdomen shows horseshoe kidney and streak gonads. Echocardiography reveals a bicuspid aortic valve.\nWhich of the following is the most likely karyotype?",
+    options: [
+      "47, XXY",
+      "45, XO",
+      "47, XXX",
+      "46, XY"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "45, XO"
   },
   {
     id: 13,
-    image: "images/IMG_8967.jpeg",
-    question: "A 26-year-old sexually active man presents with a painless genital ulcer with a clean base and firm indurated margins. Serous exudate from the lesion is examined under a microscope, showing a refractile spiral organism against a dark background. Which of the following microscopy techniques is most useful for direct visualization of the causative organism from an active chancre?",
-    options: ["Dark-field microscopy", "Gram staining", "India ink preparation", "Albert staining"],
-    answerIndex: 0,
-    correctAnswerText: "Dark-field microscopy"
+    image: "images/IMG_9105.jpeg",
+    question: "A male neonate is brought with continuous dribbling of urine since birth. Examination shows a reddish protruding mucosal plate in the lower abdomen, displaced umbilicus, separated pubic bones, and widely separated rectus muscles. The penis is short with complete epispadias and dorsal chordee.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Posterior urethral valve",
+      "Hypospadias",
+      "Bladder exstrophy",
+      "Cloacal exstrophy"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Bladder exstrophy"
   },
   {
     id: 14,
-    image: "images/IMG_8968.jpeg",
-    question: "A 6-year-old child presents with fever, sore throat, cervical lymphadenopathy, and a thick grayish-white membrane over the tonsils that bleeds on attempted removal. Gram stain shows gram-positive rods with club-shaped ends, beaded appearance, and Chinese-letter pattern arrangement. The toxin produced by this organism causes inhibition of protein synthesis. Which of the following is the mechanism of action of the toxin produced by this organism?",
-    options: ["Inactivation of 60S ribosomal subunit", "ADP-ribosylation of elongation factor-2", "Inhibition of acetylcholine release", "Increased cAMP by activation of adenylate cyclase"],
-    answerIndex: 1,
-    correctAnswerText: "ADP-ribosylation of elongation factor-2"
+    image: "images/IMG_9106.jpeg",
+    question: "A 3-year-old child is brought for evaluation of disproportionate short stature. Examination shows short limbs, macrocephaly, frontal bossing, midfacial hypoplasia, bowing of legs, and increased joint laxity. Hand examination shows short stubby fingers with increased separation between the middle and ring fingers. Pelvic radiograph shows a champagne-glass pelvic inlet.\nWhich of the following genetic abnormalities is most likely responsible?",
+    options: [
+      "Mutation in fibrillin-1 gene",
+      "Mutation in collagen type I gene",
+      "Mutation in fibroblast growth factor receptor 3 gene",
+      "Mutation in dystrophin gene"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Mutation in fibroblast growth factor receptor 3 gene"
   },
   {
     id: 15,
-    image: "images/IMG_8969.jpeg",
-    question: "A 38-year-old farmer presents with fever, headache, myalgia, and a black eschar at the site of an arthropod bite. He also has regional lymphadenopathy, maculopapular rash, and raised serum creatinine suggesting acute kidney injury. Which of the following is the most likely causative organism?",
-    options: ["Orientia tsutsugamushi", "Bacillus anthracis", "Rickettsia rickettsii", "Salmonella Typhi"],
-    answerIndex: 0,
-    correctAnswerText: "Orientia tsutsugamushi"
+    image: "images/IMG_9107.jpeg",
+    question: "A newborn is evaluated for low birth weight, jaundice, hepatosplenomegaly, petechial rash, and microcephaly. Fundus examination shows chorioretinitis. Neuroimaging reveals calcifications around the ventricles. On follow-up, the child is at high risk of developing progressive sensorineural hearing loss.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Congenital toxoplasmosis",
+      "Congenital rubella syndrome",
+      "Neonatal herpes infection",
+      "Congenital cytomegalovirus infection"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Congenital cytomegalovirus infection"
   },
   {
     id: 16,
-    image: "images/IMG_8970.jpeg",
-    question: "A 35-year-old gardener from a sub-Himalayan region presents with multiple ulcerative nodules over the upper limb arranged along the lymphatic channels. History reveals traumatic inoculation by a thorn while handling plants. Microscopy shows flower-like clusters of conidia, and tissue section shows asteroid bodies around cigar-shaped yeast cells. Which of the following is the most likely causative organism?",
-    options: ["Histoplasma capsulatum", "Sporothrix schenckii", "Blastomyces dermatitidis", "Coccidioides immitis"],
-    answerIndex: 1,
-    correctAnswerText: "Sporothrix schenckii"
+    image: "images/IMG_9108.jpeg",
+    question: "A newborn delivered at 37 weeks is found to have severe craniofacial abnormalities. Examination shows microcephaly, microphthalmia, cleft lip and palate, postaxial polydactyly with flexed fingers, scalp defect, and a cardiac murmur. Neuroimaging reveals holoprosencephaly. Ultrasound abdomen shows renal abnormalities.\nWhich of the following chromosomal disorders is most likely present?",
+    options: [
+      "Trisomy 13",
+      "Trisomy 18",
+      "Trisomy 21",
+      "45, XO"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Trisomy 13"
   },
   {
     id: 17,
-    image: "images/IMG_8971.jpeg",
-    question: "A 6-year-old child presents with superficial vesicular lesions around the mouth. The vesicles rupture easily and form honey-colored crusted lesions. There is no deep ulceration or systemic toxicity. Which of the following organisms is classically associated with this condition?",
-    options: ["Herpes simplex virus", "Varicella-zoster virus", "Streptococcus pyogenes", "Trichophyton rubrum"],
-    answerIndex: 2,
-    correctAnswerText: "Streptococcus pyogenes"
+    image: "images/IMG_9109.jpeg",
+    question: "A 7-year-old child from a nutritionally deprived background is brought with burning sensation in the eyes, excessive sensitivity to light, and soreness at the angles of the mouth. Examination shows angular fissuring of lips, inflamed tongue, and visible superficial blood vessels growing into the cornea.\nWhich vitamin deficiency is most likely responsible?",
+    options: [
+      "Vitamin B1",
+      "Vitamin B2",
+      "Vitamin B3",
+      "Vitamin B6"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Vitamin B2"
   },
   {
     id: 18,
-    image: "images/IMG_8972.jpeg",
-    question: "A 32-year-old man presents with fever, jaundice, delirium, and evidence of hepatic and renal dysfunction after travel to an endemic region. The vector shown is Aedes aegypti. Liver biopsy shows amorphous eosinophilic nuclear inclusion bodies. Which of the following inclusion bodies is classically associated with this disease?",
-    options: ["Negri bodies", "Guarnieri bodies", "Cowdry type A inclusions", "Torres bodies"],
-    answerIndex: 3,
-    correctAnswerText: "Torres bodies"
+    image: "images/IMG_9110.jpeg",
+    question: "A 2-year-old child from a poor socioeconomic background is brought with generalized swelling, poor appetite, dull behavior, thin brittle hair with alternating pale and dark bands, and flaky-paint dermatosis. Examination shows a moon-like face, protuberant abdomen, hepatomegaly, and preserved subcutaneous fat.\nWhich of the following features is most characteristic of this condition?",
+    options: [
+      "Voracious appetite with alert sensorium",
+      "Severe loss of subcutaneous fat without edema",
+      "Apathy with prominent edema",
+      "Baggy-pant appearance with severe muscle wasting"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Apathy with prominent edema"
   },
   {
     id: 19,
-    image: "images/IMG_8973.jpeg",
-    question: "A 45-year-old post-transplant patient on immunosuppressive therapy presents with chronic watery diarrhea and crampy abdominal pain. Stool examination using Kinyoun acid-fast stain shows spherical oocysts measuring 4–6 μm. The parasite is capable of completing its life cycle in a single host and can cause autoinfection. Which of the following is the most likely causative organism?",
-    options: ["Cryptosporidium parvum", "Cyclospora cayetanensis", "Isospora belli", "Giardia lamblia"],
+    image: "images/IMG_9111.jpeg",
+    question: "A 16-year-old boy presents with fever, severe sore throat, malaise, and painful cervical lymphadenopathy. Examination shows tonsillar enlargement, palatal petechiae, and mild hepatosplenomegaly. Peripheral smear shows large atypical lymphocytes with abundant cytoplasm that appears to “hug” surrounding red cells. He is advised to avoid contact sports for the next few weeks.\nWhich of the following is the best screening test for this condition?",
+    options: [
+      "Monospot test",
+      "Widal test",
+      "Weil-Felix test",
+      "Mantoux test"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Cryptosporidium parvum"
+    correctAnswerText: "Monospot test"
   },
   {
     id: 20,
-    image: "images/IMG_8974.jpeg",
-    question: "A microbiology resident performs antibiotic sensitivity testing for a bacterial isolate. The organism is spread uniformly over the entire surface of the agar plate before placing antibiotic discs. After incubation, zones of inhibition are measured around the discs. Which of the following culture methods is being used?",
-    options: ["Streak culture", "Lawn culture", "Stroke culture", "Stab culture"],
+    image: "images/IMG_ 9127.jpeg",
+    question: "A 4-year-old malnourished child is brought with difficulty seeing in dim light. On examination, the conjunctiva appears dry and wrinkled with foamy triangular plaques near the limbus. Slit-lamp examination later shows corneal ulceration involving less than one-third of the corneal surface with stromal softening.\nWhich of the following WHO stages of xerophthalmia corresponds to this corneal finding?",
+    options: [
+      "X2",
+      "X3A",
+      "X3B",
+      "XS"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Lawn culture"
+    correctAnswerText: "X3A"
   },
   {
     id: 21,
-    image: "images/IMG_8975.jpeg",
-    question: "A 30-year-old sexually active man presents with a chronic, painless, beefy-red genital ulcer that bleeds easily on touch. There is no significant lymphadenopathy. Wright–Giemsa-stained tissue smear shows rounded coccobacilli within cystic spaces in large mononuclear cells, showing bipolar staining with safety-pin appearance. Which of the following organisms is the most likely causative agent?",
-    options: ["Haemophilus ducreyi", "Treponema pallidum", "Klebsiella granulomatis", "Chlamydia trachomatis L1–L3"],
+    image: "images/IMG_ 9128.jpeg",
+    question: "A newborn is evaluated for hypotonia, flat facial profile, upslanting palpebral fissures, epicanthic folds, single transverse palmar crease, and wide sandal gap. Karyotyping confirms trisomy 21. Echocardiography is planned to screen for the most common cardiovascular lesion associated with this condition.\nWhich of the following cardiac defects is most commonly associated with this syndrome?",
+    options: [
+      "Bicuspid aortic valve",
+      "Supravalvular aortic stenosis",
+      "Endocardial cushion defect",
+      "Pulmonary stenosis"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Klebsiella granulomatis"
+    correctAnswerText: "Endocardial cushion defect"
   },
   {
     id: 22,
-    image: "images/IMG_8976.jpeg",
-    question: "A 5-year-old splenectomised child presents with fever, cough, and features of bacterial pneumonia. Culture on blood agar shows small colonies growing better near a streak of Staphylococcus aureus, with larger colonies close to the staphylococcal streak and smaller colonies farther away. Which of the following phenomena is demonstrated in this culture plate?",
-    options: ["Swarming", "Hemolysis", "String test", "Satellitism"],
+    image: "images/IMG_ 9129.jpeg",
+    question: "A 9-year-old unimmunized child presents with fever, headache, vomiting, and painful swelling near the angle of the jaw. The swelling is tender and becomes more painful while chewing sour foods. Five days later, the child develops neck stiffness and altered sensorium. CSF analysis suggests viral meningoencephalitis.\nWhich of the following is the most likely causative agent?",
+    options: [
+      "DNA herpesvirus",
+      "RNA orthomyxovirus",
+      "DNA adenovirus",
+      "RNA paramyxovirus"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Satellitism"
+    correctAnswerText: "RNA paramyxovirus"
   },
   {
     id: 23,
-    image: "images/IMG_8977.jpeg",
-    question: "A 38-year-old man presents with multiple firm, non-tender subcutaneous nodules over the elbow and iliac crest. He also complains of intense pruritus, skin rashes, photophobia, and gradual loss of vision. Eye examination shows sclerosing keratitis. The disease is transmitted by a blackfly breeding in fast-flowing rivers. Which of the following is the drug of choice for this condition?",
-    options: ["Ivermectin", "Diethylcarbamazine", "Albendazole", "Praziquantel"],
+    image: "images/IMG_ 9130.jpeg",
+    question: "A 68-year-old man presents with progressive abdominal distension, constipation, and colicky abdominal pain. He has not passed stool or flatus for 2 days. On examination, the abdomen is markedly distended and tympanic. Abdominal radiograph shows a massively dilated loop of colon arising from the pelvis and extending toward the upper abdomen, forming a characteristic coffee-bean appearance.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Sigmoid volvulus",
+      "Cecal volvulus",
+      "Intussusception",
+      "Adhesive small bowel obstruction"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Ivermectin"
+    correctAnswerText: "Sigmoid volvulus"
   },
   {
     id: 24,
-    image: "images/IMG_8978.jpeg",
-    question: "A 28-year-old man develops abdominal discomfort, nausea, and passage of proglottids in stool after eating inadequately cooked measly pork. Stool examination shows eggs of a cestode. The adult worm has a scolex with suckers and dagger-shaped hooks. Which of the following statements is correct regarding this parasite?",
-    options: ["Eggs float in saturated salt solution", "Eggs are infective to both man and pigs", "Adult worm is usually 10–12 meters long", "Cattle are the usual intermediate host"],
+    image: "images/IMG_ 9131.jpeg",
+    question: "A 14-month-old child presents with acute onset watery, non-bloody diarrhea, vomiting, low-grade fever, and signs of dehydration. Stool examination is negative for blood and pus cells. Electron microscopy of the stool sample shows wheel-like particles with short spokes radiating from the center. The virus is known to undergo genetic reassortment.\nWhich of the following best describes the causative agent?",
+    options: [
+      "Enveloped single-stranded RNA virus with helical symmetry",
+      "Non-enveloped double-stranded RNA virus with 11 segments",
+      "Non-enveloped single-stranded DNA virus with linear genome",
+      "Enveloped double-stranded DNA virus with intranuclear replication"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Eggs are infective to both man and pigs"
+    correctAnswerText: "Non-enveloped double-stranded RNA virus with 11 segments"
   },
   {
     id: 25,
-    image: "images/IMG_8979.jpeg",
-    question: "A 62-year-old man presents with fever, non-productive cough, dyspnea, diarrhea, confusion, and hyponatremia. Chest findings are suggestive of atypical pneumonia. Pleural fluid examination using direct fluorescent antibody staining shows fluorescent organisms. Which of the following is the most likely causative organism?",
-    options: ["Legionella pneumophila", "Mycoplasma pneumoniae", "Chlamydia psittaci", "Coxiella burnetii"],
-    answerIndex: 0,
-    correctAnswerText: "Legionella pneumophila"
+    image: "images/IMG_ 9132.jpeg",
+    question: "A 12-year-old child presents with headache, vomiting, diplopia, and progressive difficulty looking upward. Examination shows impaired upgaze, convergence-retraction nystagmus on attempted upward gaze, lid retraction, bilateral papilledema, and light-near dissociation of pupils. MRI reveals a pineal region mass causing obstructive hydrocephalus.\nWhich of the following structures is most likely involved?",
+    options: [
+      "Optic chiasma",
+      "Posterior commissure",
+      "Lateral geniculate body",
+      "Abducens nucleus"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Posterior commissure"
   },
   {
     id: 26,
-    image: "images/IMG_8980.jpeg",
-    question: "A 45-year-old man presents with high-grade fever, headache, malaise, weakness, and myalgia after a tick bite. Giemsa-stained peripheral blood smear shows intraerythrocytic ring forms without hemozoin pigment. A few RBCs show tetrad formation resembling a Maltese cross. Which of the following is the most likely causative organism?",
-    options: ["Plasmodium falciparum", "Babesia microti", "Trypanosoma cruzi", "Leishmania donovani"],
+    image: "images/IMG_ 9133.jpeg",
+    question: "A 7-year-old child admitted after major trauma receives multiple units of stored blood transfusion. A few hours later, she develops weakness and palpitations. ECG shows tall, narrow, tent-shaped T waves with flattening of P waves and progressive widening of QRS complexes.\nWhich electrolyte abnormality is most likely responsible?",
+    options: [
+      "Hypocalcemia",
+      "Hyperkalemia",
+      "Hypokalemia",
+      "Hypernatremia"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Babesia microti"
+    correctAnswerText: "Hyperkalemia"
   },
   {
     id: 27,
-    image: "images/IMG_8981.jpeg",
-    question: "A 28-year-old man presents with high-grade fever, severe myalgia, headache, conjunctival suffusion, jaundice, and reduced urine output after wading through floodwater. History reveals exposure to water contaminated with rat urine. Electron microscopy shows a thin, tightly coiled spirochete with hooked ends. Which of the following organisms is the most likely causative agent?",
-    options: ["Treponema pallidum", "Borrelia burgdorferi", "Leptospira interrogans", "Spirillum minus"],
+    image: "images/IMG_ 9134.jpeg",
+    question: "A preterm neonate born to a diabetic mother develops respiratory distress shortly after birth. The baby has tachypnea, nasal flaring, chest retractions, expiratory grunting, and mild cyanosis. Chest X-ray shows diffuse fine reticulogranular ground-glass opacities with air bronchograms and partial white-out of both lung fields.\nWhich of the following is the most likely underlying cause?",
+    options: [
+      "Excessive fetal lung fluid retention",
+      "Meconium aspiration into terminal bronchioles",
+      "Deficiency of pulmonary surfactant",
+      "Congenital pulmonary lymphangiectasia"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Leptospira interrogans"
+    correctAnswerText: "Deficiency of pulmonary surfactant"
   },
   {
     id: 28,
-    image: "images/IMG_8982.jpeg",
-    question: "A 27-year-old sexually active man presents with a painful genital ulcer. On examination, the ulcer is soft, non-indurated, tender, irregular, and bleeds on touch. He also has painful tender inguinal lymphadenopathy. Smear shows gram-negative coccobacilli arranged in a school of fish / railroad track appearance. Which of the following organisms is the most likely causative agent?",
-    options: ["Treponema pallidum", "Haemophilus ducreyi", "Klebsiella granulomatis", "Chlamydia trachomatis L1–L3"],
-    answerIndex: 1,
-    correctAnswerText: "Haemophilus ducreyi"
+    image: "images/IMG_ 9135.jpeg",
+    question: "A 6-year-old child is brought with progressive headache, vomiting, unsteady gait, and repeated falls. Examination shows truncal ataxia, poor balance, and dysmetria. MRI brain reveals a midline posterior fossa tumor arising from the cerebellar vermis with obstructive hydrocephalus. Histopathology shows sheets of small round blue cells arranged in Homer-Wright rosettes and immunopositivity for synaptophysin.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Pilocytic astrocytoma",
+      "Ependymoma",
+      "Craniopharyngioma",
+      "Medulloblastoma"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Medulloblastoma"
   },
   {
     id: 29,
-    image: "images/IMG_8983.jpeg",
-    question: "A microbiology laboratory performs a test for identification of an anaerobic gram-positive bacillus isolated from a case of gas gangrene which is shown below. The organism is grown on an egg-yolk medium containing lecithin. One half of the plate contains antitoxin, while the other half does not. An area of opacity develops only on the side without antitoxin. Which of the following toxins is detected by this test?",
-    options: ["Diphtheria toxin", "Botulinum toxin", "Alpha toxin of Clostridium perfringens", "Tetanospasmin"],
-    answerIndex: 2,
-    correctAnswerText: "Alpha toxin of Clostridium perfringens"
+    image: "images/IMG_ 9136.jpeg",
+    question: "A neonate born after a pregnancy complicated by polyhydramnios develops repeated episodes of bilious vomiting on the first day of life. The abdomen is not significantly distended. Plain abdominal radiograph shows two large gas shadows in the upper abdomen with absence of distal bowel gas.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Duodenal atresia",
+      "Hypertrophic pyloric stenosis",
+      "Hirschsprung disease",
+      "Malrotation with midgut volvulus"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Duodenal atresia"
   },
   {
     id: 30,
-    image: "images/IMG_8984.jpeg",
-    question: "A 36-year-old shepherd presents with right upper abdominal discomfort. CT abdomen shows a well-defined space-occupying cystic lesion in the liver with internal septations, suggestive of hydatid cyst. The clinician plans PAIR procedure for early-stage disease. Which of the following is NOT used as a scolicidal agent in this procedure?",
-    options: ["Hypertonic saline", "95% alcohol", "Cetrimide", "Hypotonic saline"],
+    image: "images/IMG_ 9137.jpeg",
+    question: "A 6-year-old child develops colicky abdominal pain and swelling of both knee joints one week after an upper respiratory tract infection. Examination shows non-blanching palpable purpura over the lower limbs and extensor surfaces. Urine examination reveals microscopic hematuria and proteinuria. Skin biopsy shows leukocytoclastic vasculitis with immune deposition in vessel walls.\nWhich of the following immunoglobulins is most characteristically deposited in this disease?",
+    options: [
+      "IgG",
+      "IgM",
+      "IgE",
+      "IgA"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Hypotonic saline"
+    correctAnswerText: "IgA"
   },
   {
     id: 31,
-    image: "images/IMG_8985.jpeg",
-    question: "An infant is born to a mother who had fever and rash during early pregnancy. The baby has bilateral nuclear cataracts, a blueberry muffin rash, continuous machinery murmur suggestive of patent ductus arteriosus, and sensorineural hearing loss. Which of the following viruses is most likely responsible for this condition?",
-    options: ["Rubella virus", "Cytomegalovirus", "Herpes simplex virus", "Varicella-zoster virus"],
-    answerIndex: 0,
-    correctAnswerText: "Rubella virus"
+    image: "images/IMG_ 9138.jpeg",
+    question: "A 5-year-old child is brought with chronic bulky foul-smelling stools, failure to thrive, and progressive difficulty walking. Examination shows ataxic gait, absent deep tendon reflexes, and visual complaints suggestive of retinal degeneration. Peripheral smear shows irregularly spiculated red cells with projections of variable length and uneven distribution.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Hereditary spherocytosis",
+      "Uremia with burr cells",
+      "Abetalipoproteinemia",
+      "Iron deficiency anemia"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Abetalipoproteinemia"
   },
   {
     id: 32,
-    image: "images/IMG_8986.jpeg",
-    question: "A 2-year-old child presents with low-grade fever, hoarseness, inspiratory stridor, and a characteristic barking cough. Neck X-ray shows subglottic narrowing producing the steeple sign. Which of the following viruses is the most likely causative agent?",
-    options: ["Respiratory syncytial virus", "Parainfluenza virus", "Adenovirus", "Influenza virus"],
-    answerIndex: 1,
-    correctAnswerText: "Parainfluenza virus"
+    image: "images/IMG_ 9139.jpeg",
+    question: "A 5-year-old child is brought for evaluation after close contact with a sputum-positive tuberculosis patient. The child is otherwise asymptomatic. Chest X-ray shows hilar lymphadenopathy with a small parenchymal pulmonary focus. There is no apical cavitary lesion. The pediatrician explains that the combination of the lung focus and draining lymph node represents the primary complex.\nWhich of the following best describes this lesion?",
+    options: [
+      "Simon focus",
+      "Puhl lesion",
+      "Rich focus",
+      "Ghon complex"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Ghon complex"
   },
   {
     id: 33,
-    image: "images/IMG_8987.jpeg",
-    question: "A 4-year-old child presents with high-grade fever, severe sore throat, drooling, tachycardia, and toxic appearance. The child is sitting upright and leaning forward to ease breathing. Lateral neck X-ray shows enlargement of the epiglottis producing the thumb sign. Which of the following organisms is classically responsible for this condition?",
-    options: ["Parainfluenza virus", "Streptococcus pyogenes", "Haemophilus influenzae type b", "Respiratory syncytial virus"],
-    answerIndex: 2,
-    correctAnswerText: "Haemophilus influenzae type b"
+    image: "images/IMG_ 9140.jpeg",
+    question: "A 10-year-old boy is brought with excessive weight gain, poor linear growth, acne, facial rounding, and increased facial hair. Examination shows central obesity, moon facies, purple abdominal striae, proximal muscle weakness, hypertension, and hyperpigmentation. Her mother gives a history of repeated long-term steroid use for a chronic inflammatory illness.\nWhich of the following is the most common cause of this condition?",
+    options: [
+      "Prolonged exogenous glucocorticoid administration",
+      "ACTH-producing pituitary adenoma",
+      "Functioning adrenocortical tumor",
+      "Ectopic ACTH secretion"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Prolonged exogenous glucocorticoid administration"
   },
   {
     id: 34,
-    image: "images/IMG_8988.jpeg",
-    question: "A 32-year-old farmer presents with a slow-growing swelling over the left foot for several years. The swelling is associated with multiple discharging sinuses, and the discharge contains black granules. On KOH examination, the grains show masses of fungal mycelium with septate hyphae. Which of the following organisms is most likely responsible?",
-    options: ["Nocardia brasiliensis", "Actinomadura madurae", "Streptomyces somaliensis", "Madurella mycetomatis"],
-    answerIndex: 3,
-    correctAnswerText: "Madurella mycetomatis"
+    image: "images/IMG_ 9141.jpeg",
+    question: "A 19-year-old boy presents with painless cervical lymphadenopathy, intermittent fever, night sweats, and weight loss. Lymph node biopsy shows large atypical cells that are either multinucleated or bilobed, with prominent eosinophilic inclusion-like nucleoli giving an “owl-eye” appearance. The neoplastic cells are derived from germinal center B cells.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Follicular lymphoma",
+      "Mantle cell lymphoma"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Hodgkin lymphoma"
   },
   {
     id: 35,
-    image: "images/IMG_8989.jpeg",
-    question: "A 1-year-old child presents with acute watery diarrhea without blood or mucus. The illness is self-limiting. Electron microscopy of the intestinal mucosa shows bacterial adherence to small bowel epithelial cells with loss of microvilli and formation of actin pedestals beneath the attached bacteria. Which of the following organisms produces attachment and effacement lesions in intestinal epithelial cells?",
-    options: ["Enteropathogenic Escherichia coli", "Enterotoxigenic Escherichia coli", "Enterohemorrhagic Escherichia coli", "Enteroinvasive Escherichia coli"],
-    answerIndex: 0,
-    correctAnswerText: "Enteropathogenic Escherichia coli"
+    image: "images/IMG_ 9142.jpeg",
+    question: "A 6-year-old child is evaluated for recurrent urinary tract infections. Ultrasound abdomen shows fusion of the lower poles of both kidneys, forming a U-shaped renal mass. The lower border of the fused kidneys lies anterior to the L3 vertebra due to failure of normal ascent. Further evaluation reveals vesicoureteral reflux.\nWhich of the following is not a usual association of this condition?",
+    options: [
+      "Turner syndrome",
+      "Posterior urethral valve",
+      "Vesicoureteral reflux",
+      "Wilms tumor"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Posterior urethral valve"
   },
   {
     id: 36,
-    image: "images/IMG_8990.jpeg",
-    question: "A 45-year-old farmer presents with a slowly spreading warty, verrucous lesion over the lower limb after a thorn-prick injury several years ago. Histopathology shows granulomatous inflammation with dark brown, thick-walled, round fungal structures within giant cells. These bodies show transverse and longitudinal septations. Which of the following histopathological findings is most characteristic of this condition?",
-    options: ["Asteroid bodies", "Medlar bodies", "Donovan bodies", "Negri bodies"],
-    answerIndex: 1,
-    correctAnswerText: "Medlar bodies"
+    image: "images/IMG_ 9143.jpeg",
+    question: "A 5-year-old girl is brought with recurrent episodes of vaginal bleeding and breast development. She also has multiple irregular café-au-lait macules with jagged borders over the trunk. She has repeated bone pain and history of recurrent fractures. Imaging shows multiple expansile bony lesions involving the skull base and proximal femur.\nWhich of the following gene mutations is most likely responsible?",
+    options: [
+      "FGFR3 gene mutation",
+      "FBN1 gene mutation",
+      "GNAS gene mutation",
+      "NF1 gene mutation"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "GNAS gene mutation"
   },
   {
     id: 37,
-    image: "images/IMG_8991.jpeg",
-    question: "A 12-year-old child presents with fever and regional lymphadenopathy after being scratched by a pet kitten. A painless papule developed at the scratch site, followed by enlargement of the draining lymph nodes. Lymph node biopsy examined with Warthin–Starry stain shows black short rod-shaped bacilli arranged in chains and clumps. Which of the following organisms is the most likely causative agent?",
-    options: ["Bartonella bacilliformis", "Bartonella henselae", "Bartonella quintana", "Borrelia burgdorferi"],
-    answerIndex: 1,
-    correctAnswerText: "Bartonella henselae"
+    image: "",
+    question: "A neonate is born at term with low birth weight. Antenatal ultrasound had shown relatively preserved head circumference with markedly reduced abdominal circumference. After birth, the baby appears thin and wasted with relatively preserved head size. Placental examination suggests uteroplacental insufficiency. The pediatrician explains that the insult most likely occurred late in gestation and mainly affected cell size rather than cell number.\nWhich of the following findings is most consistent with this type of growth restriction?",
+    options: [
+      "Reduced head circumference with normal ponderal index",
+      "Reduced cell number with normal cell size",
+      "Early gestational insult due to chromosomal disorder",
+      "Ponderal index less than 2 with preserved head circumference"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Ponderal index less than 2 with preserved head circumference"
   },
   {
     id: 38,
-    image: "images/IMG_8996.jpeg",
-    question: "A victim is brought for medicolegal examination after being assaulted with a stick-like object. Examination shows two parallel linear bruises with a pale central area at the site of impact. Which of the following injuries is most likely shown in the image?",
-    options: ["Tram-line bruise", "Patterned abrasion", "Laceration", "Defence wound"],
+    image: "",
+    question: "A term neonate is delivered vaginally to a mother with poorly controlled diabetes mellitus. Birth weight is above the 90th percentile for gestational age. Soon after birth, the baby develops hypoglycemia and plethoric appearance. On examination, there is decreased movement of one upper limb after a difficult shoulder delivery.\nWhich bone is most commonly fractured in this setting during vaginal delivery?",
+    options: [
+      "Clavicle",
+      "Humerus",
+      "Femur",
+      "Radius"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Tram-line bruise"
+    correctAnswerText: "Clavicle"
   },
   {
     id: 39,
-    image: "images/IMG_8997.jpeg",
-    question: "A patient is brought to the emergency department after ingestion of a toxic substance. He has severe abdominal pain, vomiting, diarrhoea, garlicky odour of breath, and the vomitus is described as luminescent in the dark. Gastric lavage is planned, and a compound shown in the image may be used as stomach wash. Which of the following compounds is shown?",
-    options: ["Potassium permanganate", "Activated charcoal", "Sodium bicarbonate", "Copper sulphate"],
-    answerIndex: 3,
-    correctAnswerText: "Copper sulphate"
+    image: "",
+    question: "A 30-week preterm neonate required NICU care for respiratory instability and repeated episodes of hypotension. At follow-up, the child shows delayed motor milestones with increased tone predominantly in both lower limbs. MRI brain shows injury to the periventricular white matter adjacent to the lateral ventricles.\nWhich of the following complications of prematurity best explains this finding?",
+    options: [
+      "Intraventricular hemorrhage",
+      "Periventricular leukomalacia",
+      "Retinopathy of prematurity",
+      "Necrotizing enterocolitis"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Periventricular leukomalacia"
   },
   {
     id: 40,
-    image: "images/IMG_8998.jpeg",
-    question: "A dead body is examined a few hours after death. There is bluish-purple discoloration over the dependent parts of the body, due to blood settling in dilated vessels under the influence of gravity. Which of the following postmortem changes is shown in the image?",
-    options: ["Postmortem lividity", "Rigor mortis", "Algor mortis", "Cadaveric spasm"],
-    answerIndex: 0,
-    correctAnswerText: "Postmortem lividity"
+    image: "",
+    question: "A preterm neonate is born limp and apneic. After initial steps, positive pressure ventilation is started. Chest rise is adequate, but after 30 seconds of effective ventilation, the heart rate remains 52/min. The team prepares for the next step in neonatal resuscitation.\nWhich of the following is the most appropriate next intervention?",
+    options: [
+      "Continue observation with free-flow oxygen",
+      "Start chest compressions alone without ventilation",
+      "Start chest compressions with PPV in 3:1 ratio using 100% oxygen",
+      "Give sodium bicarbonate immediately"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Start chest compressions with PPV in 3:1 ratio using 100% oxygen"
   },
   {
     id: 41,
-    image: "images/IMG_8999.jpeg",
-    question: "A child presents with orofacial paresthesias, tremors, headache, fatigue, irritability, and painful pink discoloration of hands and feet. On examination, features suggest acrodynia as shown below, due to chronic organic mercury exposure. Mercury mainly produces toxicity by binding to which of the following groups?",
-    options: ["Amino groups", "Sulfhydryl groups", "Carboxyl groups", "Phosphate groups"],
-    answerIndex: 1,
-    correctAnswerText: "Sulfhydryl groups"
+    question: "A term newborn is assessed 1 minute after birth. The baby has a heart rate of 86/min, slow irregular respiration, peripheral cyanosis, some flexion of limbs, and grimaces when a catheter is introduced into the nostril.\nWhat is the APGAR score of this newborn?",
+    options: [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "5"
   },
   {
     id: 42,
-    image: "images/IMG_9001.jpeg",
-    question: "A patient presents with painful blisters, itching, and eczematous eruptions over the skin after local application of juice from black, heart-shaped seeds. The juice is commonly used by malingerers to fabricate wounds and artificial bruises. Which of the following is the active principle responsible for these effects?",
-    options: ["Ricin", "Abrin", "Bhilawanol", "Colchicine"],
-    answerIndex: 2,
-    correctAnswerText: "Bhilawanol"
+    image: "",
+    question: "A term neonate with history of birth asphyxia is evaluated 8 hours after delivery. The baby is lethargic, has generalized hypotonia, weak suck, incomplete Moro reflex, bradycardia, constricted pupils, and periodic breathing. During observation, the baby develops a focal seizure.\nWhich stage of hypoxic-ischemic encephalopathy is most consistent with these findings?",
+    options: [
+      "Stage 2 HIE",
+      "Stage 1 HIE",
+      "Stage 3 HIE",
+      "Normal neonatal transition"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Stage 2 HIE"
   },
   {
     id: 43,
-    image: "images/IMG_9002.jpeg",
-    question: "A 6-year-old child presents with abdominal pain, irritability, anemia, and developmental delay. Peripheral smear shows coarse basophilic stippling of red blood cells. This hematological finding occurs due to inhibition of which of the following enzymes?",
-    options: ["Delta-ALA dehydratase", "Ferrochelatase", "Cytochrome oxidase", "Pyrimidine 5′ nucleotidase"],
-    answerIndex: 3,
-    correctAnswerText: "Pyrimidine 5′ nucleotidase"
+    image: "",
+    question: "A neonate born at 29 weeks of gestation is admitted to NICU. On day 2 of life, the baby develops sudden pallor, hypotension, tense anterior fontanelle, and a fall in hematocrit. Cranial ultrasonography shows bleeding arising from the subependymal region and extending into the ventricular system.\nWhich of the following is the most likely site of origin of bleeding?",
+    options: [
+      "Cerebellar vermis",
+      "Germinal matrix",
+      "Choroid plexus",
+      "Basal ganglia"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Germinal matrix"
   },
   {
     id: 44,
-    image: "images/IMG_9003.jpeg",
-    question: "A dead body is recovered from a pond. During autopsy, the forensic expert performs acid digestion of bone marrow tissue, followed by centrifugation and microscopic examination. The test detects microscopic unicellular algae with silica-containing cell walls, supporting antemortem drowning. Which of the following is the most reliable site for this test?",
-    options: ["Bone marrow of femur", "Stomach contents", "Skin from dependent areas", "Vitreous humour"],
-    answerIndex: 0,
-    correctAnswerText: "Bone marrow of femur"
+    image: "",
+    question: "A 2-day-old neonate is observed to have repeated episodes of chewing movements, lip smacking, bicycling movements of the lower limbs, and intermittent ocular deviation. The episodes are not abolished by holding the limbs and are associated with mild autonomic changes. There is no generalized tonic-clonic activity.\nWhich type of neonatal seizure is most likely present?",
+    options: [
+      "Tonic seizure",
+      "Clonic seizure",
+      "Subtle seizure",
+      "Myoclonic seizure"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Subtle seizure"
   },
   {
     id: 45,
-    image: "images/IMG_9004.jpeg",
-    question: "A group of people develop vomiting, diarrhoea, bilateral pedal edema, generalized anasarca, and hypersecretory glaucoma after consuming adulterated mustard oil. The adulterant is obtained from a plant with yellow flowers, and all parts of the plant are poisonous. Which of the following toxic alkaloids is responsible?",
-    options: ["Abrin", "Sanguinarine", "Ricin", "Bhilawanol"],
-    answerIndex: 1,
-    correctAnswerText: "Sanguinarine"
+    image: "",
+    question: "A 2-day-old neonate develops repeated subtle seizures with lip smacking, cycling limb movements, and ocular deviation. Blood glucose and serum calcium are checked immediately and corrected, but the seizures persist. The baby is hemodynamically stable with no respiratory depression.\nWhich of the following is the first-line antiepileptic drug of choice?",
+    options: [
+      "Diazepam",
+      "Phenytoin",
+      "Levetiracetam",
+      "Phenobarbitone"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Phenobarbitone"
   },
   {
     id: 46,
-    image: "images/IMG_9005.jpeg",
-    question: "A young man is brought to the emergency department with dry hot skin, dilated pupils, dryness of mouth and throat, unquenchable thirst, delirium, drunken gait, and drowsiness after ingestion of seeds from a plant with white trumpet-shaped flowers and spiny fruits. Which of the following toxidromes is most likely produced by this plant?",
-    options: ["Cholinergic toxidrome", "Opioid toxidrome", "Anticholinergic toxidrome", "Sympathomimetic toxidrome"],
-    answerIndex: 2,
-    correctAnswerText: "Anticholinergic toxidrome"
+    image: "",
+    question: "A neonate is born at 30 weeks of gestation and requires NICU admission for respiratory distress. The baby receives oxygen therapy and intermittent respiratory support during the first week of life. The parents ask when the first retinal screening should be done to detect a vasoproliferative disorder of the immature retina.\nWhich of the following is the most appropriate timing for the first screening examination?",
+    options: [
+      "At 32 weeks postmenstrual age or 4 weeks postnatal age, whichever is later",
+      "Immediately after birth before starting oxygen therapy",
+      "Only after the baby develops leukocoria or abnormal red reflex",
+      "At 40 weeks postmenstrual age in all preterm babies"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "At 32 weeks postmenstrual age or 4 weeks postnatal age, whichever is later"
   },
   {
     id: 47,
-    image: "images/IMG_9006.jpeg",
-    question: "A child is brought after blunt trauma to the head. Imaging of the skull shows a localized inward depression of the cranial bone without complete fragmentation, resembling an indentation on a soft ping-pong ball. This type of fracture occurs commonly in children due to the elasticity of skull bones. Which of the following skull fractures is shown in the image?",
-    options: ["Fissured fracture", "Comminuted fracture", "Gutter fracture", "Pond fracture"],
-    answerIndex: 3,
-    correctAnswerText: "Pond fracture"
+    image: "",
+    question: "A preterm neonate develops respiratory distress soon after birth. On examination, the upper chest lags behind the lower chest during inspiration, lower chest retractions are marked, xiphoid retractions are marked, nasal flaring is just visible, and expiratory grunt is audible without a stethoscope.\nWhat is the Silverman-Anderson score and severity of respiratory distress?",
+    options: [
+      "8 — Severe respiratory distress",
+      "6 — Moderate respiratory distress",
+      "4 — Mild respiratory distress",
+      "2 — No significant respiratory distress"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "8 — Severe respiratory distress"
   },
   {
     id: 48,
-    image: "images/IMG_9007.jpeg",
-    question: "A victim is attacked from behind, with the assailant placing an arm around the throat and trapping the neck in the crook of the elbow. Pressure is exerted over the larynx and sides of the neck by the forearm and upper arm. Which type of strangulation is shown in the image?",
-    options: ["Mugging", "Bansdola", "Garrotting", "Burking"],
-    answerIndex: 0,
-    correctAnswerText: "Mugging"
+    image: "",
+    question: "A 29-week preterm neonate develops respiratory distress soon after birth and is started on nasal CPAP. The baby is hemodynamically stable with good spontaneous respiratory effort, but oxygen requirement increases to FiO₂ 0.32. The neonatologist decides to give surfactant while minimizing ventilator-induced lung injury.\nWhich of the following is the most appropriate approach?",
+    options: [
+      "Continue CPAP alone until respiratory failure develops",
+      "Intubate, administer surfactant, briefly ventilate, and rapidly extubate to nasal CPAP",
+      "Give prophylactic surfactant within 15 minutes irrespective of respiratory distress",
+      "Start chest compressions with 100% oxygen"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Intubate, administer surfactant, briefly ventilate, and rapidly extubate to nasal CPAP"
   },
   {
     id: 49,
-    image: "images/IMG_9008.jpeg",
-    question: "A patient is brought with a wound produced by a sharp-edged weapon. On examination, the wound is clean-cut, spindle-shaped, longer than deep, with well-defined everted margins and no surrounding contusion or abrasion. Which type of wound is shown in the image?",
-    options: ["Lacerated wound", "Incised wound", "Punctured wound", "Contused wound"],
-    answerIndex: 1,
-    correctAnswerText: "Incised wound"
+    image: "",
+    question: "A 29-year-old pregnant woman at 30 weeks of gestation presents with preterm uterine contractions and cervical changes. The obstetrician expects delivery within the next few days. There is no evidence of chorioamnionitis. She has gestational diabetes, but her glucose is monitored and controlled. A drug is planned to accelerate fetal lung maturity and reduce neonatal complications.\nWhich of the following is the most appropriate regimen?",
+    options: [
+      "Hydrocortisone 100 mg IV every 8 hours for 3 days",
+      "Prednisolone 40 mg orally once daily for 5 days",
+      "Betamethasone 12 mg intramuscularly, 2 doses 24 hours apart",
+      "Methylprednisolone 1 g IV daily for 3 days"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Betamethasone 12 mg intramuscularly, 2 doses 24 hours apart"
   },
   {
     id: 50,
-    image: "images/IMG_9009.jpeg",
-    question: "A patient is brought after a road traffic accident with a superficial injury over the skin due to friction against a rough surface. The injury involves loss of superficial epidermis and does not penetrate the full thickness of epidermis. Which of the following injuries is most likely shown?",
-    options: ["Incised wound", "Lacerated wound", "Abrasion", "Stab wound"],
-    answerIndex: 2,
-    correctAnswerText: "Abrasion"
+    image: "",
+    question: "A term neonate develops severe respiratory distress within the first few hours of life. The baby has tachypnea, grunting, retractions, and increasing oxygen requirement. Chest X-ray shows features resembling hyaline membrane disease. Surfactant therapy is given, but there is poor clinical response. Genetic analysis from blood confirms mutation affecting surfactant protein-B.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Transient tachypnea of newborn",
+      "Meconium aspiration syndrome",
+      "Neonatal pneumonia",
+      "Congenital alveolar proteinosis"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Congenital alveolar proteinosis"
   },
   {
     id: 51,
-    image: "images/IMG_9010.jpeg",
-    question: "A person is brought after being struck by lightning. On examination, there are superficial, thin, tortuous, fern-like branching erythematous marks over the shoulder and flank. These marks are produced due to rupture of small vessels and usually disappear within 1–2 days. Which of the following findings is shown in the image?",
-    options: ["Joule burn", "Electric mark", "Spark burn", "Lichtenberg figure"],
-    answerIndex: 3,
-    correctAnswerText: "Lichtenberg figure"
+    image: "",
+    question: "A 30-week preterm neonate develops recurrent episodes of apnea on day 4 of life, associated with bradycardia and desaturation. Sepsis, hypoglycemia, hypocalcemia, hypothermia, and airway obstruction are excluded. The baby is otherwise hemodynamically stable.\nWhich of the following is the most appropriate first-line pharmacological treatment?",
+    options: [
+      "Caffeine",
+      "CPAP",
+      "Nasal intermittent positive pressure ventilation",
+      "Phenobarbitone"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Caffeine"
   },
   {
     id: 52,
-    image: "images/IMG_9011.jpeg",
-    question: "A dead body is examined around 36–48 hours after death. The skin shows linear branching discoloration along the course of superficial veins over the abdomen, chest, shoulders, and inguinal region. This occurs due to hemolysis of blood and staining of vessel walls by sulfmethemoglobin. Which postmortem change is shown in the image?",
-    options: ["Marbling", "Postmortem lividity", "Mummification", "Adipocere formation"],
-    answerIndex: 0,
-    correctAnswerText: "Marbling"
+    image: "",
+    question: "A term neonate delivered by elective cesarean section develops tachypnea soon after birth. The baby has mild cyanosis that improves with low-flow oxygen. There are no crepitations or rhonchi. Chest X-ray shows prominent perihilar streaking with fluid in the interlobar fissures giving a sunray-like appearance.\nWhich of the following is the most likely underlying mechanism?",
+    options: [
+      "Deficiency of pulmonary surfactant",
+      "Delayed clearance of fetal lung fluid",
+      "Aspiration of meconium into airways",
+      "Pulmonary hypoplasia due to oligohydramnios"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Delayed clearance of fetal lung fluid"
   },
   {
     id: 53,
-    image: "images/IMG_9012.jpeg",
-    question: "A worker comes in contact with a high-tension electric current in the multi-kilovolt range. Examination shows multiple spark lesions over the skin. Which of the following is the most likely finding shown in the image?",
-    options: ["Lichtenberg figure", "Crocodile skin effect", "Joule burn", "Contact flattening"],
-    answerIndex: 1,
-    correctAnswerText: "Crocodile skin effect"
+    image: "",
+    question: "A post-term neonate is delivered after a pregnancy complicated by fetal distress. The amniotic fluid is thick greenish-black. Soon after birth, the baby develops respiratory distress with tachypnea, grunting, retractions, and cyanosis. Chest X-ray shows bilateral diffuse patchy infiltrates with areas of hyperinflation and air trapping.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Transient tachypnea of newborn",
+      "Hyaline membrane disease",
+      "Meconium aspiration syndrome",
+      "Congenital lobar emphysema"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Meconium aspiration syndrome"
   },
   {
     id: 54,
-    image: "images/IMG_9013.jpeg",
-    question: "A child presents with abdominal colic, anemia, irritability, and developmental delay. Oral examination shows a bluish-grey line along the gingival margin, especially near the teeth. This finding is classically associated with chronic exposure to which poison?",
-    options: ["Arsenic", "Phosphorus", "Lead", "Cyanide"],
-    answerIndex: 2,
-    correctAnswerText: "Lead"
+    image: "",
+    question: "A term neonate develops severe respiratory distress soon after birth. Examination shows a scaphoid abdomen, decreased breath sounds more on the left side, bowel sounds heard in the chest, and cardiac impulse shifted to the right. Antenatal ultrasound had shown bowel loops in the thorax with lung-to-head ratio less than 1.\nWhich of the following should be avoided during initial stabilization?",
+    options: [
+      "Orogastric tube decompression",
+      "Endotracheal intubation",
+      "Extracorporeal membrane oxygenation in severe cases",
+      "Bag and mask ventilation"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Bag and mask ventilation"
   },
   {
     id: 55,
-    image: "images/IMG_9014.jpeg",
-    question: "A patient with long-term industrial exposure presents with hyperpigmented and hypopigmented spots over the skin, giving a raindrop pigmentation appearance. Examination of nails shows transverse white bands. Which of the following chelating agents is preferred for subacute or chronic severe poisoning in this condition?",
-    options: ["Atropine", "Pralidoxime", "Naloxone", "Succimer"],
-    answerIndex: 3,
-    correctAnswerText: "Succimer"
+    image: "",
+    question: "A term neonate develops severe cyanosis soon after birth. Oxygen saturation in the right hand is 94%, while saturation in the lower limb is 82%. The baby has respiratory distress but no obvious structural cyanotic heart disease on clinical examination. The neonatologist suspects persistent fetal circulation with right-to-left shunting across the ductus arteriosus.\nWhich of the following is the gold standard investigation to confirm the diagnosis?",
+    options: [
+      "Echocardiography",
+      "Chest X-ray",
+      "Arterial blood gas analysis",
+      "Complete blood count with sepsis screen"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Echocardiography"
   },
   {
     id: 56,
-    image: "images/IMG_9015.jpeg",
-    question: "A patient develops poisoning after consuming a herbal preparation made from roots resembling horseradish. During examination, the pupils show abnormal exaggerated rhythmic contraction and dilatation, independent of light or fixation. Which of the following ocular signs is classically associated with this poisoning?",
-    options: ["Hippus", "Miosis", "Ptosis", "Nystagmus"],
-    answerIndex: 0,
-    correctAnswerText: "Hippus"
+    image: "",
+    question: "A 3-day-old neonate is brought with poor feeding, lethargy, temperature instability, prolonged capillary refill time, and respiratory distress with gasping respiration. Examination shows hypotonia and absent neonatal reflexes. The mother had foul-smelling liquor and prolonged rupture of membranes before delivery.\nWhich of the following findings is not usually included under neonatal sepsis?",
+    options: [
+      "Hypothermia",
+      "Oral thrush",
+      "Refusal to suck",
+      "Metabolic acidosis"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Oral thrush"
   },
   {
     id: 57,
-    image: "images/IMG_9016.jpeg",
-    question: "A young drug user is seen heating heroin base on aluminium foil with a hand-held flame and inhaling the thick white vapour produced. This method produces heroin levels similar to intravenous use. Which of the following methods of drug intake is described?",
-    options: ["Mainlining", "Chasing the dragon", "Skin popping", "Insufflation"],
-    answerIndex: 1,
-    correctAnswerText: "Chasing the dragon"
+    image: "",
+    question: "A 9-day-old neonate is admitted with fever, lethargy, poor feeding, seizures, and bulging anterior fontanelle. CSF examination shows features suggestive of bacterial meningitis. Blood culture is awaited. Empirical antibiotics are started with cefotaxime and amikacin.\nWhat is the minimum recommended duration of antibiotic therapy in this baby?",
+    options: [
+      "5–7 days",
+      "10 days",
+      "21 days",
+      "5–6 weeks"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "21 days"
   },
   {
     id: 58,
-    image: "images/IMG_9017.jpeg",
-    question: "A dead body is recovered from water. Examination of the hands and feet shows pale, sodden, wrinkled skin, first appearing over the finger pads. The finding suggests immersion in water for a few hours to 3 days. Which of the following signs is shown?",
-    options: ["Cutis anserina", "Postmortem hypostasis", "Washerwoman’s skin", "Cadaveric spasm"],
-    answerIndex: 2,
-    correctAnswerText: "Washerwoman’s skin"
+    image: "",
+    question: "A low-birth-weight neonate is kept uncovered on a cold examination table immediately after delivery. The baby becomes cold to touch, with an axillary temperature of 35°C. The neonatologist explains that newborns cannot generate heat effectively by shivering and depend mainly on a special metabolic mechanism activated by the sympathetic nervous system.\nWhich of the following best describes the main mechanism of heat production in this neonate?",
+    options: [
+      "Shivering thermogenesis by skeletal muscle contraction",
+      "Increased sweating with peripheral vasodilatation",
+      "Glycogenolysis in liver mediated by insulin",
+      "Non-shivering thermogenesis by brown fat through UCP-1"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Non-shivering thermogenesis by brown fat through UCP-1"
   },
   {
     id: 59,
-    image: "images/IMG_9018.jpeg",
-    question: "A person is examined after custodial torture. He gives history of repeated beating over the soles of the feet using a stick-like object. On examination, there is severe pain and tenderness over the plantar aspect of both feet. Which of the following methods of torture is shown in the image?",
-    options: ["Mugging", "Burking", "Garrotting", "Falanga / Bastinado"],
-    answerIndex: 3,
-    correctAnswerText: "Falanga / Bastinado"
+    image: "",
+    question: "A 32-week preterm neonate with birth weight 1450 g is maintaining spontaneous breathing and is hemodynamically stable. The baby is receiving expressed breast milk through an orogastric tube and has occasional apnea episodes that resolve with stimulation. The mother asks whether skin-to-skin care can be started.\nWhich of the following is the most appropriate advice?",
+    options: [
+      "Start kangaroo mother care as apnea and orogastric feeding are not contraindications",
+      "Avoid kangaroo mother care until birth weight becomes more than 2500 g",
+      "Avoid kangaroo mother care because an orogastric tube is an absolute contraindication",
+      "Start kangaroo mother care only after the baby is discharged from NICU"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Start kangaroo mother care as apnea and orogastric feeding are not contraindications"
   },
   {
     id: 60,
-    image: "images/IMG_9019.jpeg",
-    question: "A child accidentally ingests seeds of a plant commonly known as the castor oil plant. The toxic principle enters cells and inhibits protein synthesis, leading to severe toxicity. Which of the following is the main toxic principle of this plant?",
-    options: ["Ricin", "Abrin", "Sanguinarine", "Bhilawanol"],
-    answerIndex: 0,
-    correctAnswerText: "Ricin"
+    image: "",
+    question: "A 6-week-old exclusively breastfed infant is brought with poor feeding, irritability, repeated vomiting, and sudden-onset seizures. There is no history of trauma. The baby had prolonged jaundice since birth, pale stools, and dark urine. Vitamin K was not documented at birth. Neuroimaging shows intracranial hemorrhage.\nWhich of the following is the most likely underlying disorder?",
+    options: [
+      "Classical hemorrhagic disease of newborn",
+      "Late-onset vitamin K deficiency bleeding",
+      "Early-onset hemorrhagic disease due to maternal anticonvulsants",
+      "Benign birth-related retinal hemorrhage"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Late-onset vitamin K deficiency bleeding"
   },
   {
     id: 61,
-    image: "images/IMG_9020.jpeg",
-    question: "A child is brought with sharply demarcated red skin lesions with blistering and desquamation after accidental spillage of hot liquid. The lesions show a trickle pattern due to the liquid running down under gravity. Which of the following injuries is most likely shown?",
-    options: ["Flame burn", "Scald", "Electrical burn", "Chemical burn"],
-    answerIndex: 1,
-    correctAnswerText: "Scald"
+    image: "",
+    question: "A newborn delivered by vacuum-assisted vaginal delivery develops diffuse scalp swelling within a few hours of birth. The swelling is fluctuant, progressively increasing, and crosses the suture lines and midline. The baby becomes pale and tachycardic, and serial monitoring shows falling hematocrit with increasing occipitofrontal circumference.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Caput succedaneum",
+      "Cephalhematoma",
+      "Subgaleal hemorrhage",
+      "Chignon"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Subgaleal hemorrhage"
   },
   {
     id: 62,
-    image: "images/IMG_9021.jpeg",
-    question: "A patient is brought with drowsiness, pinpoint pupils, slow respiration, and coma after consuming an extract obtained from the unripe fruit capsule of a plant. The plant shown is Papaver somniferum. Which of the following is the toxic part from which the toxic principle is derived?",
-    options: ["Leaves", "Roots", "Unripe fruit capsule", "Stem bark"],
-    answerIndex: 2,
-    correctAnswerText: "Unripe fruit capsule"
+    image: "",
+    question: "A 3-week-old term neonate is brought for persistent yellowish discoloration of the skin. The baby is exclusively breastfed, gaining weight well, passing normal-colored stools, and has normal urine color. Examination is otherwise normal. Serum bilirubin shows predominantly unconjugated hyperbilirubinemia. Direct Coombs test is negative, hemoglobin is normal, and there is no hepatosplenomegaly.\nWhich of the following is the most likely mechanism?",
+    options: [
+      "Rh isoimmunization causing immune hemolysis",
+      "Complete absence of UGT1A1 enzyme activity",
+      "Obstruction of extrahepatic bile ducts",
+      "Increased enterohepatic circulation due to beta-glucuronidase in breast milk"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Increased enterohepatic circulation due to beta-glucuronidase in breast milk"
   },
   {
     id: 63,
-    image: "images/IMG_9022.jpeg",
-    question: "A victim sustains a firearm injury from a shotgun. The wound shows a central round rat-hole wound with multiple satellite pellet holes scattered around the central wound. There is no soot deposition, and tattooing may or may not be present. What is the most likely range of firing?",
-    options: ["Contact shot", "Less than 30 cm", "More than 5 meters", "1–5 meters"],
-    answerIndex: 3,
-    correctAnswerText: "1–5 meters"
+    image: "",
+    question: "A 5-month-old infant is evaluated for persistent cholestatic jaundice and pruritus. Examination shows a broad forehead, deep-set eyes, and pointed chin. Fundus examination reveals a prominent Schwalbe line. Echocardiography shows peripheral pulmonary artery stenosis, and spine X-ray shows butterfly vertebrae.\nWhich of the following genetic abnormalities is most likely responsible?",
+    options: [
+      "JAG1 mutation on chromosome 20",
+      "ATP8B1 mutation on chromosome 18",
+      "ABCB11 mutation causing bile salt export pump defect",
+      "SERPINA1 mutation causing alpha-1 antitrypsin deficiency"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "JAG1 mutation on chromosome 20"
   },
   {
     id: 64,
-    image: "images/IMG_9023.jpeg",
-    question: "A snake is identified by its characteristic expanded hood showing a spectacle-shaped mark on the dorsal aspect. Which of the following snakes is shown in the image?",
-    options: ["Common cobra", "Russell’s viper", "Krait", "Saw-scaled viper"],
-    answerIndex: 0,
-    correctAnswerText: "Common cobra"
+    image: "",
+    question: "A 7-week-old infant is brought with persistent jaundice, dark urine, and pale clay-colored stools. Examination shows hepatomegaly. Liver function test shows predominantly direct hyperbilirubinemia with raised GGT. Ultrasonography is suspicious, but liver biopsy is not confirmatory. The pediatric surgeon wants to definitively rule out extrahepatic biliary obstruction before planning surgery.\nWhich of the following is the gold standard investigation in this situation?",
+    options: [
+      "HIDA scan",
+      "Intraoperative cholangiogram",
+      "Serum gamma-glutamyl transferase level",
+      "Repeat stool color chart after 2 weeks"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Intraoperative cholangiogram"
   },
   {
     id: 65,
-    image: "images/IMG_9024.jpeg",
-    question: "A snake is identified by the presence of three rows of diamond-shaped black/brown spots over the body. Which of the following snakes is shown in the image?",
-    options: ["Common cobra", "Russell’s viper", "Common krait", "Saw-scaled viper"],
-    answerIndex: 1,
-    correctAnswerText: "Russell’s viper"
+    image: "",
+    question: "A 2-hour-old term neonate born to a diabetic mother develops jitteriness and poor feeding. Bedside blood glucose is 28 mg/dL. The baby is symptomatic but hemodynamically stable. The resident plans immediate correction and prevention of recurrence.\nWhich of the following is the most appropriate initial management?",
+    options: [
+      "Start frequent oral feeds and recheck glucose after 1 hour",
+      "Give intramuscular glucagon as the first-line treatment",
+      "Give 10% dextrose 2 mL/kg IV bolus followed by glucose infusion at 6 mg/kg/min",
+      "Start diazoxide immediately to suppress insulin release"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Give 10% dextrose 2 mL/kg IV bolus followed by glucose infusion at 6 mg/kg/min"
   },
   {
     id: 66,
-    image: "images/IMG_9025.jpeg",
-    question: "A victim is found with a ligature noose around the neck. The noose was tightened by inserting and twisting a rod-like object within the ligature, producing fatal compression of the neck. Which of the following methods of strangulation is shown?",
-    options: ["Mugging", "Burking", "Garrotting", "Bansdola"],
-    answerIndex: 2,
-    correctAnswerText: "Garrotting"
+    image: "",
+    question: "A 30-hour-old preterm neonate born to a diabetic mother develops jitteriness, poor feeding, and a brief seizure episode. ECG shows a prolonged QTc interval. Serum total calcium is 6.5 mg/dL. The baby is symptomatic.\nWhich of the following is the most appropriate immediate management?",
+    options: [
+      "Start oral calcium supplementation and repeat calcium after 24 hours",
+      "Give phenobarbitone loading dose as the first-line treatment",
+      "Give vitamin D alone and observe for spontaneous correction",
+      "Give 10% calcium gluconate 2 mL/kg IV slowly followed by calcium infusion"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Give 10% calcium gluconate 2 mL/kg IV slowly followed by calcium infusion"
   },
   {
     id: 67,
-    image: "images/IMG_9026.jpeg",
-    question: "A child with chronic exposure to lead presents with abdominal colic, anemia, irritability, and developmental delay. X-ray of long bones shows dense transverse metaphyseal bands at the growth plates. These radiological lines are mainly due to deposition of which substance?",
-    options: ["Lead", "Iron", "Sulfur", "Calcium"],
-    answerIndex: 3,
-    correctAnswerText: "Calcium"
+    image: "",
+    question: "A 31-week preterm neonate on formula feeds develops abdominal distension, temperature instability, apnea, and blood-stained stools. Abdominal radiograph shows linear lucencies within the bowel wall, but there is no pneumoperitoneum. The baby has no features of shock or DIC.\nWhich of the following is the most appropriate classification and management?",
+    options: [
+      "Modified Bell stage IIA; NPO with antibiotics for 7–10 days",
+      "Modified Bell stage IA; continue feeds with observation only",
+      "Modified Bell stage IIIA; emergency laparotomy",
+      "Modified Bell stage IIIB; NPO with antibiotics for 3 days only"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Modified Bell stage IIA; NPO with antibiotics for 7–10 days"
   },
   {
     id: 68,
-    image: "images/IMG_9027.jpeg",
-    question: "A victim is brought after severe blunt force trauma over the skull. Examination shows multiple fracture lines radiating and interconnecting, dividing the skull into several fragments and producing a spider-web pattern. Which type of skull fracture is shown in the image?",
-    options: ["Mosaic fracture", "Pond fracture", "Fissured fracture", "Gutter fracture"],
+    image: "",
+    question: "A 2-day-old term neonate delivered after difficult shoulder delivery is examined for primitive reflexes. On sudden extension of the head, the baby abducts and extends only the left upper limb, while the right upper limb shows poor abduction. Suck reflex and rooting reflex are normal.\nWhich of the following is the most likely explanation for this finding?",
+    options: [
+      "Right brachial plexus injury",
+      "Normal finding because Moro reflex appears only after 9 months",
+      "Bilateral cortical blindness",
+      "Physiological absence of Moro reflex until 6–8 weeks"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Mosaic fracture"
+    correctAnswerText: "Right brachial plexus injury"
   },
   {
     id: 69,
-    image: "images/IMG_9028.jpeg",
-    question: "A child presents with severe poisoning after accidental ingestion of antiseptic compound- Boric Acid. Examination shows a beefy red skin rash involving the palms, soles, buttocks, and scrotum, followed by extensive exfoliation. This characteristic appearance is known as which of the following?",
-    options: ["Raindrop pigmentation", "Boiled lobster appearance", "Burtonian line", "Crocodile skin effect"],
+    image: "",
+    question: "A 14-month-old child is evaluated for delayed motor milestones. On examination, there is increased tone in both lower limbs, brisk deep tendon reflexes, and scissoring posture. When the examiner gently strokes the sole just behind the toes, the toes flex strongly and the response is still clearly present.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "It is a normal reflex at this age and should disappear only after 2 years",
+      "Persistence of plantar grasp beyond the expected age suggests spastic cerebral palsy",
+      "It indicates lower motor neuron lesion involving the tibial nerve",
+      "It is the same reflex as Moro reflex and normally disappears by 3–6 months"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Boiled lobster appearance"
+    correctAnswerText: "Persistence of plantar grasp beyond the expected age suggests spastic cerebral palsy"
   },
   {
     id: 70,
-    image: "images/IMG_9029.jpeg",
-    question: "In a suspected sexual assault case, a stain is collected and tested for the presence of seminal fluid. On adding saturated aqueous or alcoholic picric acid solution, yellow needle-shaped rhombic crystals of spermine picrate are formed. Which of the following tests is described?",
-    options: ["Florence test", "Teichmann test", "Barberio test", "Takayama test"],
+    image: "",
+    question: "A 4-year-old child has recurrent lower respiratory tract infections, chronic productive cough, failure to thrive, bulky foul-smelling stools, and salty-tasting skin. Sweat chloride is elevated. The pediatrician explains to the parents that the same ion channel defect produces opposite functional consequences in sweat ducts and respiratory epithelium.\nWhich of the following best explains this paradox?",
+    options: [
+      "Increased chloride reabsorption in sweat glands with increased chloride secretion in airways",
+      "Defective sodium-potassium ATPase causing reduced sodium absorption in all epithelial tissues",
+      "Impaired chloride reabsorption in sweat ducts and impaired chloride secretion in respiratory/GI epithelium",
+      "Defective aquaporin channel causing isolated water transport failure without electrolyte abnormality"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Barberio test"
+    correctAnswerText: "Impaired chloride reabsorption in sweat ducts and impaired chloride secretion in respiratory/GI epithelium"
   },
   {
     id: 71,
-    image: "images/IMG_9030.jpeg",
-    question: "A patient undergoes abdominal surgery. Postoperatively, an X-ray shows a pair of surgical scissors left behind inside the abdomen. The negligent act is so obvious that the patient need not prove negligence in detail. Which legal doctrine is applicable in this case?",
-    options: ["Vicarious liability", "Contributory negligence", "Therapeutic misadventure", "Res ipsa loquitur"],
+    image: "",
+    question: "A 12-day-old newborn has a positive screening result due to elevated serum immunoreactive trypsinogen. Genetic testing shows one CFTR mutation. The baby is currently asymptomatic, but an elder sibling had recurrent chest infections and malabsorption. The pediatrician explains that the screening result alone is not diagnostic.\nWhich of the following findings would confirm the diagnosis?",
+    options: [
+      "Single elevated immunoreactive trypsinogen level",
+      "Repeat immunoreactive trypsinogen positivity at 2 weeks",
+      "Presence of one CFTR mutation",
+      "Two elevated sweat chloride values >60 mmol/L on separate days"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Res ipsa loquitur"
+    correctAnswerText: "Two elevated sweat chloride values >60 mmol/L on separate days"
   },
   {
     id: 72,
-    image: "images/IMG_9031.jpeg",
-    question: "A patient is brought after ingestion of seeds of Strychnos nux-vomica. He develops severe painful convulsions, but remains conscious during the seizures. The toxin acts as a competitive antagonist of an inhibitory neurotransmitter at postsynaptic receptors in motor neurons of the anterior horn of spinal cord. Which neurotransmitter is antagonized?",
-    options: ["Glycine", "GABA", "Dopamine", "Acetylcholine"],
+    image: "",
+    question: "A 9-month-old HIV-positive infant is brought with cough and difficulty breathing for 2 days. The child has fast breathing and lower chest indrawing. There is no stridor when calm, no lethargy, no convulsion, no inability to drink, and oxygen saturation is maintained. Auscultation reveals mild wheeze.\nAlong with oral amoxicillin and bronchodilator therapy, which additional drug should be added?",
+    options: [
+      "Cotrimoxazole",
+      "Oseltamivir",
+      "Azithromycin",
+      "Amphotericin B"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Glycine"
+    correctAnswerText: "Cotrimoxazole"
   },
   {
     id: 73,
     image: "",
-    question: "A registered medical practitioner allows an unqualified person to examine patients and provide treatment under the doctor’s name and clinic setup. This act amounts to which professional misconduct under warning notices?",
-    options: ["Dichotomy", "Covering", "Adultery", "Advertisement"],
+    question: "A 4-month-old infant presents in winter with coryza, cough, tachypnea, wheeze, and mild chest retractions. Chest X-ray shows hyperinflation. Oxygen saturation is 88% on room air. The child is otherwise stable, with no toxic appearance. Nasopharyngeal sample later detects a respiratory virus.\nWhich of the following is the most appropriate management?",
+    options: [
+      "Start oral amoxicillin for 5 days",
+      "Supportive care with humidified oxygen, nasal suctioning, and hydration",
+      "Start systemic corticosteroids and nebulized adrenaline routinely",
+      "Start ribavirin in all infants with bronchiolitis"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Covering"
+    correctAnswerText: "Supportive care with humidified oxygen, nasal suctioning, and hydration"
   },
   {
     id: 74,
     image: "",
-    question: "A woman dies under suspicious circumstances within a few years of marriage, and dowry death is suspected. The investigating officer asks for the legally appropriate type of inquest to be conducted. Which of the following authorities should conduct the inquest in this case?",
-    options: ["Executive Magistrate", "Police officer", "Coroner", "Medical examiner"],
-    answerIndex: 0,
-    correctAnswerText: "Executive Magistrate"
+    question: "A 4-year-old unimmunized child is brought with sudden onset high fever, muffled voice, dysphagia, drooling, and severe respiratory distress. The child prefers sitting upright and becomes more distressed on lying supine. Cough is minimal. Lateral neck X-ray shows a swollen epiglottis.\nWhich of the following is the most appropriate first step in management?",
+    options: [
+      "Examine the throat with a tongue depressor",
+      "Start oral antibiotics and observe",
+      "Secure the airway immediately",
+      "Give nebulized salbutamol and discharge after improvement"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Secure the airway immediately"
   },
   {
     id: 75,
     image: "",
-    question: "A terminally ill patient with an irreversible condition is on life-support. The treating team discusses withdrawal of extraordinary life-sustaining treatment according to legal guidelines and advance directives. Which type of euthanasia is legally permitted in India under strict safeguards?",
-    options: ["Passive euthanasia", "Active euthanasia using barbiturates", "Involuntary euthanasia", "Non-voluntary active euthanasia"],
-    answerIndex: 0,
-    correctAnswerText: "Passive euthanasia"
+    question: "A 10-year-old child with asthma has symptoms throughout the day, wakes up at night almost daily, and has marked limitation of play activity. Spirometry shows FEV₁ = 55% predicted. Despite regular controller therapy, adequate control is not achieved.\nWhich of the following is the most appropriate classification and next step in therapy?",
+    options: [
+      "Intermittent asthma — SABA with intermittent ICS",
+      "Mild persistent asthma — low-dose ICS daily",
+      "Moderate persistent asthma — low-dose ICS + LABA daily",
+      "Severe persistent asthma — high-dose ICS + LABA; consider oral steroid/biological therapy"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Severe persistent asthma — high-dose ICS + LABA; consider oral steroid/biological therapy"
   },
   {
     id: 76,
     image: "",
-    question: "A doctor is called to court as an expert witness by the accused in a criminal case. During court proceedings, the opposite side is allowed to ask questions where the answer may be simply “Yes” or “No.” Who will conduct the cross examination in this situation?",
-    options: ["Prosecutor", "Defence lawyer", "Judge", "Court clerk"],
+    question: "A boy presents with recurrent severe bacterial infections and absent tonsils. Family pedigree shows that only males are affected across generations, mothers are clinically normal, and there is no father-to-son transmission. His maternal uncle had a similar illness. The pediatrician explains that the pattern is due to transmission of an abnormal X chromosome.\nWhich inheritance pattern best explains this pedigree?",
+    options: [
+      "X-linked recessive inheritance",
+      "Autosomal dominant inheritance",
+      "Mitochondrial inheritance",
+      "Autosomal recessive inheritance"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Prosecutor"
+    correctAnswerText: "X-linked recessive inheritance"
   },
   {
     id: 77,
     image: "",
-    question: "A patient with severe burn injuries gives a statement regarding the cause of injury before death. The doctor first certifies that the patient is compos mentis and fit to give the statement. Which of the following statements regarding dying declaration is correct?",
-    options: ["Oath is not administered before recording dying declaration", "It must always be recorded only by a magistrate", "It has no value if the patient survives", "Cross examination is mandatory before accepting it"],
-    answerIndex: 0,
-    correctAnswerText: "Oath is not administered before recording dying declaration"
+    question: "A 15-year-old boy is brought for evaluation of delayed puberty. He is tall with disproportionately long lower limbs, has small firm testes, sparse facial hair, and bilateral gynecomastia. Laboratory evaluation shows low testosterone with elevated FSH and LH.\nWhich of the following is the most likely karyotype?",
+    options: [
+      "45, XO",
+      "47, XXY",
+      "47, XYY",
+      "46, XY with androgen receptor defect"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "47, XXY"
   },
   {
     id: 78,
     image: "",
-    question: "A person is accused of committing murder, and the police officer arrests him without obtaining a warrant from the magistrate. Which type of offence is this?",
-    options: ["Non-cognizable offence", "Cognizable offence", "Bailable offence", "Compoundable offence"],
-    answerIndex: 1,
-    correctAnswerText: "Cognizable offence"
+    question: "A 12-day-old neonate is brought with poor feeding, vomiting, dehydration, and weight loss. Examination shows hyperpigmentation and ambiguous genitalia. Serum sodium is low, potassium is high, cortisol is low, ACTH is high, and 17-hydroxyprogesterone is markedly elevated.\nWhich enzyme deficiency is most likely responsible?",
+    options: [
+      "11β-hydroxylase deficiency",
+      "17α-hydroxylase deficiency",
+      "21-hydroxylase deficiency",
+      "3β-hydroxysteroid dehydrogenase deficiency"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "21-hydroxylase deficiency"
   },
   {
     id: 79,
     image: "",
-    question: "A 16-year-old rape survivor is brought for medical termination of pregnancy at 22 weeks of gestation. As per the MTP Act provisions, termination in rape survivors and minors is permitted up to which gestational age?",
-    options: ["12 weeks", "20 weeks", "24 weeks", "Anytime"],
-    answerIndex: 2,
-    correctAnswerText: "24 weeks"
+    question: "A 10-day-old newborn presents with vomiting, severe dehydration, hyperpigmentation, hyponatremia, and hyperkalemia. External genitalia appear female, but karyotype is 46, XY. Hormonal evaluation shows very low cortisol, very low aldosterone, and markedly elevated ACTH. Imaging shows enlarged lipid-laden adrenal glands.\nWhich of the following is the most likely molecular defect?",
+    options: [
+      "Defect in 21-hydroxylase enzyme causing accumulation of 17-hydroxyprogesterone",
+      "Defect in 11β-hydroxylase enzyme causing excess deoxycorticosterone",
+      "Defect in androgen receptor causing end-organ resistance to testosterone",
+      "Defect in steroidogenic acute regulatory protein causing impaired cholesterol transport into mitochondria"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Defect in steroidogenic acute regulatory protein causing impaired cholesterol transport into mitochondria"
   },
   {
     id: 80,
     image: "",
-    question: "A 17-year-old boy is apprehended for committing an offence. During legal assessment, the court considers him under the Juvenile Justice Act because he has not completed the legally defined age of adulthood. As per the Juvenile Justice Act, a juvenile / child / minor is a person below which age?",
-    options: ["12 years", "14 years", "16 years", "18 years"],
-    answerIndex: 3,
-    correctAnswerText: "18 years"
+    question: "A 6-week-old infant is brought with poor feeding, constipation, decreased activity, prolonged jaundice, puffy eyelids, depressed nasal bridge, large tongue, hoarse cry, umbilical hernia, hypotonia, dry cold skin, and bradycardia. The mother says the baby looked apparently normal at birth.\nWhy may this disorder remain clinically subtle during the first few days of life?",
+    options: [
+      "Transplacental maternal thyroxine temporarily supports the newborn",
+      "Neonatal adrenal cortisol masks thyroid hormone deficiency",
+      "High neonatal growth hormone maintains basal metabolic rate",
+      "Breast milk contains enough thyroid hormone to prevent early symptoms"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Transplacental maternal thyroxine temporarily supports the newborn"
   },
   {
     id: 81,
     image: "",
-    question: "A forensic expert is asked to identify an unknown person using fingerprints. The impression shows the most common fingerprint pattern, characterized by ridges entering from one side, curving, and exiting from the same side. Which of the following fingerprint patterns is most commonly seen?",
-    options: ["Loop", "Whorl", "Arch", "Composite"],
-    answerIndex: 0,
-    correctAnswerText: "Loop"
+    question: "A 5-day-old newborn is clinically well but newborn screening shows TSH = 92 mU/L with low T4. The parents ask whether treatment can be delayed until confirmatory imaging is completed. The pediatrician explains that delayed therapy can cause irreversible neurodevelopmental injury.\nWhat is the most appropriate next step?",
+    options: [
+      "Repeat TSH after 2 weeks and start treatment only if still elevated",
+      "Start levothyroxine immediately and repeat TSH with free T4 / T4",
+      "Do thyroid ultrasound first and start therapy only after absent thyroid gland is confirmed",
+      "Observe because transient neonatal TSH rise is common in the first week"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Start levothyroxine immediately and repeat TSH with free T4 / T4"
   },
   {
     id: 82,
     image: "",
-    question: "A forensic expert is asked to estimate the age of an unidentified adult dead body using an extracted tooth. Which of the following is the most reliable criterion in Gustafson’s method?",
-    options: ["Attrition", "Root transparency", "Cementum apposition", "Paradentosis"],
-    answerIndex: 1,
-    correctAnswerText: "Root transparency"
+    question: "A 13-year-old boy is brought for evaluation of short stature. His height is below the 3rd percentile for age and sex. He has normal body proportions, no chronic diarrhea, no respiratory symptoms, and no features of dysmorphism. His height velocity is appropriate for bone age. Puberty has not started. His father gives a history of delayed puberty during adolescence and later attained normal adult height. Bone age is delayed compared with chronological age.\nWhat is the most likely diagnosis?",
+    options: [
+      "Familial short stature",
+      "Growth hormone deficiency",
+      "Constitutional delay of growth and puberty",
+      "Celiac disease"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Constitutional delay of growth and puberty"
   },
   {
     id: 83,
     image: "",
-    question: "A dead body is examined after death. The eyelids were left open, and the exposed sclera shows a dark triangular discoloration due to drying and deposition of debris, resembling a pterygium. Which of the following postmortem eye changes is described?",
-    options: ["Kevorkian sign", "Corneal haziness", "Tache noire", "Rise in vitreous potassium"],
-    answerIndex: 2,
-    correctAnswerText: "Tache noire"
+    question: "A 7-year-old boy is evaluated for severe short stature. His height is below the 3rd percentile, height velocity is poor, and bone age is delayed. He has normal body proportions and no dysmorphic features. A random serum growth hormone level is ordered, but the pediatric endocrinologist says it is not useful because the hormone is released in pulses.\nWhich of the following is the most appropriate test to confirm the suspected diagnosis?",
+    options: [
+      "Single random serum growth hormone level",
+      "Serum TSH and free T4 alone",
+      "Mid-parental height calculation alone",
+      "Growth hormone stimulation test showing peak GH <10 ng/mL on two occasions"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Growth hormone stimulation test showing peak GH <10 ng/mL on two occasions"
   },
   {
     id: 84,
     image: "",
-    question: "A dead body is recovered from a warm, moist environment several months after death. The tissues show a waxy, greasy, whitish appearance with an ammoniacal/cheesy smell. This change is due to saponification of body fat and helps in preservation of the body. Which of the following postmortem changes is described?",
-    options: ["Adipocere formation", "Mummification", "Marbling", "Skeletonization"],
+    question: "A 5-year-old boy is brought with early pubic hair, penile enlargement, rapid height gain, and advanced bone age. Parents also report brief episodes of sudden inappropriate laughter without any obvious trigger. MRI brain shows a non-enhancing lesion near the hypothalamus. Basal LH is pubertal and increases after GnRH stimulation.\nWhich of the following best explains the mechanism of this child’s early puberty?",
+    options: [
+      "Hypothalamic hamartoma activating the GnRH pulse generator",
+      "Autonomous ovarian hyperfunction due to GNAS mutation",
+      "Leydig cell tumor causing peripheral androgen excess",
+      "Exogenous androgen exposure suppressing pituitary LH secretion"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Adipocere formation"
+    correctAnswerText: "Hypothalamic hamartoma activating the GnRH pulse generator"
   },
   {
     id: 85,
     image: "",
-    question: "A chronic alcoholic boxer is brought after repeated head trauma. On examination, there is suspected subdural hemorrhage, classically associated with punch-drunk syndrome. Rupture of which vessel is most commonly responsible for this condition?",
-    options: ["Middle meningeal artery", "Bridging veins", "Anterior cerebral artery", "Lenticulostriate artery"],
+    question: "A 16-year-old boy is brought for delayed puberty. He has no facial hair, small testes, and poor development of secondary sexual characters. He also says he has never been able to smell perfumes or food properly. MRI brain shows absence of olfactory bulbs. Hormonal profile shows low testosterone with low LH and FSH. He also has congenital unilateral renal agenesis and involuntary mirror movements of the opposite hand.\nWhich of the following is the most likely underlying genetic abnormality?",
+    options: [
+      "FGFR1 mutation causing autosomal dominant hypogonadotropic hypogonadism",
+      "ANOS1 mutation causing X-linked Kallmann syndrome",
+      "GNAS mutation causing autonomous gonadal steroid secretion",
+      "MKRN3 loss-of-function mutation causing early activation of puberty"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Bridging veins"
+    correctAnswerText: "ANOS1 mutation causing X-linked Kallmann syndrome"
   },
   {
     id: 86,
     image: "",
-    question: "A bullet is fired from a rifle and travels through the air before striking the victim. A forensic expert is asked to study the behaviour of the projectile during its flight from the muzzle to the target. Which branch of ballistics deals with this?",
-    options: ["Internal ballistics", "Terminal ballistics", "External ballistics", "Wound ballistics"],
+    question: "A 3-year-old child is brought with growth failure, bowing of legs, delayed walking, and recurrent episodes of dehydration. Blood gas shows normal anion gap metabolic acidosis. Urine evaluation shows bicarbonaturia and phosphaturia with low serum phosphate. X-ray wrist shows changes of rickets.\nWhich of the following best explains the skeletal abnormality in this child?",
+    options: [
+      "Impaired distal hydrogen ion secretion causing alkaline urine",
+      "Increased urinary calcium loss causing nephrocalcinosis",
+      "Proximal tubular loss of bicarbonate and phosphate causing acidosis with hypophosphatemic rickets",
+      "Defective vitamin D receptor causing resistance to calcitriol"
+    ],
     answerIndex: 2,
-    correctAnswerText: "External ballistics"
+    correctAnswerText: "Proximal tubular loss of bicarbonate and phosphate causing acidosis with hypophosphatemic rickets"
   },
   {
     id: 87,
     image: "",
-    question: "A suspect is arrested after alleged firing of a firearm. The investigating officer wants the best test for detecting gunshot residue on the hands of the suspect. Which of the following is considered the best test for gunshot residue analysis?",
-    options: ["Dermal nitrate test", "Harrison and Gilroy test", "Neutron activation analysis", "Scanning electron microscopy with energy dispersive X-ray analysis"],
+    question: "A 4-year-old boy is brought with progressive bowing of lower limbs, waddling gait, delayed dentition, and recurrent dental abscesses. His height is below normal for age. Serum calcium is normal, serum phosphate is low, alkaline phosphatase is elevated, and urinary phosphate excretion is increased. Vitamin D supplementation alone has not improved his symptoms.\nWhich of the following is the most likely underlying mechanism?",
+    options: [
+      "Defective collagen type I synthesis causing brittle bones",
+      "Defective renal bicarbonate reabsorption causing metabolic acidosis",
+      "Defective vitamin D receptor causing end-organ resistance to calcitriol",
+      "Increased FGF23 activity causing renal phosphate wasting and reduced calcitriol synthesis"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Scanning electron microscopy with energy dispersive X-ray analysis"
+    correctAnswerText: "Increased FGF23 activity causing renal phosphate wasting and reduced calcitriol synthesis"
   },
   {
     id: 88,
     image: "",
-    question: "A victim is brought after a bomb blast. On examination, there is rupture of the tympanic membrane due to the direct effect of the shock wave / blast wave. Which type of blast injury is responsible for this finding?",
-    options: ["Primary blast injury", "Secondary blast injury", "Tertiary blast injury", "Quaternary blast injury"],
+    question: "A 9-month-old infant presents with chronic diarrhea, recurrent bacterial skin infections, poor growth, delayed wound healing, and reduced taste sensation. Examination shows symmetrical dry eczematous lesions around the mouth, acral areas, and knees. Laboratory evaluation shows low serum zinc and decreased alkaline phosphatase.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Acrodermatitis enteropathica",
+      "Biotinidase deficiency",
+      "Atopic dermatitis",
+      "Hartnup disease"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Primary blast injury"
+    correctAnswerText: "Acrodermatitis enteropathica"
   },
   {
     id: 89,
     image: "",
-    question: "A marathon runner collapses during a hot summer afternoon. On examination, his body temperature is 42°C, skin is hot and dry, and sweating is absent due to failure of hypothalamic thermoregulation. Which of the following heat-related conditions is most likely?",
-    options: ["Heat cramp", "Heat stroke", "Heat syncope", "Hypothermia"],
+    question: "A 20-month-old child is brought with lethargy, poor feeding, visible wasting, and bilateral pedal swelling. The swelling is pitting in nature and is present on both feet. There is no evidence of renal disease, liver disease, or cardiac failure. The child also has pneumonia and dehydration.\nWhich of the following findings is sufficient to diagnose severe acute malnutrition in this child?",
+    options: [
+      "Weight-for-age below 3rd percentile",
+      "Bilateral pitting pedal edema of nutritional origin",
+      "Hemoglobin less than 11 g/dL",
+      "History of recurrent respiratory infections"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Heat stroke"
+    correctAnswerText: "Bilateral pitting pedal edema of nutritional origin"
   },
   {
     id: 90,
     image: "",
-    question: "A 35-year-old adult male is brought to the emergency department with flame burns involving the entire anterior trunk. The doctor wants to estimate the percentage of total body surface area burned using Wallace rule of nine. What is the approximate percentage of burn area?",
-    options: ["9%", "18%", "27%", "36%"],
-    answerIndex: 1,
-    correctAnswerText: "18%"
+    question: "A 14-month-old child with severe acute malnutrition is admitted with watery diarrhea. The child is lethargic but not in shock. Examination findings like skin turgor and sunken eyes are difficult to interpret because of severe wasting. The child has thirst and reduced urine output. The resident plans rehydration but wants to avoid rapid sodium and fluid overload.\nWhich of the following is the most appropriate initial fluid strategy?",
+    options: [
+      "Rapid bolus of normal saline 20 mL/kg followed by maintenance fluids",
+      "Standard low-osmolarity ORS without modification at 100 mL/kg over 4 hours",
+      "ReSoMal 5 mL/kg every 30 minutes initially, followed by slow rehydration with feeds",
+      "Ringer lactate 15 mL/kg/hour immediately for 2 hours in all cases"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "ReSoMal 5 mL/kg every 30 minutes initially, followed by slow rehydration with feeds"
   },
   {
     id: 91,
     image: "",
-    question: "A charred body is recovered from a house fire. Which of the following findings is the best evidence that the burns occurred during life?",
-    options: ["Heat rupture resembling laceration", "Heat hematoma resembling extradural hemorrhage", "Soot in trachea", "Heat fracture crossing suture lines"],
-    answerIndex: 2,
-    correctAnswerText: "Soot in trachea"
+    question: "A 16-month-old child with severe acute malnutrition is admitted for stabilization. The child has bilateral pedal edema, diarrhea, poor appetite, and severe wasting. Hemoglobin is 8.4 g/dL. The resident wants to start iron immediately because the child is anemic. The senior pediatrician advises delaying iron therapy during the initial stabilization phase.\nWhich of the following is the most appropriate micronutrient strategy?",
+    options: [
+      "Start oral iron immediately with F-75 feeds",
+      "Avoid vitamin A unless eye signs are present",
+      "Give iron only if hemoglobin is below 7 g/dL",
+      "Start iron only after the child begins gaining weight"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Start iron only after the child begins gaining weight"
   },
   {
     id: 92,
     image: "",
-    question: "A dead body is found suspended by a ligature around the neck. The ligature mark is oblique, incomplete, and placed high up in the neck. There is dribbling of saliva from the angle of mouth. Which of the following is the most characteristic sign of hanging?",
-    options: ["Cyanosis of face", "Petechial hemorrhages", "Protrusion of tongue", "Ligature mark"],
-    answerIndex: 3,
-    correctAnswerText: "Ligature mark"
+    question: "A 2-year-old child with severe acute malnutrition is started on nutritional rehabilitation. After a few days, the child develops weakness, tachycardia, edema, irritability, and poor feeding. Laboratory tests show hypophosphatemia, hypokalemia, hypomagnesemia, and features of thiamine deficiency. The pediatrician explains that this occurred due to sudden intracellular shift of electrolytes after feeding was restarted.\nWhich of the following is the most important biochemical abnormality responsible for this condition?",
+    options: [
+      "Hypophosphatemia",
+      "Hypernatremia",
+      "Hypercalcemia",
+      "Metabolic alkalosis"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Hypophosphatemia"
   },
   {
     id: 93,
     image: "",
-    question: "During medicolegal autopsy, the forensic surgeon uses an incision extending from the chin to the pubic symphysis. This is the most commonly used autopsy incision. Which of the following incisions is described?",
-    options: ["I-shaped incision", "Y-shaped incision", "Modified Y-shaped incision", "Transverse incision"],
-    answerIndex: 0,
-    correctAnswerText: "I-shaped incision"
+    question: "A 2-year-old child is brought with acute watery diarrhea, lethargy, very thirsty appearance, sunken eyes, and poor peripheral perfusion. The radial pulse is weak. The child is not severely malnourished. The pediatrician decides to start Plan C for severe dehydration.\nWhich of the following is the most appropriate initial rehydration schedule?",
+    options: [
+      "ORS 75 mL/kg over 4 hours followed by reassessment",
+      "Ringer lactate 100 mL/kg IV, giving 30 mL/kg in 30 minutes followed by 70 mL/kg in 2½ hours",
+      "Ringer lactate 100 mL/kg IV, giving 30 mL/kg in 1 hour followed by 70 mL/kg in 5 hours",
+      "ReSoMal 5 mL/kg every 30 minutes for 2 hours followed by F-75 feeds"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Ringer lactate 100 mL/kg IV, giving 30 mL/kg in 30 minutes followed by 70 mL/kg in 2½ hours"
   },
   {
     id: 94,
     image: "",
-    question: "In a suspected poisoning case, viscera are sent for chemical analysis. The forensic expert mentions that the routine viscera to be preserved are selected based on pharmacokinetics. Which of the following is included in routine viscera preservation?",
-    options: ["Spinal cord", "Stomach with contents", "Nasal swab", "Mesenteric fat"],
-    answerIndex: 1,
-    correctAnswerText: "Stomach with contents"
+    question: "A fetus receives oxygenated blood from the placenta through the umbilical vein. Most of this blood bypasses the liver and enters the inferior vena cava through a fetal vascular channel. After entering the right atrium, the relatively well-oxygenated stream is preferentially directed across the foramen ovale to the left atrium.\nWhich of the following fetal structures is mainly responsible for directing this oxygen-rich blood across the foramen ovale?",
+    options: [
+      "Ductus arteriosus",
+      "Crista terminalis",
+      "Eustachian valve",
+      "Ligamentum venosum"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Eustachian valve"
   },
   {
     id: 95,
     image: "",
-    question: "A patient is brought to casualty after ingestion of an unknown poison. Gastric decontamination is planned, and activated charcoal is given because it binds many poisons in the gut and prevents further absorption. What is the mechanism of action of activated charcoal?",
-    options: ["Neutralization", "Oxidation", "Adsorption", "Chelation"],
-    answerIndex: 2,
-    correctAnswerText: "Adsorption"
+    question: "A 5-week-old infant with a large ventricular septal defect was relatively asymptomatic at birth. Now the child develops tachypnea, poor feeding, sweating during feeds, and recurrent chest infections. The pediatrician explains that the symptoms appeared later because the pulmonary circulation underwent a major postnatal hemodynamic change.\nWhich of the following best explains this delayed onset of symptoms?",
+    options: [
+      "Closure of ductus venosus increases pulmonary blood flow",
+      "Rise in systemic vascular resistance decreases left ventricular output",
+      "Closure of foramen ovale causes right-to-left shunting",
+      "Fall in pulmonary vascular resistance allows increased left-to-right shunt across the defect"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Fall in pulmonary vascular resistance allows increased left-to-right shunt across the defect"
   },
   {
     id: 96,
     image: "",
-    question: "A young woman is brought to the emergency department with sudden drowsiness and impaired memory after consuming a drink at a party. The investigating officer suspects a predator drug commonly known as “Mickey Finn” or “knock-out drops.” Which of the following drugs is most likely involved?",
-    options: ["LSD", "Phencyclidine", "Flunitrazepam", "Chloral hydrate"],
-    answerIndex: 3,
-    correctAnswerText: "Chloral hydrate"
+    question: "A 7-year-old child is evaluated for an incidental cardiac murmur. On auscultation, the second heart sound is heard as two components. The examiner notes that this separation normally becomes more prominent during inspiration because one semilunar valve closes later than usual.\nWhich of the following best explains the physiological basis of this finding?",
+    options: [
+      "Increased venous return to the right heart prolongs right ventricular ejection and delays pulmonary valve closure",
+      "Decreased pulmonary venous return prolongs left ventricular ejection and delays aortic valve closure",
+      "Increased systemic vascular resistance delays pulmonary valve closure during expiration",
+      "Simultaneous closure of aortic and pulmonary valves occurs during inspiration"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Increased venous return to the right heart prolongs right ventricular ejection and delays pulmonary valve closure"
   },
   {
     id: 97,
     image: "",
-    question: "A worker from an electroplating industry is brought with sudden collapse, convulsions, dilated pupils, respiratory distress, and brick-red colour of skin and mucous membranes. The poison produces histotoxic anoxia by preventing tissue utilization of oxygen. Which antidote is the drug of choice?",
-    options: ["Hydroxocobalamin", "Naloxone", "Physostigmine", "Atropine"],
-    answerIndex: 0,
-    correctAnswerText: "Hydroxocobalamin"
+    question: "A 6-year-old child is evaluated for poor weight gain and recurrent respiratory infections. On examination, there is a systolic murmur at the upper left sternal border. The second heart sound is widely split, and the split remains almost unchanged during both inspiration and expiration. Echocardiography shows left-to-right shunting at the atrial level with increased right ventricular end-diastolic volume.\nWhich of the following best explains the auscultatory finding in this child?",
+    options: [
+      "Delayed aortic valve closure due to increased left ventricular afterload",
+      "Delayed pulmonary valve closure due to increased right ventricular volume throughout the respiratory cycle",
+      "Early pulmonary valve closure due to reduced pulmonary blood flow",
+      "Reversal of shunt from right atrium to left atrium causing cyanosis"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Delayed pulmonary valve closure due to increased right ventricular volume throughout the respiratory cycle"
   },
   {
     id: 98,
     image: "",
-    question: "A young woman is brought with burns around the mouth after an acid attack. The forensic expert explains that acids and alkalis produce different types of tissue necrosis. Which of the following is the typical type of necrosis produced by acids?",
-    options: ["Liquefaction necrosis", "Coagulation necrosis", "Caseous necrosis", "Fat necrosis"],
-    answerIndex: 1,
-    correctAnswerText: "Coagulation necrosis"
+    question: "A 6-year-old child is brought for evaluation of an incidental murmur. On auscultation, the murmur begins after S₁, rises and falls in intensity, and ends before S₂. It is best heard at the upper left sternal border. The cardiologist explains that the murmur is produced during ventricular ejection across a narrowed outflow tract.\nWhich of the following best describes this murmur?",
+    options: [
+      "Pansystolic murmur due to ventricular septal defect",
+      "Continuous murmur due to patent ductus arteriosus",
+      "Ejection systolic murmur due to pulmonary stenosis",
+      "Mid-diastolic murmur due to mitral stenosis"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Ejection systolic murmur due to pulmonary stenosis"
   },
   {
     id: 99,
     image: "",
-    question: "A 32-year-old man is brought to the emergency department after heavy alcohol intake. He is unconscious and not responding to painful stimuli. Blood alcohol concentration is found to be > 400 mg%. Which stage of alcohol intoxication is most likely?",
-    options: ["Excitement", "Incoordination", "Coma", "Delirium tremens"],
-    answerIndex: 2,
-    correctAnswerText: "Coma"
+    question: "A 9-year-old child is evaluated for exertional breathlessness. On auscultation, a high-pitched decrescendo murmur is heard immediately after S₂ along the left sternal border. The murmur is best appreciated with the child sitting forward in expiration. Peripheral pulses are bounding.\nWhich of the following is the most likely cause of this murmur?",
+    options: [
+      "Ventricular septal defect",
+      "Patent ductus arteriosus",
+      "Pulmonary stenosis",
+      "Aortic regurgitation"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Aortic regurgitation"
   },
   {
     id: 100,
     image: "",
-    question: "A body is dug out from a grave for medicolegal examination in a suspected poisoning case. The forensic expert collects 500 g of soil in contact with the body from 6 different sites to compare with viscera findings and detect soil contamination. Which poison is most commonly looked for in such soil samples?",
-    options: ["Cyanide", "Alcohol", "Carbon monoxide", "Arsenic"],
-    answerIndex: 3,
-    correctAnswerText: "Arsenic"
+    question: "A 3-year-old child is brought with poor weight gain and recurrent lower respiratory tract infections. On examination, bounding peripheral pulses and wide pulse pressure are noted. Auscultation reveals a machinery-like murmur that begins in systole, continues beyond S₂, and extends into diastole. The murmur is best heard in the left infraclavicular region.\nWhich of the following is the most likely cause of this murmur?",
+    options: [
+      "Patent ductus arteriosus",
+      "Pulmonary stenosis",
+      "Atrial septal defect",
+      "Ventricular septal defect"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Patent ductus arteriosus"
   },
   {
     id: 101,
     image: "",
-    question: "A Sessions Court passes a death sentence in a murder trial. Before the sentence can be legally executed, it must be confirmed by another court. Which court must confirm the death sentence passed by a Sessions Court?",
-    options: ["High Court", "Supreme Court", "Chief Judicial Magistrate", "First Class Judicial Magistrate"],
-    answerIndex: 0,
-    correctAnswerText: "High Court"
+    question: "A 9-month-old infant is brought with poor feeding, recurrent chest infections, and features of congestive heart failure. On examination, there is a wide fixed split S₂ along with an additional pansystolic murmur at the apex. Echocardiography shows an atrial septal defect located in the lower part of the atrial septum, associated with abnormal mitral valve morphology.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Ostium secundum atrial septal defect",
+      "Ostium primum atrial septal defect",
+      "Patent ductus arteriosus",
+      "Pulmonary stenosis"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Ostium primum atrial septal defect"
   },
   {
     id: 102,
     image: "",
-    question: "During trial, a witness is called by one party to give evidence in court. After the initial questioning, the opposite party is allowed to question the witness to test the truthfulness and reliability of the statement. This step is called:",
-    options: ["Examination-in-chief", "Cross-examination", "Re-examination", "Questions by judge"],
-    answerIndex: 1,
-    correctAnswerText: "Cross-examination"
+    question: "A 4-month-old infant presents with poor feeding, tachypnea, sweating during feeds, and failure to thrive. Examination shows a pansystolic murmur at the lower left sternal border with an additional pulmonary ejection systolic murmur. ECG shows LVH, RVH, and left atrial enlargement. Echocardiography shows a large left-to-right shunt across the interventricular septum.\nWhich of the following hemodynamic profiles is most likely in this child?",
+    options: [
+      "RVP/LVP 25–30% with normal ECG",
+      "RVP/LVP 30–50% with isolated LVH",
+      "RVP/LVP 60–80% with LVH, RVH, and left atrial enlargement",
+      "RVP/LVP <20% with right atrial enlargement only"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "RVP/LVP 60–80% with LVH, RVH, and left atrial enlargement"
   },
   {
     id: 103,
     image: "",
-    question: "A medical witness gives a statement in court after taking oath. Later, it is proved that the witness knowingly gave false evidence under oath. What is this offence called?",
-    options: ["Contempt of court", "Hostile witness", "Perjury", "Subpoena"],
+    question: "A 5-month-old infant with Down syndrome is brought with repeated chest infections, poor feeding, sweating during feeds, and failure to thrive. On examination, there is cardiomegaly and a pansystolic murmur heard widely over the precordium. ECG shows a superior QRS axis. Echocardiography shows an ostium primum type atrial septal defect, ventricular septal defect, and abnormalities of both atrioventricular valves.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Isolated ventricular septal defect",
+      "Ostium secundum atrial septal defect",
+      "Complete endocardial cushion defect",
+      "Patent ductus arteriosus"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Perjury"
+    correctAnswerText: "Complete endocardial cushion defect"
   },
   {
     id: 104,
     image: "",
-    question: "A patient develops complications due to negligence committed by a junior doctor working in a hospital. In court, the hospital administration is held liable because the act was committed by an employee during the course of employment. Which legal doctrine is being applied?",
-    options: ["Novus actus interveniens", "Contributory negligence", "Res ipsa loquitur", "Vicarious liability"],
+    question: "A 12-year-old child with an unrepaired congenital heart disease presents with exertional dyspnea, cyanosis, clubbing, and loud P₂. Chest X-ray shows a prominent pulmonary artery segment with relatively oligemic peripheral lung fields. Echocardiography shows severe pulmonary arterial hypertension with reversal of the previously left-to-right shunt.\nWhich of the following best explains the pathophysiology of this condition?",
+    options: [
+      "Acute closure of ductus arteriosus causing reduced pulmonary blood flow",
+      "Persistent fall in pulmonary vascular resistance causing pulmonary overcirculation",
+      "Primary right ventricular outflow obstruction causing cyanosis from birth",
+      "Long-standing increased pulmonary blood flow causing pulmonary vascular medial hypertrophy and right-to-left shunt reversal"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Vicarious liability"
+    correctAnswerText: "Long-standing increased pulmonary blood flow causing pulmonary vascular medial hypertrophy and right-to-left shunt reversal"
   },
   {
     id: 105,
     image: "",
-    question: "A 17-year-old girl is brought to the hospital for medical examination after alleged sexual assault. The duty doctor prepares for examination and medico-legal documentation. Which of the following statements is correct regarding medical examination of a rape victim?",
-    options: ["Consent of victim is not required", "Female doctor should examine if the victim is below 18 years", "Police intimation is not mandatory if the victim is below 18 years", "Examination should be done without a female attendant"],
-    answerIndex: 1,
-    correctAnswerText: "Female doctor should examine if the victim is below 18 years"
+    question: "A 2-year-old child presents with cyanosis since infancy, worsening during crying, and relief on squatting. On examination, there is a harsh ejection systolic murmur at the upper left sternal border. Echocardiography shows a large malalignment ventricular septal defect with narrowing of the right ventricular outflow tract.\nWhich of the following combinations best represents the underlying cardiac anomaly?",
+    options: [
+      "Pulmonary stenosis, right ventricular hypertrophy, ventricular septal defect, overriding of aorta",
+      "Atrial septal defect, pulmonary stenosis, left ventricular hypertrophy, dextroposition of aorta",
+      "Patent ductus arteriosus, right ventricular hypertrophy, mitral regurgitation, pulmonary hypertension",
+      "Ventricular septal defect, aortic stenosis, left atrial enlargement, coarctation of aorta"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Pulmonary stenosis, right ventricular hypertrophy, ventricular septal defect, overriding of aorta"
   },
   {
     id: 106,
     image: "",
-    question: "A 13-year-old girl is brought for medicolegal examination after an alleged sexual assault. The doctor explains that consent for medical examination is required and that a victim above a certain age can give consent for examination. Above what age can the victim herself give consent for medicolegal examination?",
-    options: ["10 years", "12 years", "16 years", "18 years"],
+    question: "A 2-month-old infant presents with cyanosis since birth, worsening during crying and feeding. On examination, there is a pansystolic murmur at the lower left sternal border. ECG shows left axis deviation with left ventricular hypertrophy, which is unusual for most cyanotic congenital heart diseases. Echocardiography shows absence of communication between the right atrium and right ventricle.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Tetralogy of Fallot",
+      "Tricuspid atresia",
+      "Transposition of great arteries",
+      "Total anomalous pulmonary venous connection"
+    ],
     answerIndex: 1,
-    correctAnswerText: "12 years"
+    correctAnswerText: "Tricuspid atresia"
   },
   {
     id: 107,
     image: "",
-    question: "A hospital has an unclaimed dead body. The anatomy department requests the body for teaching purpose as per the Delhi Anatomy Act. After how many hours can an unclaimed body be donated to the anatomy department?",
-    options: ["12 hours", "24 hours", "48 hours", "72 hours"],
+    question: "A neonate develops marked cyanosis soon after birth. Antenatal history reveals maternal treatment with lithium during pregnancy. Examination shows massive cardiomegaly and a murmur of tricuspid regurgitation. ECG later shows features suggestive of Wolff-Parkinson-White syndrome. Echocardiography shows downward displacement of the septal leaflet of the tricuspid valve with atrialization of the right ventricle.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Tricuspid atresia",
+      "Tetralogy of Fallot",
+      "Ebstein anomaly",
+      "Total anomalous pulmonary venous connection"
+    ],
     answerIndex: 2,
-    correctAnswerText: "48 hours"
+    correctAnswerText: "Ebstein anomaly"
   },
   {
     id: 108,
     image: "",
-    question: "A 17-year-old boy is found guilty of a heinous offence and is sent to a juvenile home under the Juvenile Justice Act. The magistrate asks the medical officer about the maximum age up to which a juvenile can be kept in a juvenile home. What is the correct age limit?",
-    options: ["18 years", "19 years", "20 years", "21 years"],
+    question: "A newborn develops severe respiratory distress and shock within the first week of life. Peripheral pulses are weak, and a single second heart sound is heard with audible P₂. Echocardiography shows mitral valve atresia, aortic valve atresia, and a small hypofunctional left ventricle. The neonate worsens after oxygen administration.\nWhich of the following best explains the systemic circulation in this condition?",
+    options: [
+      "Left ventricle pumps oxygenated blood directly into the ascending aorta",
+      "Right ventricle supplies only the pulmonary circulation through the pulmonary artery",
+      "Systemic circulation is maintained through a large ventricular septal defect",
+      "Aorta receives blood retrogradely through the ductus arteriosus from the pulmonary artery"
+    ],
     answerIndex: 3,
-    correctAnswerText: "21 years"
+    correctAnswerText: "Aorta receives blood retrogradely through the ductus arteriosus from the pulmonary artery"
   },
   {
     id: 109,
     image: "",
-    question: "During forensic identification, examination of teeth shows shovel-shaped incisors with prominent marginal ridges. This dental feature is classically associated with which racial group?",
-    options: ["Mongoloids", "Caucasoids", "Negroids", "Australoids"],
+    question: "A term neonate develops severe cyanosis soon after birth. The cyanosis does not improve significantly with oxygen. On examination, there is single S₂ and no obvious murmur. Pulse oximetry shows preductal saturation lower than postductal saturation. Chest X-ray shows a narrow superior mediastinum with an egg-on-string appearance.\nWhich of the following best explains the underlying physiology?",
+    options: [
+      "Aorta arises from right ventricle and pulmonary artery arises from left ventricle, producing parallel circulations",
+      "Pulmonary veins drain into systemic venous circulation causing complete mixing in right atrium",
+      "Left ventricle is hypoplastic and systemic circulation is maintained through ductus arteriosus",
+      "Right ventricular outflow obstruction causes right-to-left shunt across ventricular septal defect"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Mongoloids"
+    correctAnswerText: "Aorta arises from right ventricle and pulmonary artery arises from left ventricle, producing parallel circulations"
   },
   {
     id: 110,
     image: "",
-    question: "A partially decomposed body is recovered, and only the skull is available for identification. The forensic expert compares the skull with the antemortem photograph of a suspected person by placing one image over the other. Which method of identification is being used?",
-    options: ["Anthropometry", "Superimposition", "Dactylography", "Tattoo mark examination"],
+    question: "A 2-month-old infant presents with mild cyanosis and recurrent respiratory infections. On examination, oxygen saturation is almost similar in all limbs. Auscultation reveals a wide fixed split S₂, an ejection systolic murmur at the pulmonary area, and a mid-diastolic murmur at the lower left sternal border. Chest X-ray shows a figure-of-8 / snowman appearance.\nWhich of the following best explains the underlying lesion?",
+    options: [
+      "Aorta arises from right ventricle and pulmonary artery arises from left ventricle",
+      "Pulmonary veins drain into systemic venous circulation with complete mixing in right atrium",
+      "Pulmonary artery fails to connect with right ventricle causing duct-dependent pulmonary flow",
+      "Aorta receives blood retrogradely through ductus arteriosus due to hypoplastic left ventricle"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Superimposition"
+    correctAnswerText: "Pulmonary veins drain into systemic venous circulation with complete mixing in right atrium"
   },
   {
     id: 111,
     image: "",
-    question: "A middle-aged immunocompromised patient presents with chronic pulmonary symptoms followed by headache and features of chronic meningitis. Sputum culture shows aerobic, Gram-positive, branching filamentous organisms that are weakly acid-fast on modified Ziehl-Neelsen stain. The organism is isolated using the paraffin bait technique. Which of the following is the most likely causative organism?",
-    options: ["Actinomyces israelii", "Mycobacterium tuberculosis", "Nocardia asteroides", "Cryptococcus neoformans"],
+    question: "A 6-day-old neonate is brought with poor feeding, tachypnea, cold lower limbs, weak femoral pulses, and features of congestive cardiac failure. Pulse oximetry shows higher saturation in the right upper limb than in the lower limb. The baby rapidly worsened after functional closure of ductus arteriosus.\nWhich of the following best explains this presentation?",
+    options: [
+      "Right-to-left shunt across ventricular septal defect supplies the lower body",
+      "Pulmonary venous return drains into systemic veins causing complete mixing",
+      "Descending aorta is supplied through ductus arteriosus, making systemic circulation duct-dependent",
+      "Aorta arises from right ventricle producing parallel systemic and pulmonary circulations"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Nocardia asteroides"
+    correctAnswerText: "Descending aorta is supplied through ductus arteriosus, making systemic circulation duct-dependent"
   },
   {
     id: 112,
     image: "",
-    question: "A dead body is recovered from a cold environment. On postmortem examination, the dependent areas show bright pink postmortem hypostasis. There are no features suggestive of carbon monoxide exposure. Which of the following conditions is most likely associated with this colour of hypostasis?",
-    options: ["Cyanide poisoning", "Nitrite poisoning", "Hydrogen sulphide poisoning", "Hypothermia"],
+    question: "A 12-year-old boy is evaluated for headache and easy fatigability. Blood pressure is higher in the upper limbs than lower limbs, and femoral pulses are weak. Chest X-ray shows notching along the inferior borders of ribs. On auscultation, a continuous murmur is heard over the posterior chest.\nWhich of the following best explains these findings?",
+    options: [
+      "Increased pulmonary blood flow through patent ductus arteriosus",
+      "Compression of intercostal arteries by dilated pulmonary arteries",
+      "Right-to-left shunting across ductus arteriosus supplying lower limbs",
+      "Dilated collateral vessels through intercostal arteries bypassing the aortic obstruction"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Hypothermia"
+    correctAnswerText: "Dilated collateral vessels through intercostal arteries bypassing the aortic obstruction"
   },
   {
     id: 113,
     image: "",
-    question: "A dead body is examined within 1–2 hours after death. On tapping the lower third of the quadriceps femoris muscle, about 10 cm above the patella, the patella moves upward due to contraction of the muscle. This transient response is due to residual neuromuscular excitability. Which of the following phenomena is described?",
-    options: ["Cadaveric spasm", "Zasko phenomenon", "Postmortem clotting", "Wound gaping along skin tension lines"],
-    answerIndex: 1,
-    correctAnswerText: "Zasko phenomenon"
+    question: "A 10-year-old child presents with fever and pain involving the knee, ankle, and elbow joints one after another. The joint pain improves dramatically after salicylates. There is no audible cardiac murmur on examination, but echocardiography shows valvulitis involving the mitral valve.\nWhich of the following findings in this child is considered a major criterion for diagnosis?",
+    options: [
+      "Echocardiographic valvulitis without audible murmur",
+      "Fever with elevated acute phase reactants",
+      "Prolonged PR interval on ECG",
+      "Arthralgia involving small joints of hands"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Echocardiographic valvulitis without audible murmur"
   },
   {
     id: 114,
     image: "",
-    question: "A young man sustains a blow to the lateral side of the skull in a road traffic accident. He briefly loses consciousness, then becomes fully oriented and talks normally for some time. After a few hours, he suddenly deteriorates with signs of raised intracranial pressure. Fracture is suspected at the pterion. Which vessel is most likely ruptured?",
-    options: ["Bridging veins", "Anterior cerebral artery", "Middle meningeal artery", "Superior sagittal sinus"],
-    answerIndex: 2,
-    correctAnswerText: "Middle meningeal artery"
+    question: "A 12-year-old child was treated for acute rheumatic fever with clinical carditis. At follow-up, echocardiography shows complete resolution of valvulitis with no residual valvular disease. The child is started on intramuscular benzathine penicillin G prophylaxis to prevent recurrence.\nWhat is the most appropriate duration of secondary prophylaxis in this child?",
+    options: [
+      "5 years or until 21 years of age, whichever is longer",
+      "10 years or until 21 years of age, whichever is longer",
+      "10 years or until 40 years of age, whichever is longer",
+      "Lifelong prophylaxis in all cases of rheumatic fever"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "10 years or until 21 years of age, whichever is longer"
   },
   {
     id: 115,
     image: "",
-    question: "A fetus is recovered during medicolegal examination. On fetal autopsy, the crown-heel length is measured and found to be 35 cm. Since the fetus is beyond the first 5 months, the forensic expert applies Morrison’s rule to estimate the fetal age. What is the approximate age of the fetus?",
-    options: ["5 months", "6 months", "8 months", "7 months"],
-    answerIndex: 3,
-    correctAnswerText: "7 months"
+    question: "A 2-month-old infant is brought with generalized edema, frothy urine, and severe hypoalbuminemia. Urine protein is 4+. On examination, the child has bilateral pinpoint pupils that do not dilate normally. Family history reveals consanguinity. Genetic testing shows a defect affecting the basement membrane of both the kidney and eye.\nWhich of the following gene defects is most likely responsible?",
+    options: [
+      "NPHS1 mutation affecting nephrin",
+      "NPHS2 mutation affecting podocin",
+      "LAMB2 mutation affecting beta-2 laminin",
+      "WT1 mutation causing Denys-Drash syndrome"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "LAMB2 mutation affecting beta-2 laminin"
   },
   {
     id: 116,
     image: "",
-    question: "A forensic expert examines a suspected blood stain collected from a crime scene. A screening test is performed, and the stain gives a deep blue colour reaction. The test is highly sensitive but is not used now because of its carcinogenic risk. Which of the following tests is most likely described?",
-    options: ["Benzidine test", "Kastle-Meyer test", "Teichmann test", "Takayama test"],
-    answerIndex: 0,
-    correctAnswerText: "Benzidine test"
+    question: "A 9-year-old child presents with generalized edema, frothy urine, and heavy proteinuria. Serum albumin is low. On evaluation, the child also has hypertension, microscopic hematuria, and low serum C3 level. The resident plans to start empirical steroid therapy, but the consultant advises renal biopsy first.\nWhich of the following is the strongest indication for renal biopsy in this child?",
+    options: [
+      "Age between 1–10 years with first episode nephrotic syndrome",
+      "Steroid-sensitive nephrotic syndrome with normal blood pressure",
+      "Selective proteinuria without hematuria or hypocomplementemia",
+      "Nephrotic syndrome with hypertension, hematuria, and low C3 level"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Nephrotic syndrome with hypertension, hematuria, and low C3 level"
   },
   {
     id: 117,
     image: "",
-    question: "A newborn delivered with forceps develops a localized swelling over the scalp. The swelling is limited to the area over a single parietal bone and does not cross suture lines. It takes a longer time to resolve and suggests live birth with regression process. Which of the following is the most likely diagnosis?",
-    options: ["Caput succedaneum", "Cephalhematoma", "Subgaleal hemorrhage", "Meningocele"],
-    answerIndex: 1,
-    correctAnswerText: "Cephalhematoma"
+    question: "A 7-year-old child is brought with facial puffiness, cola-colored urine, oliguria, and headache. Blood pressure is elevated. The mother says he had a sore throat 10 days ago. Serum C3 is low. The physician explains that the complement level should normalize within a few weeks and gives supportive treatment along with antibiotics to prevent community spread of the organism.\nWhich of the following is the most appropriate statement regarding this condition?",
+    options: [
+      "Low serum C3 usually returns to normal within 6–8 weeks",
+      "Anti-DNase B is the best antibody marker after streptococcal pharyngitis",
+      "Renal biopsy is mandatory in all children at first presentation",
+      "Penicillin prevents renal immune injury if started after nephritis develops"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Low serum C3 usually returns to normal within 6–8 weeks"
   },
   {
     id: 118,
     image: "",
-    question: "A dead newborn is brought for medicolegal examination to determine whether the child had breathed after birth. During autopsy, the liver is first placed in water and it floats. The forensic expert decides to stop further lung flotation testing. What is the most appropriate reason?",
-    options: ["Floating liver confirms live birth", "Floating liver confirms stillbirth", "Floating liver suggests decomposition, making lung float test unreliable", "Floating liver proves artificial respiration was given"],
-    answerIndex: 2,
-    correctAnswerText: "Floating liver suggests decomposition, making lung float test unreliable"
+    question: "A 9-year-old boy has repeated episodes of gross hematuria occurring within 1–2 days of upper respiratory tract infections. Each episode resolves spontaneously within a few days. Blood pressure is normal, renal function is preserved, and serum C3 level is normal. Urine shows mild proteinuria.\nWhich of the following is the most likely underlying pathology?",
+    options: [
+      "Subepithelial immune deposits with low serum C3",
+      "Mesangial deposition of IgA",
+      "Linear IgG deposition along glomerular basement membrane",
+      "Anti-streptolysin O mediated immune injury after 3–6 weeks"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Mesangial deposition of IgA"
   },
   {
     id: 119,
     image: "",
-    question: "A 2-year-old child is repeatedly brought to the emergency department with multiple bruises of different colours, inconsistent history from the caregivers, and X-ray showing multiple rib fractures arranged like a string of beads. The child is also found to have features resembling infantile whiplash injury. Which of the following is the most likely diagnosis?",
-    options: ["Osteogenesis imperfecta", "Battered baby syndrome", "Rickets", "Accidental fall injury"],
-    answerIndex: 1,
-    correctAnswerText: "Battered baby syndrome"
+    question: "A 4-year-old child is brought with pallor, reduced urine output, and irritability 5 days after an episode of bloody diarrhea. Investigations show anemia, thrombocytopenia, rising urea and creatinine, and peripheral smear showing fragmented RBCs. Stool culture grows E. coli O157:H7.\nWhich of the following should be avoided in the management of this child?",
+    options: [
+      "Packed RBC transfusion",
+      "Hemodialysis",
+      "Antibiotic therapy",
+      "Correction of hyperkalemia"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Antibiotic therapy"
   },
   {
     id: 120,
     image: "",
-    question: "A farmer is brought to casualty after accidental exposure to an agricultural insecticide. He has salivation, lacrimation, urination, diarrhoea, bronchoconstriction, bradycardia, miosis, muscle fasciculations, weakness, and respiratory depression. The poison acts by inhibiting acetylcholinesterase and pseudocholinesterase. Which of the following is the definitive treatment that acts at the nicotinic site?",
-    options: ["Atropine sulphate", "Pralidoxime", "Naloxone", "Sodium bicarbonate"],
-    answerIndex: 1,
-    correctAnswerText: "Pralidoxime"
+    question: "A 7-month-old febrile infant is evaluated for suspected urinary tract infection. Urine is collected by suprapubic aspiration. Culture grows a small number of colonies of E. coli. Microscopy of centrifuged urine shows 8 WBCs/high-power field. A junior resident says the culture is insignificant because the colony count is low.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "Culture is significant only if colony count is more than 10⁵ CFU/mL in all methods",
+      "Pyuria is diagnosed only when WBC count is more than 20/high-power field",
+      "Suprapubic aspiration culture is significant only if colony count is more than 10⁴ CFU/mL",
+      "Any bacterial growth in suprapubic aspirate is significant, and pyuria is present if WBCs are more than 5/high-power field"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Any bacterial growth in suprapubic aspirate is significant, and pyuria is present if WBCs are more than 5/high-power field"
   },
   {
     id: 121,
     image: "",
-    question: "A microbiology student is comparing bacterial cells with human cells. The teacher explains that bacteria are unicellular prokaryotes with a single circular chromosome, absence of true nuclear membrane, and smaller ribosomes. Which of the following is a feature of prokaryotic cells?",
-    options: ["70S ribosomes composed of 30S and 50S subunits", "Presence of true nuclear membrane", "Respiration occurring mainly in mitochondria", "Multiplication by mitosis and meiosis"],
+    question: "A child is being evaluated for poor linear growth. The clinician explains to the parents that the dominant factor controlling growth changes with age. During fetal life, growth is mainly influenced by insulin, while in later childhood another hormone becomes the major determinant of height velocity.\nWhich of the following pairs is most appropriate?",
+    options: [
+      "Fetal growth — insulin; Childhood growth — growth hormone",
+      "Fetal growth — growth hormone; Infant growth — estrogen",
+      "Infant growth — testosterone; Childhood growth — insulin",
+      "Pubertal growth — nutrition; Fetal growth — growth hormone"
+    ],
     answerIndex: 0,
-    correctAnswerText: "70S ribosomes composed of 30S and 50S subunits"
+    correctAnswerText: "Fetal growth — insulin; Childhood growth — growth hormone"
   },
   {
     id: 122,
     image: "",
-    question: "A microbiology student is studying bacterial appendages used for locomotion. The teacher explains that this structure is important for bacterial motility, antigenic identification, and classification based on arrangement such as monotrichous, lophotrichous, amphitrichous, and peritrichous. Which of the following is the main protein composition of this bacterial structure?",
-    options: ["Pilin", "Flagellin", "Peptidoglycan", "Lipopolysaccharide"],
+    question: "A 5-year-old child is brought for evaluation of short stature. Birth history and nutrition are normal. The child’s height velocity over the last year is 3 cm/year. The pediatrician explains that this is below the expected childhood growth velocity and raises suspicion of an endocrine cause.\nWhich of the following statements is most appropriate regarding normal linear growth?",
+    options: [
+      "Normal length at birth is approximately 75 cm",
+      "Childhood height velocity is normally around 6 cm/year, and growth hormone deficiency is suspected if it is less than 4 cm/year",
+      "A child usually reaches half of adult height by 5 years of age",
+      "Peak height velocity is higher in girls than in boys during puberty"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Flagellin"
+    correctAnswerText: "Childhood height velocity is normally around 6 cm/year, and growth hormone deficiency is suspected if it is less than 4 cm/year"
   },
   {
     id: 123,
     image: "",
-    question: "A microbiology student is studying bacterial surface structures. The teacher explains that the glycocalyx may be present as a loosely arranged slime layer or a well-organized capsule. The well-organized form helps bacteria resist phagocytosis and acts as an important virulence factor. Which of the following is a function of bacterial capsule?",
-    options: ["Locomotion of bacteria", "Protein synthesis", "Antiphagocytic action", "Binary fission"],
+    question: "A 3-year-old child is brought for nutritional assessment. The child has visible wasting, but weight measurement is unreliable due to dehydration. The pediatrician decides to assess the child’s subcutaneous fat stores using a caliper at the triceps and subscapular region. The measured skin fold thickness is 5 mm.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "Normal nutritional status because skin fold thickness is above 4 mm",
+      "Mild malnutrition because skin fold thickness is below 10 mm",
+      "Moderate to severe malnutrition because skin fold thickness is below 6 mm",
+      "Obesity because skin fold thickness is measured at triceps region"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Antiphagocytic action"
+    correctAnswerText: "Moderate to severe malnutrition because skin fold thickness is below 6 mm"
   },
   {
     id: 124,
     image: "",
-    question: "A microbiology student is comparing the cell wall structure of gram-positive and gram-negative bacteria. Which of the following cell wall components is present in gram-negative bacteria but absent in gram-positive bacteria?",
-    options: ["Thick peptidoglycan layer", "Teichoic acid", "N-acetyl muramic acid", "Lipopolysaccharide"],
+    question: "A mother brings her 3-year-old child for developmental assessment. The child can walk backward and can climb upstairs using alternate feet, but while coming downstairs, he places both feet on each step before moving to the next step. The mother is worried because the child cannot yet come downstairs using alternate feet.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "Delayed gross motor development because downstairs alternate stepping should appear by 2 years",
+      "Normal only if the child cannot walk backward before 3 years",
+      "Abnormal because a 3-year-old child should go both upstairs and downstairs with one foot per step",
+      "Normal development because at 3 years, upstairs is one foot per step, while downstairs may still be two feet per step"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Lipopolysaccharide"
+    correctAnswerText: "Normal development because at 3 years, upstairs is one foot per step, while downstairs may still be two feet per step"
   },
   {
     id: 125,
     image: "",
-    question: "A microbiology student is classifying bacteria based on their oxygen requirement. The teacher explains that some bacteria can grow in the presence or absence of oxygen. In the presence of oxygen, they use oxidation, while in the absence of oxygen, they switch to fermentation. Which of the following bacteria shows this type of growth pattern?",
-    options: ["Escherichia coli", "Clostridium tetani", "Mycobacterium tuberculosis", "Campylobacter jejuni"],
+    question: "A 9-month-old infant is brought for developmental assessment. The mother says the child can sit without support and can transfer a toy from one hand to the other. On examination, the child picks up a small pellet using the thumb and side of the index finger, but cannot yet use the fingertip-to-fingertip precision grip.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "Normal fine motor development with immature pincer grasp",
+      "Delayed fine motor development because mature pincer grasp should appear by 9 months",
+      "Abnormal development because transfer of objects should appear only after 12 months",
+      "Normal only if bidextrous grasp is absent at 5 months"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Escherichia coli"
+    correctAnswerText: "Normal fine motor development with immature pincer grasp"
   },
   {
     id: 126,
     image: "",
-    question: "A microbiology student inoculates bacteria into a fresh culture medium and observes the growth pattern over time. During one phase, bacteria show rapid increase in number, uniform morphology, active biochemical reactions, and increased sensitivity to antibiotics. Which phase of the bacterial growth curve is described here?",
-    options: ["Lag phase", "Log phase", "Stationary phase", "Decline phase"],
+    question: "A 24-month-old child is brought for developmental assessment. The mother says the child sits near other children and plays with similar toys, but does not yet actively share toys or participate in cooperative group play. The child can understand a simple story and imitates household activities.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "Delayed social development because cooperative group play should appear by 24 months",
+      "Normal development because parallel play is expected around 24 months",
+      "Abnormal development because domestic mimicry should appear only after 3 years",
+      "Normal only if the child already knows gender by 24 months"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Log phase"
+    correctAnswerText: "Normal development because parallel play is expected around 24 months"
   },
   {
     id: 127,
     image: "",
-    question: "A microbiology laboratory receives a respiratory sample for rapid molecular diagnosis. The test used is a nucleic acid amplification test based on polymerase chain reaction. During the PCR cycle, DNA strands are first separated, primers bind to the target sequence, and then Taq polymerase extends the new DNA strand. At which temperature does the extension step of PCR usually occur?",
-    options: ["95°C", "55°C", "72°C", "37°C"],
+    question: "A 2-year-old child is brought for developmental assessment. The parents are worried because the child does not speak long sentences. On evaluation, the child knows around 60 words and can combine 3 words like “mamma give ball.” Receptive language is appropriate, and hearing assessment is normal.\nWhich of the following is the most appropriate interpretation?",
+    options: [
+      "Delayed language development because a 2-year-old should know 250 words",
+      "Normal only if the child can use past tense",
+      "Normal language development because a 2-year-old can know 50–100 words and put 3 words together",
+      "Delayed language development because jargons should persist until 3 years"
+    ],
     answerIndex: 2,
-    correctAnswerText: "72°C"
+    correctAnswerText: "Normal language development because a 2-year-old can know 50–100 words and put 3 words together"
   },
   {
     id: 128,
     image: "",
-    question: "A microbiology student is studying bacterial gene transfer. The teacher explains that in one mechanism, a bacteriophage transfers bacterial DNA from one bacterium to another. In one type, only a few specific genes adjacent to the prophage insertion site are transferred during the lysogenic cycle, as seen in toxin production by Corynebacterium diphtheriae. Which of the following best describes this type of gene transfer?",
-    options: ["Transformation", "Conjugation", "Generalized transduction", "Specialized transduction"],
+    question: "A 20-month-old child is brought by parents because he has stopped using words that he had previously learned. At 14 months, he used to say a few meaningful words, wave bye-bye, and respond to his name. Over the last 2 months, he has stopped speaking those words and no longer responds consistently to his name. Gross motor milestones are age appropriate.\nWhich of the following best describes this developmental pattern?",
+    options: [
+      "Developmental delay",
+      "Developmental dissociation",
+      "Deviant development",
+      "Regression"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Specialized transduction"
+    correctAnswerText: "Regression"
   },
   {
     id: 129,
     image: "",
-    question: "A microbiology student is studying bacterial gene transfer. The teacher explains that in one mechanism, genetic material is transferred from a donor bacterium to a recipient bacterium by direct cell-to-cell contact through a sex pilus. This mechanism can transfer plasmids responsible for fertility, drug resistance, toxin production, and virulence. Which of the following mechanisms of bacterial gene transfer is described here?",
-    options: ["Conjugation", "Transformation", "Generalized transduction", "Specialized transduction"],
-    answerIndex: 0,
-    correctAnswerText: "Conjugation"
+    question: "A 17-month-old child is brought for routine developmental assessment. The child walks independently and has normal growth parameters. Parents report that the child does not point to show interesting objects, does not respond consistently to sounds, and has no meaningful speech. The examiner notes intermittent toe walking.\nWhich of the following findings is the strongest red flag requiring referral for developmental evaluation?",
+    options: [
+      "Absence of running at 17 months",
+      "Inability to climb stairs independently at 17 months",
+      "Absence of mature pincer grasp at 9 months",
+      "No pointing to show interest by 18 months"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "No pointing to show interest by 18 months"
   },
   {
     id: 130,
     image: "",
-    question: "A microbiology student is asked to classify culture media based on their purpose. The teacher explains that one type of medium allows the growth of the desired organism while suppressing the growth of unwanted organisms. Examples include TCBS agar and Lowenstein–Jensen medium. Which of the following best describes this type of culture medium?",
-    options: ["Enriched medium", "Selective medium", "Differential medium", "Transport medium"],
-    answerIndex: 1,
-    correctAnswerText: "Selective medium"
+    question: "A newborn is evaluated because the mother had a suspected protozoal infection during pregnancy. The baby has hydrocephalus, chorioretinitis, thrombocytopenia, and CT brain shows intracranial calcifications. The pediatrician explains that although vertical transmission is maximum in late pregnancy, fetal damage is most severe when maternal infection occurs early in pregnancy.\nWhich of the following is the most appropriate treatment for this neonate?",
+    options: [
+      "Pyrimethamine plus sulfadiazine for 12 months",
+      "Spiramycin alone for 12 months",
+      "Ganciclovir for 6 weeks",
+      "Penicillin G for 10 days"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Pyrimethamine plus sulfadiazine for 12 months"
   },
   {
     id: 131,
     image: "",
-    question: "A microbiology student performs a biochemical test on an unknown gram-negative bacillus. On adding Kovac’s oxidase reagent, the colony rapidly develops a purple colour. The teacher explains that organisms like Pseudomonas, Vibrio, Neisseria, Campylobacter jejuni, Helicobacter pylori, Bordetella, Brucella, and Legionella are positive for this test. Which of the following biochemical tests is being described?",
-    options: ["Catalase test", "Indole test", "Oxidase test", "Urease test"],
-    answerIndex: 2,
-    correctAnswerText: "Oxidase test"
+    question: "A newborn delivered to a mother with a history of fever and rash during early pregnancy is found to have sensorineural hearing loss, bilateral cataracts, and a continuous murmur suggestive of patent ductus arteriosus. The baby also has hepatosplenomegaly and a blueberry muffin rash due to extramedullary hematopoiesis.\nWhich of the following is the most appropriate statement regarding this condition?",
+    options: [
+      "Maximum fetal damage occurs when maternal infection is acquired in the third trimester",
+      "Sensorineural hearing loss is the most common clinical feature",
+      "Intracranial calcification and hydrocephalus form the classical triad",
+      "Diagnosis is excluded if maternal IgG antibodies are positive at birth"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Sensorineural hearing loss is the most common clinical feature"
   },
   {
     id: 132,
     image: "",
-    question: "A microbiology laboratory needs to sterilize culture media, reagents, linen, glassware, and metallic instruments. The method used works by moist heat and protein coagulation at 121°C under 15 lb/sq inch pressure for 15 minutes. Which of the following sterilization methods is being described?",
-    options: ["Inspissation", "Tyndallisation", "Hot air oven", "Autoclave"],
-    answerIndex: 3,
-    correctAnswerText: "Autoclave"
+    question: "A 6-day-old neonate born to a mother with active genital lesions at delivery develops fever, lethargy, vesicular lesions over the skin, and poor feeding. CSF shows pleocytosis and HSV PCR is positive. The pediatrician explains that most neonatal HSV infections are acquired during delivery and that CNS disease requires longer treatment than isolated skin-eye-mouth disease.\nWhich of the following is the most appropriate management?",
+    options: [
+      "Oral acyclovir for 5 days only",
+      "IV ganciclovir for 6 weeks",
+      "IV acyclovir for 21 days followed by oral suppressive acyclovir for 6 months",
+      "No treatment if the mother has recurrent genital herpes"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "IV acyclovir for 21 days followed by oral suppressive acyclovir for 6 months"
   },
   {
     id: 133,
     image: "",
-    question: "A nurse is asked to disinfect a stethoscope and clinical thermometer after routine patient examination. She uses 70% ethyl alcohol for surface disinfection. The same agent is also commonly used in hand sanitizers. Which of the following is the main mechanism of action of this disinfectant?",
-    options: ["Protein coagulation and cell membrane damage", "Alkylation with DNA damage", "Oxidation of cellular components", "Disintegration of bacterial proteins"],
-    answerIndex: 0,
-    correctAnswerText: "Protein coagulation and cell membrane damage"
+    question: "A term neonate is born to a mother who developed a generalized vesicular rash diagnosed as chickenpox 3 days before delivery. The baby is currently asymptomatic. The pediatrician explains that this timing carries maximum neonatal risk because the infant is exposed before adequate maternal antibody transfer.\nWhat is the most appropriate next step?",
+    options: [
+      "Reassure and observe only, as herpes zoster during pregnancy has no neonatal risk",
+      "Give oral acyclovir only if vesicles appear after 10 days of life",
+      "Give live varicella vaccine immediately after birth",
+      "Give varicella zoster immunoglobulin within 72 hours of exposure"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Give varicella zoster immunoglobulin within 72 hours of exposure"
   },
   {
     id: 134,
     image: "",
-    question: "A hospital infection-control team is preparing protocols for reusable instruments. A flexible endoscope is used on mucous membranes and does not usually enter sterile tissue or the vascular system. According to Spaulding classification, which level of processing is required for this instrument?",
-    options: ["Low-level disinfection", "High-level disinfection", "Sterilization only", "Intermediate-level disinfection only"],
-    answerIndex: 1,
-    correctAnswerText: "High-level disinfection"
+    question: "A 24-year-old pregnant woman in her second trimester develops fever, malaise, and exposure history to a child with erythematous cheek rash. Fetal ultrasound done later shows nonimmune hydrops. The obstetrician explains that the virus binds to a receptor present on fetal erythroid precursors and fetal cardiac myocytes, leading to severe fetal anemia and myocarditis.\nWhich of the following is the most appropriate statement regarding this infection?",
+    options: [
+      "The main receptor is blood group P antigen, and fetal anemia is monitored by middle cerebral artery Doppler",
+      "The maximum fetal risk occurs only when infection happens in the third trimester",
+      "It commonly causes congenital cataract, PDA, and sensorineural hearing loss",
+      "Maternal infection is diagnosed by positive VZV IgM and treated with VZIG"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "The main receptor is blood group P antigen, and fetal anemia is monitored by middle cerebral artery Doppler"
   },
   {
     id: 135,
     image: "",
-    question: "A 24-year-old man develops a viral infection. Infected host cells present endogenous viral antigens to cytotoxic T lymphocytes. These activated cells release perforins and granzymes, resulting in lysis of virus-infected cells. Which of the following molecules is mainly involved in antigen presentation to these cytotoxic T cells?",
-    options: ["MHC class II", "IgM", "MHC class I", "IL-4"],
-    answerIndex: 2,
-    correctAnswerText: "MHC class I"
+    question: "A 4-month-old infant is brought with progressive increase in head size, bulging anterior fontanelle, sunset eye sign, and prominent scalp veins. Neuroimaging shows dilatation of the lateral ventricles and third ventricle, but the fourth ventricle is not dilated. The pediatrician suspects obstruction in the normal pathway of cerebrospinal fluid flow.\nWhich of the following is the most likely site of obstruction?",
+    options: [
+      "Arachnoid villi",
+      "Cerebral aqueduct of Sylvius",
+      "Foramen of Luschka",
+      "Foramen of Magendie"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Cerebral aqueduct of Sylvius"
   },
   {
     id: 136,
     image: "",
-    question: "A 2-month-old infant is protected against several infections despite not yet mounting a strong independent antibody response. This protection is mainly due to a maternal immunoglobulin that crosses the placenta and is also responsible for long-term immunity, opsonization, complement activation, and secondary immune response. Which of the following immunoglobulins is being described?",
-    options: ["IgA", "IgM", "IgE", "IgG"],
-    answerIndex: 3,
-    correctAnswerText: "IgG"
+    question: "A newborn presents with severe hypotonia, poor feeding, seizures, and multiple congenital anomalies. Examination shows large head size, occipital encephalocele, and abnormal eye findings. Neuroimaging shows hydrocephalus with absent cerebral gyri, and ophthalmic evaluation reveals retinal dysplasia.\nWhich of the following syndromes best explains this constellation of findings?",
+    options: [
+      "Dandy-Walker malformation",
+      "Arnold-Chiari type II malformation",
+      "Walker-Warburg syndrome",
+      "Zellweger syndrome"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Walker-Warburg syndrome"
   },
   {
     id: 137,
     image: "",
-    question: "A patient suspected to have enteric fever undergoes Widal test. The test detects antibodies against particulate bacterial antigens by visible clumping. In another laboratory test, soluble antigen reacts with specific antibody at optimal pH, temperature, and electrolyte concentration to form an insoluble deposit. Which of the following statements best differentiates these two antigen–antibody reactions?",
-    options: ["Agglutination involves particulate antigen, while precipitation involves soluble antigen", "Agglutination involves soluble antigen, while precipitation involves particulate antigen", "Both agglutination and precipitation require only soluble antigen", "Both agglutination and precipitation require only particulate antigen"],
-    answerIndex: 0,
-    correctAnswerText: "Agglutination involves particulate antigen, while precipitation involves soluble antigen"
+    question: "A 5-month-old infant is brought with progressive increase in head size. On examination, the anterior fontanelle is wide and tense, scalp veins are prominent, and percussion over the skull produces a cracked-pot sound. The child also has downward deviation of eyes and brisk lower limb reflexes.\nWhich of the following combinations best explains these findings?",
+    options: [
+      "Microcephaly, closed sutures, papilledema, and hypotonia",
+      "Normal head growth, closed anterior fontanelle, absent scalp veins, and normal gaze",
+      "Macrocephaly with early closure of sutures and isolated upper limb weakness",
+      "Rapid head enlargement, Macewen sign, setting sun sign, and corticospinal tract involvement"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Rapid head enlargement, Macewen sign, setting sun sign, and corticospinal tract involvement"
   },
   {
     id: 138,
     image: "",
-    question: "A 12-year-old boy develops puffiness of face and cola-colored urine 2 weeks after recovery from streptococcal pharyngitis. Renal biopsy shows granular immune deposits along the glomerular basement membrane. Complement levels are reduced. Which of the following conditions occurs by the same immunopathological mechanism?",
-    options: ["Anaphylaxis after penicillin injection", "Goodpasture syndrome", "Serum sickness after antiserum therapy", "Contact dermatitis due to nickel"],
-    answerIndex: 2,
-    correctAnswerText: "Serum sickness after antiserum therapy"
+    question: "A 16-year-old girl presents with progressive bilateral hearing difficulty, tinnitus, and imbalance. MRI brain shows bilateral cerebellopontine angle tumors arising from vestibular nerves. Ophthalmic examination shows juvenile cataract. Her father had multiple intracranial tumors and hearing loss at a young age.\nWhich of the following is the most likely underlying defect?",
+    options: [
+      "Autosomal dominant mutation of NF2 gene on chromosome 22",
+      "Autosomal dominant mutation of NF1 gene on chromosome 17",
+      "Mutation causing defective DNA repair on chromosome 15",
+      "Mutation in RET proto-oncogene on chromosome 10"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Autosomal dominant mutation of NF2 gene on chromosome 22"
   },
   {
     id: 139,
     image: "",
-    question: "A 46-year-old woman presents with persistent dryness of eyes and mouth. She also complains of difficulty swallowing dry food and recurrent dental caries. Examination shows parotid enlargement. Autoantibody-mediated damage is directed mainly against exocrine glands, especially salivary glands, and may also involve liver, kidney, and thyroid. Which of the following autoimmune diseases is most likely associated with this pattern of self-antigen involvement?",
-    options: ["Systemic lupus erythematosus", "Multiple sclerosis", "Scleroderma", "Sjogren’s syndrome"],
-    answerIndex: 3,
-    correctAnswerText: "Sjogren’s syndrome"
+    question: "A 6-year-old child is evaluated for recurrent seizures and developmental delay. Examination shows multiple hypopigmented macules that become more prominent under Wood’s lamp, facial angiofibromas over the malar region, a leathery plaque over the lower back, and periungual fibromas. MRI brain shows cortical tubers and a mass near the foramen of Monro causing obstructive hydrocephalus.\nWhich of the following genetic abnormalities is most classically associated with this disorder?",
+    options: [
+      "NF2 gene mutation on chromosome 22 encoding merlin",
+      "TSC2 gene mutation on chromosome 16 encoding tuberin",
+      "FBN1 gene mutation on chromosome 15 encoding fibrillin",
+      "RET proto-oncogene mutation on chromosome 10"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "TSC2 gene mutation on chromosome 16 encoding tuberin"
   },
   {
     id: 140,
     image: "",
-    question: "A 3-month-old infant is brought with recurrent viral and fungal infections. The child has abnormal facial features, cleft palate, hypocalcemic seizures, and a cardiac outflow tract defect. Chest X-ray shows absence of thymic shadow. Flow cytometry shows markedly reduced mature T lymphocytes. Which of the following genetic abnormalities is most likely responsible for this condition?",
-    options: ["Deletion of chromosome 22q11", "Defect in NADPH oxidase", "Defect in CD18 integrin", "Defect in lysosomal trafficking regulator gene"],
-    answerIndex: 0,
-    correctAnswerText: "Deletion of chromosome 22q11"
+    question: "A 2-year-old child is brought with recurrent focal seizures involving the right upper limb. Examination shows a unilateral reddish vascular patch over the left forehead and upper eyelid that does not cross the midline. Ophthalmic evaluation shows congenital glaucoma. MRI brain shows leptomeningeal vascular malformation with cortical atrophy on the same side as the facial lesion.\nWhich of the following statements is most appropriate regarding this condition?",
+    options: [
+      "It is an autosomal dominant disorder due to NF2 gene mutation on chromosome 22",
+      "The facial lesion is physiological, bilateral, crosses the midline, and resolves spontaneously",
+      "It is a sporadic disorder due to GNAQ mutation with ipsilateral port-wine stain, glaucoma, and leptomeningeal angioma",
+      "It is caused by TSC2 mutation and is associated with ash-leaf macules and subependymal giant cell astrocytoma"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "It is a sporadic disorder due to GNAQ mutation with ipsilateral port-wine stain, glaucoma, and leptomeningeal angioma"
   },
   {
     id: 141,
     image: "",
-    question: "A group of medical students develop sudden-onset vomiting followed by diarrhea within 3 hours after eating mayonnaise-containing salad from a cafeteria. All recover within 24 hours. Culture of the food sample grows gram-positive cocci in clusters, which are catalase-positive and coagulase-positive. Which of the following virulence factors is most likely responsible for this illness?",
-    options: ["Exfoliative toxin", "Preformed heat-stable enterotoxin", "Toxic shock syndrome toxin-1", "Protein A"],
-    answerIndex: 1,
-    correctAnswerText: "Preformed heat-stable enterotoxin"
+    question: "A 14-year-old boy presents with headache, vomiting, and gait ataxia. MRI shows a cerebellar hemangioblastoma. Fundus examination reveals peripheral retinal angiomas, and abdominal imaging shows multiple pancreatic and renal cysts with a small enhancing renal mass. His father had surgery for a posterior fossa tumor at a young age.\nWhich of the following statements is most appropriate regarding this disorder?",
+    options: [
+      "It is caused by NF2 mutation on chromosome 22 and presents with bilateral vestibular schwannomas",
+      "Retinal angiomas are always central and cause early visual loss",
+      "The inheritance is autosomal recessive with renal angiomyolipoma as the major renal tumor",
+      "It is an autosomal dominant disorder due to VHL gene mutation on chromosome 3, with clear cell renal cell carcinoma being an important cause of death"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "It is an autosomal dominant disorder due to VHL gene mutation on chromosome 3, with clear cell renal cell carcinoma being an important cause of death"
   },
   {
     id: 142,
     image: "",
-    question: "A 5-year-old child presents with fever, cough, pleuritic chest pain, and rust-colored sputum. Sputum Gram stain shows lanceolate diplococci arranged in pairs. Culture on blood agar shows alpha-hemolytic draughtsman colonies. When type-specific antiserum is added to the organism, the capsule appears swollen and more prominent. Which of the following tests is being described?",
-    options: ["Nagler reaction", "Elek gel precipitation test", "Quellung reaction", "Satellitism test"],
-    answerIndex: 2,
-    correctAnswerText: "Quellung reaction"
+    question: "A 3-year-old child born preterm is brought with difficulty in walking. Parents say the child crawled by pulling forward with arms while the legs remained relatively stiff. On examination, there is increased tone in both lower limbs, exaggerated deep tendon reflexes, positive Babinski sign, scissoring of legs, and equinovarus posture during walking. Intelligence appears normal.\nWhich of the following is the most likely underlying pathology?",
+    options: [
+      "Periventricular leukomalacia due to hypoxic ischemic injury in a preterm child",
+      "Bilateral basal ganglia injury due to kernicterus",
+      "Cerebellar vermis hypoplasia causing truncal ataxia",
+      "Chronic spinal muscular atrophy with lower motor neuron weakness"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Periventricular leukomalacia due to hypoxic ischemic injury in a preterm child"
   },
   {
     id: 143,
     image: "",
-    question: "A 42-year-old wool-sorter presents with a painless ulcer on the forearm surrounded by marked edema. The lesion has a black necrotic center. Culture from the lesion shows large gram-positive rods with square ends, non-hemolytic colonies on blood agar, and a “string of pearls” appearance on penicillin agar. Which of the following virulence factors is responsible for the major antiphagocytic property of this organism?",
-    options: ["Heat-stable emetic toxin", "Beta-hemolysin", "Central to terminal spores", "Poly-D-glutamate capsule"],
-    answerIndex: 3,
-    correctAnswerText: "Poly-D-glutamate capsule"
+    question: "A 9-year-old girl is brought with sudden onset of clumsiness, emotional lability, and irregular jerky movements of both upper limbs. Movements worsen with activity but disappear during sleep. On examination, she has intermittent squeezing of the examiner’s fingers while gripping, darting movements of the tongue, and spooning of the hands when arms are extended.\nWhich of the following best explains the pathogenesis of this condition?",
+    options: [
+      "Direct invasion of basal ganglia by group A streptococcus",
+      "Antibodies against N-acetyl glucosamine cross-reacting with lysoganglioside in basal ganglia",
+      "Autoantibodies against acetylcholine receptor at neuromuscular junction",
+      "Dopamine deficiency due to degeneration of substantia nigra"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Antibodies against N-acetyl glucosamine cross-reacting with lysoganglioside in basal ganglia"
   },
   {
     id: 144,
     image: "",
-    question: "A 68-year-old hospitalized woman develops profuse watery diarrhea and abdominal cramps after receiving clindamycin for aspiration pneumonia. Colonoscopy shows yellow-white plaques over the colonic mucosa. Stool testing detects toxins produced by an anaerobic gram-positive bacillus. Which of the following toxins is primarily an enterotoxin in this condition?",
-    options: ["Toxin A", "Toxin B", "Alpha toxin", "Botulinum toxin"],
+    question: "A 4-year-old child is brought with high-grade fever, vomiting, photophobia, and altered sensorium. On examination, the child has neck stiffness. When the hip is flexed to 90 degrees, passive extension of the knee causes pain and resistance. Passive flexion of the neck also produces involuntary flexion of the hips and knees.\nWhich of the following correctly identifies these signs?",
+    options: [
+      "Kernig sign and Brudzinski sign",
+      "Macewen sign and setting sun sign",
+      "Milkmaid grip and darting tongue",
+      "Gower sign and Trendelenburg sign"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Toxin A"
+    correctAnswerText: "Kernig sign and Brudzinski sign"
   },
   {
     id: 145,
     image: "",
-    question: "A 17-year-old boy is brought with allegations of sexual assault by a person in a position of authority. The accused argues that the POCSO Act applies only to girls and not to boys. According to the Protection of Children from Sexual Offences Act, who is legally considered a child?",
-    options: ["Girls under 16 years of age", "All children under 18 years of age", "All children under 16 years of age", "Girls under 18 years of age"],
+    question: "A 3-year-old child presents with high-grade fever, vomiting, irritability, neck stiffness, and altered sensorium. Lumbar puncture shows turbid CSF with 4200 cells/mm³, predominantly neutrophils. CSF protein is 280 mg/dL, CSF glucose is 28 mg/dL, and simultaneous blood glucose is 90 mg/dL.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Viral meningitis",
+      "Acute bacterial meningitis",
+      "Partially treated bacterial meningitis",
+      "Tubercular meningitis"
+    ],
     answerIndex: 1,
-    correctAnswerText: "All children under 18 years of age"
+    correctAnswerText: "Acute bacterial meningitis"
   },
   {
     id: 146,
     image: "",
-    question: "A 38-year-old man presents with chronic cough, evening rise of temperature, weight loss, and hemoptysis. Two sputum samples are collected, including an early morning sample. Microscopy shows acid-fast bacilli. Culture is planned on solid medium, but the clinician wants a rapid molecular test that can detect both the organism and rifampicin resistance within about 2 hours. Which of the following investigations is most appropriate?",
-    options: ["Ziehl-Neelsen staining", "Lowenstein-Jensen culture", "CBNAAT / GeneXpert", "Mantoux test"],
+    question: "A 2-year-old child is brought with fever, seizures, neck stiffness, and altered sensorium. CSF is turbid with neutrophilic pleocytosis, high protein, and low glucose. Gram stain report is awaited, but bacterial meningitis is strongly suspected. The pediatrician wants to start treatment immediately and also knows that repeat CSF examination is required only in selected organisms.\nWhich of the following is the most appropriate management plan?",
+    options: [
+      "Ceftriaxone alone, and repeat CSF in all children after 48 hours",
+      "Ampicillin alone, and repeat CSF only if fever persists for 7 days",
+      "Vancomycin plus third-generation cephalosporin, with repeat CSF if Gram-negative bacilli or beta-lactam-resistant pneumococcus is suspected",
+      "Wait for CSF culture sensitivity before starting antibiotics"
+    ],
     answerIndex: 2,
-    correctAnswerText: "CBNAAT / GeneXpert"
+    correctAnswerText: "Vancomycin plus third-generation cephalosporin, with repeat CSF if Gram-negative bacilli or beta-lactam-resistant pneumococcus is suspected"
   },
   {
     id: 147,
     image: "",
-    question: "A 26-year-old man using soft contact lenses presents with severe eye pain, redness, photophobia, and corneal ulceration. Culture grows a non-fermenting gram-negative bacillus producing a diffusible pigment. The same organism is also a common cause of burn wound infection, ventilator-associated pneumonia, hot-tub folliculitis, and infection in cystic fibrosis patients. Which of the following virulence factors is most responsible for persistent colonization and antibiotic resistance in this organism?",
-    options: ["Protein A", "Slime layer-mediated biofilm formation", "Poly-D-glutamate capsule", "Heat-stable enterotoxin"],
-    answerIndex: 1,
-    correctAnswerText: "Slime layer-mediated biofilm formation"
+    question: "A 15-year-old boy is brought with difficulty releasing his grip after shaking hands. He also has distal muscle weakness, facial muscle involvement, dysphagia, early cataract, testicular atrophy, and episodes of cardiac conduction abnormality. His father had similar symptoms but at a later age and milder severity.\nWhich of the following correctly describes the molecular defect in this condition?",
+    options: [
+      "CCTG repeat expansion on chromosome 3 involving ZNF9 gene",
+      "Deletion of dystrophin gene on X chromosome",
+      "Mutation in SMN1 gene causing anterior horn cell degeneration",
+      "CTG repeat expansion on chromosome 19 involving DMPK gene"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "CTG repeat expansion on chromosome 19 involving DMPK gene"
   },
   {
     id: 148,
     image: "",
-    question: "A 32-year-old veterinary worker presents with prolonged fever showing evening rise, night sweats, fatigue, arthralgia, and lymphadenopathy. He gives history of handling goats and consuming unpasteurized milk. Blood culture grows small gram-negative coccobacilli showing safety-pin appearance. The organism is aerobic, oxidase-positive, and grows better with erythritol. Which of the following is the most appropriate treatment regimen?",
-    options: ["Ceftriaxone for 7 days", "Vancomycin followed by fidaxomicin", "Doxycycline with rifampicin for 6 weeks", "Penicillin G with antitoxin"],
-    answerIndex: 2,
-    correctAnswerText: "Doxycycline with rifampicin for 6 weeks"
+    question: "A 20-month-old child develops generalized tonic-clonic movements during an episode of viral fever. The seizure lasts for 8 minutes and stops after administration of an emergency medication. Neurological examination is normal after recovery, and there is no evidence of CNS infection. The parents are worried about recurrence and ask whether daily antiepileptic therapy should be started.\nWhich of the following is the most appropriate statement regarding management?",
+    options: [
+      "Continuous antiepileptic prophylaxis should be started in all children after the first febrile seizure",
+      "Antipyretics significantly reduce the risk of recurrence of febrile seizures",
+      "Iron deficiency decreases the risk of febrile seizures and does not require evaluation",
+      "Simple febrile seizures do not require prophylaxis; seizures lasting >5 minutes should be treated with benzodiazepines"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Simple febrile seizures do not require prophylaxis; seizures lasting >5 minutes should be treated with benzodiazepines"
   },
   {
     id: 149,
     image: "",
-    question: "A 45-year-old man presents with recurrent epigastric pain relieved by food intake. Endoscopy shows a duodenal ulcer. Gastric biopsy reveals curved, motile, microaerophilic bacilli at the gastric antrum. The organism produces an enzyme that converts urea into ammonia and carbon dioxide, helping it survive in the acidic gastric environment. Which of the following is the most sensitive non-invasive test for detecting this infection?",
-    options: ["Warthin-Starry silver stain", "Rapid urease test", "Culture on Skirrow agar", "Urea breath test"],
-    answerIndex: 3,
-    correctAnswerText: "Urea breath test"
+    question: "A 14-month-old toddler is brought with recurrent episodes in which he cries intensely after being scolded, suddenly becomes bluish, briefly loses consciousness, and recovers completely within less than a minute. There is no postictal confusion, no incontinence, and neurological examination is normal. EEG is normal. His mother says episodes occur several times a week.\nWhich of the following is the most appropriate statement regarding this condition?",
+    options: [
+      "ECG should be done to rule out long QT syndrome, and iron deficiency anemia should be corrected",
+      "Long-term antiepileptic therapy should be started because recurrence is common",
+      "Neuroimaging is mandatory because breath-holding spells usually indicate structural brain disease",
+      "These episodes commonly begin after 5 years of age and are usually associated with postictal sleep"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "ECG should be done to rule out long QT syndrome, and iron deficiency anemia should be corrected"
   },
   {
     id: 150,
     image: "",
-    question: "A 19-year-old student presents with fever for 7 days, headache, malaise, coated tongue, relative bradycardia, and faint erythematous macules on the trunk. The fever shows a gradual step-ladder rise. Blood culture is sent during the first week of illness and shows a motile, non-lactose fermenting gram-negative bacillus producing H₂S. Which of the following specimens is most useful for culture in the third week of this illness?",
-    options: ["Stool culture", "Blood culture", "Urine culture", "Widal test only"],
-    answerIndex: 0,
-    correctAnswerText: "Stool culture"
+    question: "A 7-month-old infant is brought with clusters of sudden brief flexor spasms occurring soon after awakening. Each spasm lasts for less than 2 seconds and occurs repeatedly in clusters. Parents also report loss of previously attained milestones. Examination shows hypopigmented macules over the trunk. EEG shows a chaotic high-amplitude pattern consistent with hypsarrhythmia.\nWhich of the following is the most appropriate first-line drug in this child?",
+    options: [
+      "ACTH",
+      "Vigabatrin",
+      "Phenobarbital",
+      "Carbamazepine"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Vigabatrin"
   },
   {
     id: 151,
     image: "",
-    question: "A 24-year-old sexually active man presents with dysuria and mucoid urethral discharge. Gram stain of urethral smear shows plenty of pus cells but no organisms. The causative agent is an obligate intracellular energy parasite grown in yolk sac or McCoy cell lines. Its extracellular form is responsible for transmission, while its intracellular form is responsible for multiplication. Which of the following correctly identifies the replicative form of this organism?",
-    options: ["Elementary body", "Reticulate body", "Halberstaedter-Prowazek body", "Miyagawa granular corpuscle"],
-    answerIndex: 1,
-    correctAnswerText: "Reticulate body"
+    question: "A 5-year-old child with developmental delay is brought with recurrent episodes of sudden falls while walking. Parents also report brief staring spells, occasional jerks, and stiffening episodes mainly during sleep. The child has poor seizure control despite previous therapy.\nWhich of the following seizure patterns is most characteristic of this condition?",
+    options: [
+      "Only simple febrile seizures with normal development",
+      "Brief clustered spasms occurring between 2–12 months with hypsarrhythmia",
+      "Multiple seizure types including atonic falls, tonic nocturnal seizures, myoclonic seizures, and atypical absences",
+      "Single focal seizure type with normal cognition and normal school performance"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Multiple seizure types including atonic falls, tonic nocturnal seizures, myoclonic seizures, and atypical absences"
   },
   {
     id: 152,
     image: "",
-    question: "A 38-year-old renal transplant recipient develops persistent fever and cough. Fungal infection is suspected. The microbiologist explains that the suspected pathogen is a eukaryotic organism with 80S ribosomes, a cell wall containing chitin and mannan, and a cell membrane sterol that is targeted by many antifungal drugs. Which of the following membrane components is the major target of commonly used antifungal therapy in this group of organisms?",
-    options: ["Ergosterol", "Peptidoglycan", "Lipopolysaccharide", "Mycolic acid"],
-    answerIndex: 0,
-    correctAnswerText: "Ergosterol"
+    question: "A 9-month-old infant is brought with recurrent prolonged seizures triggered by fever. The first episode was diagnosed as a febrile seizure, but later the child developed multiple seizure types, developmental delay, and poor seizure control. Parents are told that this condition is also called severe myoclonic epilepsy of infancy and usually does not show remission.\nWhich of the following genetic abnormalities is most commonly associated with this condition?",
+    options: [
+      "TSC2 gene mutation on chromosome 16",
+      "DMPK gene CTG repeat expansion on chromosome 19",
+      "SCN1A sodium channel gene mutation",
+      "NF2 gene mutation on chromosome 22"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "SCN1A sodium channel gene mutation"
   },
   {
     id: 153,
     image: "",
-    question: "A 21-year-old man presents with multiple hypopigmented scaly macules over the upper trunk. The lesions become more prominent after sun exposure. Direct microscopy from skin scrapings shows short curved hyphae with clusters of yeast cells giving a “spaghetti and meatball” appearance. The organism is lipophilic and culture requires overlay with olive oil. Which of the following is the most likely etiological agent?",
-    options: ["Malassezia furfur", "Trichophyton rubrum", "Hortaea werneckii", "Piedraia hortae"],
-    answerIndex: 0,
-    correctAnswerText: "Malassezia furfur"
+    question: "A 16-year-old student is brought with recurrent episodes of sudden jerks of both upper limbs, especially soon after waking up in the morning. He often drops his toothbrush and cup during these episodes. There is no loss of consciousness during the jerks. Symptoms worsen after sleep deprivation and examination is otherwise normal. EEG shows a generalized 4–5 Hz spike-and-wave pattern.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Lennox-Gastaut syndrome",
+      "West syndrome",
+      "Dravet syndrome",
+      "Juvenile myoclonic epilepsy"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Juvenile myoclonic epilepsy"
   },
   {
     id: 154,
     image: "",
-    question: "A 35-year-old man from the Ohio-Mississippi river valley presents with chronic cough, fever, weight loss, and verrucous skin lesions. Lung biopsy shows a thick-walled yeast with broad-based budding, giving a figure-of-eight appearance. The infection was acquired by inhalation, and the organism shows thermal dimorphism. Which of the following organisms is most likely responsible?",
-    options: ["Coccidioides immitis", "Blastomyces dermatitidis", "Histoplasma capsulatum", "Paracoccidioides brasiliensis"],
-    answerIndex: 1,
-    correctAnswerText: "Blastomyces dermatitidis"
+    question: "A 9-year-old boy is brought after two episodes of seizures occurring during sleep. Parents noticed twitching of one side of the face, drooling, inability to speak, and brief jerking of the same-side upper limb. He regained consciousness completely and has normal school performance. MRI brain is normal. EEG shows centrotemporal spikes.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Benign childhood epilepsy with centrotemporal spikes",
+      "Juvenile myoclonic epilepsy",
+      "Lennox-Gastaut syndrome",
+      "Dravet syndrome"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Benign childhood epilepsy with centrotemporal spikes"
   },
   {
     id: 155,
     image: "",
-    question: "A 52-year-old man receiving chemotherapy for acute leukemia develops fever, pleuritic chest pain, cough, and hemoptysis. CT chest shows nodular lung lesions with surrounding ground-glass opacity. Bronchoalveolar lavage shows septate hyphae with acute-angle branching. Serum galactomannan assay is positive. Which of the following antifungal drugs is the treatment of choice for this condition?",
-    options: ["Fluconazole", "Griseofulvin", "Voriconazole", "Terbinafine"],
-    answerIndex: 2,
-    correctAnswerText: "Voriconazole"
+    question: "A 6-year-old child is brought with continuous generalized tonic-clonic seizures for 18 minutes. Airway, breathing, circulation, bedside glucose, electrolytes, CBC, and SpO₂ monitoring are initiated. The child receives an appropriate dose of IV lorazepam, but seizures continue beyond 20 minutes.\nWhich of the following is the most appropriate next step?",
+    options: [
+      "Repeat benzodiazepines repeatedly until seizure stops",
+      "Start IV fosphenytoin or IV valproate or IV levetiracetam",
+      "Start oral carbamazepine and observe",
+      "Directly start anesthetic coma with propofol as first escalation"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Start IV fosphenytoin or IV valproate or IV levetiracetam"
   },
   {
     id: 156,
     image: "",
-    question: "A 9-month-old infant presents with acute watery diarrhea, vomiting, fever, and dehydration during winter. Stool antigen test is positive for a virus that has a double-stranded RNA genome with segmented RNA. The same group of viruses is also classically remembered as non-enveloped RNA viruses. Which of the following virus families has these properties?",
-    options: ["Orthomyxoviridae", "Paramyxoviridae", "Coronaviridae", "Reoviridae"],
-    answerIndex: 3,
-    correctAnswerText: "Reoviridae"
+    question: "Which of the following terms refers to a single gene defect causing multiple seemingly unrelated clinical effects across different organ systems?",
+    options: [
+      "Pseudo-dominance",
+      "Penetrance",
+      "Pleiotropism",
+      "Anticipation"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Pleiotropism"
   },
   {
     id: 157,
     image: "",
-    question: "A 6-year-old child is brought with fever, altered sensorium, hydrophobia, and aerophobia after a stray dog bite. Postmortem examination of brain tissue shows eosinophilic intracytoplasmic inclusion bodies in neurons, especially in hippocampal and Purkinje cells. Which of the following inclusion bodies is most likely seen in this condition?",
-    options: ["Negri bodies", "Cowdry type A bodies", "Cowdry type B bodies", "Guarnieri bodies"],
-    answerIndex: 0,
-    correctAnswerText: "Negri bodies"
+    question: "A healthy 6-month-old boy undergoing ultrasound for an unrelated reason is found to have a duplicated collecting system. There is no hydronephrosis, no ureteric dilatation, no history of urinary tract infection, and the child is growing well.\nWhich of the following is the most appropriate next step in management?",
+    options: [
+      "Prophylactic antibiotics",
+      "Stent replacement",
+      "Surgical repair",
+      "Observation"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Observation"
   },
   {
     id: 158,
     image: "",
-    question: "A 17-year-old boy presents with fever, sore throat, generalized lymphadenopathy, and marked fatigue. Examination shows splenomegaly. Peripheral smear shows atypical lymphocytes. The causative virus infects B cells through a receptor that is also used by complement component C3d. A heterophile antibody test is positive using sheep RBCs. Which of the following malignancies is classically associated with the same virus?",
-    options: ["Kaposi sarcoma", "Burkitt lymphoma", "Adult T-cell leukemia", "Cervical carcinoma"],
-    answerIndex: 1,
-    correctAnswerText: "Burkitt lymphoma"
+    question: "A young male child is brought with developmental delay and autistic behavior. On examination, he has macrocephaly, prominent ears, elongated face with prominent jaw, hyperextensible joints, and enlarged testes.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Fragile X syndrome",
+      "Williams syndrome",
+      "Rett syndrome",
+      "Down syndrome"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Fragile X syndrome"
   },
   {
     id: 159,
     image: "",
-    question: "A 10-year-old child presents with fever, malaise, anorexia, nausea, jaundice, and yellow discoloration of sclera after attending a school picnic where several children consumed contaminated food. Liver enzymes are elevated. The suspected virus is non-enveloped, positive-sense single-stranded RNA and spreads by the feco-oral route. Which of the following laboratory findings is most suggestive of acute active infection by this virus?",
-    options: ["Anti-HAV IgG", "HBsAg", "Anti-HAV IgM", "Anti-HCV antibody"],
-    answerIndex: 2,
-    correctAnswerText: "Anti-HAV IgM"
+    question: "A 7-year-old boy is brought with persistent bedwetting at night. He has never achieved 6 months of nighttime dryness. There are no daytime urinary symptoms, no urgency, no dysuria, no constipation, and physical examination is normal. Urinalysis is unremarkable.\nWhich of the following is the most appropriate first-line treatment?",
+    options: [
+      "Start desmopressin immediately",
+      "Use enuresis alarm therapy",
+      "Refer to pediatric urologist",
+      "Start prophylactic antibiotics"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Use enuresis alarm therapy"
   },
   {
     id: 160,
     image: "",
-    question: "A 34-year-old man from a rural area presents with high-grade fever, severe headache, drowsiness, disorientation, and rapidly progressive encephalitis. Several people in the same locality had consumed fruits partially eaten by bats. Some secondary cases occurred among close contacts of affected patients. The natural reservoir of the causative agent is suspected to be fruit bats. Which of the following is the most appropriate statement regarding this infection?",
-    options: ["Specific antiviral therapy with acyclovir is the treatment of choice", "It is primarily transmitted by the bite of Aedes mosquito", "Human infection occurs only through contaminated water", "Treatment is mainly intensive supportive care"],
-    answerIndex: 3,
-    correctAnswerText: "Treatment is mainly intensive supportive care"
+    question: "A 3-year-old child was treated for acute pyogenic meningitis and improved clinically. At discharge, the pediatrician advises follow-up audiological assessment because one particular complication may already be present during the initial illness and is the most common long-term sequela.\nWhich of the following is the most common long-term sequela of acute pyogenic meningitis in children?",
+    options: [
+      "Seizures",
+      "SIADH",
+      "Sensorineural deafness",
+      "Septic shock"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Sensorineural deafness"
   },
   {
     id: 161,
     image: "",
-    question: "A 42-year-old man presents with fever, right upper quadrant pain, and tender hepatomegaly. He gives a history of intermittent dysentery with stool containing blood and mucus a few weeks earlier. Imaging shows a solitary liver abscess. On aspiration, thick brownish material resembling anchovy sauce is obtained. Which of the following is the most likely causative agent?",
-    options: ["Entamoeba histolytica", "Acanthamoeba castellanii", "Giardia lamblia", "Balantidium coli"],
-    answerIndex: 0,
-    correctAnswerText: "Entamoeba histolytica"
+    question: "A neonate weighing 1500 g is delivered at 33 weeks of gestation. The baby is hemodynamically stable, has no respiratory distress, no shock, and no major congenital anomaly. The neonatologist wants to initiate nutrition while aiming to establish full enteral feeding as early as possible.\nWhich of the following is the most appropriate method of feeding?",
+    options: [
+      "Total parenteral nutrition only",
+      "IV fluids and reassessment after 48 hours",
+      "Direct exclusive breastfeeding from birth",
+      "Orogastric feeding with alternate supervised oral feeding"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Orogastric feeding with alternate supervised oral feeding"
   },
   {
     id: 162,
     image: "",
-    question: "A 28-year-old pregnant woman in her first trimester gives a history of cleaning cat litter and eating undercooked meat. Ultrasound later shows fetal hydrocephalus and intracranial calcifications. The organism causing this condition infects all nucleated cells, and its definitive host is a cat. Which of the following is the drug of choice during pregnancy for this infection?",
-    options: ["Spiramycin", "Sulfadiazine with pyrimethamine", "Amphotericin B", "Metronidazole"],
+    question: "A term newborn does not cry immediately after birth and resuscitation is initiated. At 3 minutes of life, the baby is connected to ECG and pulse oximetry monitoring to guide oxygen therapy accurately.\nWhich limb is preferred for preductal SpO₂ monitoring during neonatal resuscitation?",
+    options: [
+      "Right upper limb",
+      "Left upper limb",
+      "Left lower limb",
+      "Right lower limb"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Spiramycin"
+    correctAnswerText: "Right upper limb"
   },
   {
     id: 163,
     image: "",
-    question: "A 46-year-old man presents with recurrent right upper quadrant pain, jaundice, and features of cholangitis. He has a history of consuming inadequately cooked freshwater fish. Imaging shows biliary ductal dilatation, and long-standing infection is suspected to predispose to cholangiocarcinoma. Stool examination reveals operculated eggs. Which of the following parasites is most likely responsible?",
-    options: ["Fasciola hepatica", "Clonorchis sinensis", "Paragonimus westermani", "Schistosoma haematobium"],
+    question: "A woman planning pregnancy gives history that her previous child had meningomyelocele. She asks for preconception advice to reduce recurrence risk in the next pregnancy. She has no diabetes and is not on antiepileptic drugs.\nWhat is the recommended daily dose of folic acid for her?",
+    options: [
+      "400 μg",
+      "4000 μg",
+      "8000 μg",
+      "200 μg"
+    ],
     answerIndex: 1,
-    correctAnswerText: "Clonorchis sinensis"
+    correctAnswerText: "4000 μg"
   },
   {
     id: 164,
     image: "",
-    question: "A 12-year-old child presents with fever, migratory polyarthritis, a new pansystolic murmur, and involuntary jerky movements of the limbs. Three weeks earlier, he had sore throat that was only partially treated. Laboratory tests show raised ESR, raised CRP, and antistreptolysin O titre > 200 IU/mL. The underlying mechanism involves antibodies against a bacterial surface protein cross-reacting with host tissues. Which of the following best explains the pathogenesis of this condition?",
-    options: ["Direct invasion of cardiac valves by bacteria", "Exotoxin-mediated destruction of myocardium", "Molecular mimicry due to antibodies against M protein", "Immune complex deposition in renal glomeruli"],
+    question: "A 5-year-old child suddenly collapses in the emergency room. Pulse is absent, and CPR is initiated immediately. The team leader reminds the resident that high-quality pediatric CPR requires correct hand position, adequate depth, full recoil, minimal interruptions, and an appropriate compression rate.\nAccording to PALS 2020 guidelines, what is the recommended chest compression rate in this child?",
+    options: [
+      "80–100/min",
+      "130–150/min",
+      "100–120/min",
+      "Rate is not specified in newer guidelines"
+    ],
     answerIndex: 2,
-    correctAnswerText: "Molecular mimicry due to antibodies against M protein"
+    correctAnswerText: "100–120/min"
   },
   {
     id: 165,
     image: "",
-    question: "A 9-year-old child from a rural area presents with easy fatigability, pallor, poor school performance, and pica. Examination shows pallor but no jaundice or splenomegaly. Stool examination reveals ova of an intestinal parasite. Hemoglobin is low with microcytic hypochromic anemia, and serum ferritin is reduced. Which of the following infections most likely explains this mechanism of anemia?",
-    options: ["Malaria", "Kala-azar", "Parvovirus B19 infection", "Hookworm infection"],
+    question: "A term neonate is planned for routine postnatal care soon after delivery. The pediatric resident gives an intramuscular injection of vitamin K1 to prevent a potentially fatal bleeding disorder related to deficiency of vitamin K-dependent clotting factors.\nVitamin K is given at birth to prevent which of the following?",
+    options: [
+      "Neonatal asphyxia",
+      "Neonatal hypoglycemia",
+      "Hemolytic anemia",
+      "Hemorrhagic disease of newborn"
+    ],
     answerIndex: 3,
-    correctAnswerText: "Hookworm infection"
+    correctAnswerText: "Hemorrhagic disease of newborn"
   },
   {
     id: 166,
     image: "",
-    question: "A 32-year-old man develops sudden onset profuse watery stools after eating contaminated seafood. There is no blood or mucus in stool. He is afebrile but severely dehydrated. Stool volume is large and diarrhea continues even when oral intake is stopped. Which of the following best describes the type of diarrhea in this patient?",
-    options: ["Secretory diarrhea", "Osmotic diarrhea", "Dysentery", "Fatty diarrhea"],
+    question: "A 9-year-old child with sickle cell anemia has recurrent episodes of severe limb pain requiring hospital visits. The pediatrician starts a drug that increases fetal hemoglobin and reduces hemoglobin S polymerization, thereby decreasing the frequency of painful vaso-occlusive crises.\nWhich of the following drugs is used for this purpose?",
+    options: [
+      "Hydroxyurea",
+      "Methotrexate–Leucovorin",
+      "Eltrombopag",
+      "Azathioprine"
+    ],
     answerIndex: 0,
-    correctAnswerText: "Secretory diarrhea"
+    correctAnswerText: "Hydroxyurea"
   },
   {
     id: 167,
     image: "",
-    question: "A 19-year-old student presents with high-grade fever, severe headache, neck rigidity, photophobia, and altered sensorium. Lumbar puncture shows markedly raised opening pressure, turbid CSF, predominant neutrophils, markedly elevated protein, and very low glucose. Gram stain demonstrates bacteria. Which of the following CSF patterns is most consistent with this condition?",
-    options: ["Turbid CSF with neutrophilic pleocytosis and markedly decreased glucose", "Clear CSF with lymphocytic pleocytosis and normal glucose", "Cobweb appearance with lymphocytic pleocytosis and low glucose", "Clear/turbid CSF with lymphocytic pleocytosis and India ink positivity"],
-    answerIndex: 0,
-    correctAnswerText: "Turbid CSF with neutrophilic pleocytosis and markedly decreased glucose"
+    question: "A term neonate is 24 hours old and has not passed urine since birth. The baby is active, breastfeeding well, has normal temperature, normal perfusion, no abdominal distension, no vomiting, and no signs of dehydration or sepsis.\nWhat is the most appropriate next step in management?",
+    options: [
+      "Admit to NICU immediately",
+      "Continue breastfeeding and observe",
+      "Start formula feeds",
+      "Start IV fluids"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Continue breastfeeding and observe"
   },
   {
     id: 168,
     image: "",
-    question: "A 7-year-old child from a rural area near paddy fields presents with fever, headache, vomiting, confusion, seizures, and altered sensorium. Examination shows features of acute encephalitis. MRI brain shows involvement of the thalamus, and history reveals mosquito exposure in an area where pigs are commonly reared. CSF shows lymphocytic pleocytosis. Which of the following is the most appropriate treatment approach for this condition?",
-    options: ["IV acyclovir for 14–21 days", "Supportive care only", "Amphotericin B with flucytosine", "Pyrimethamine, sulfadiazine, and leucovorin"],
-    answerIndex: 1,
-    correctAnswerText: "Supportive care only"
+    question: "A 2-month-old infant is brought with poor feeding, lethargy, constipation, hoarse cry, facial puffiness, hypotonia, and a wide posterior fontanelle. The pediatrician explains that delay in diagnosis can lead to irreversible intellectual disability, but early treatment can prevent it.\nWhich of the following is the most common preventable / treatable cause of intellectual disability in children?",
+    options: [
+      "Down syndrome",
+      "Cerebral palsy",
+      "Congenital hypothyroidism",
+      "Fragile X syndrome"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Congenital hypothyroidism"
   },
   {
     id: 169,
     image: "",
-    question: "A 27-year-old man presents to an STI clinic with anorectal discharge, pain during defecation, and history of unprotected receptive anal intercourse. There is no genital ulcer or inguinal bubo. Under the NACP syndromic management approach, he is started on the brown kit. Which of the following drug combinations is included in this kit?",
-    options: ["Secnidazole + fluconazole", "Benzathine penicillin G + azithromycin", "Cefixime single dose + doxycycline for 7 days", "Doxycycline for 21 days"],
-    answerIndex: 2,
-    correctAnswerText: "Cefixime single dose + doxycycline for 7 days"
+    question: "A 7-year-old child is found unresponsive after a road traffic accident. He has shallow breathing and a pulse is present. A first responder plans to open the airway by extending the neck and lifting the chin. However, the team leader stops him and advises an alternative manoeuvre to avoid worsening a possible spinal injury.\nIn which of the following situations is the head-tilt chin-lift manoeuvre contraindicated?",
+    options: [
+      "Suspected ventricular fibrillation",
+      "Suspected poisoning",
+      "Suspected blunt abdominal trauma",
+      "Suspected cervical spine injury"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Suspected cervical spine injury"
   },
   {
     id: 170,
     image: "",
-    question: "A tertiary care hospital conducts an audit after repeated incidents of needle-stick injuries, mixing of infectious waste with general waste, and improper segregation at the point of generation. The infection control officer emphasizes that only a small fraction of total hospital waste is truly biomedical or infectious, but improper mixing makes the entire waste hazardous. Which of the following statements is most appropriate regarding biomedical waste management?",
-    options: ["Biomedical waste should be collected only after it reaches the central storage area", "Segregation of biomedical waste should be done at the point of generation", "General waste forms only 15% of hospital waste", "Biomedical waste does not pose risk to the community once packed in bags"],
-    answerIndex: 1,
-    correctAnswerText: "Segregation of biomedical waste should be done at the point of generation"
+    question: "A neonate is examined during routine postnatal assessment. The pediatrician palpates the largest fontanelle, which is diamond-shaped and present at the junction of cranial sutures between the frontal and parietal bones. A junior resident is asked to identify the suture that does not contribute to this fontanelle.\nWhich of the following is not involved in anterior fontanelle formation?",
+    options: [
+      "Lambdoid suture",
+      "Metopic suture",
+      "Coronal suture",
+      "Sagittal suture"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Lambdoid suture"
   },
   {
     id: 171,
     image: "",
-    question: "A hospital infection control team finds that human anatomical waste, blood-soaked dressings, discarded linen contaminated with body fluids, expired cytotoxic drugs, and microbiology laboratory waste are being mixed with general waste. The team decides to segregate these wastes into the correct BMW color category as per biomedical waste management rules. Which of the following is the most appropriate color category for disposal of these wastes?",
-    options: ["Red category", "White category", "Yellow category", "Blue category"],
-    answerIndex: 2,
-    correctAnswerText: "Yellow category"
+    question: "A 4-year-old child with fever, headache, neck stiffness, and vomiting is evaluated for suspected CNS infection. The child is hemodynamically stable, has no signs of raised intracranial pressure, and no local skin infection over the lumbar area. Lumbar puncture is planned.\nWhich of the following statements regarding lumbar puncture is true?",
+    options: [
+      "Lumbar puncture should be performed at or above L1–L2 to obtain maximum CSF yield",
+      "CSF samples are routinely sent for cell count, protein, glucose, Gram stain, and culture",
+      "Lumbar puncture is indicated in all cases of meningitis irrespective of clinical condition",
+      "Lumbar puncture is safe in a hemodynamically unstable child if there are no signs of raised ICP"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "CSF samples are routinely sent for cell count, protein, glucose, Gram stain, and culture"
   },
   {
     id: 172,
     image: "",
-    question: "A 56-year-old diabetic patient is brought to the emergency department with altered sensorium. The physician suspects hypoglycemia and asks for a blood sample in a tube that prevents in-vitro glycolysis so that the measured blood glucose value is not falsely low. Which of the following vacutainers should be used for this sample?",
-    options: ["Blue-top tube containing sodium citrate", "Red-top plain tube without anticoagulant", "Purple-top tube containing EDTA", "Grey-top tube containing sodium fluoride / potassium oxalate"],
-    answerIndex: 3,
-    correctAnswerText: "Grey-top tube containing sodium fluoride / potassium oxalate"
+    question: "A 9-month-old child born to an HIV-positive mother presents with progressive respiratory distress, dry cough, fever, and hypoxemia. Chest examination shows minimal auscultatory findings despite significant respiratory distress. Chest X-ray shows bilateral interstitial infiltrates without hilar lymphadenopathy or lobar consolidation.\nWhich of the following is the most common cause of pneumonia in this child?",
+    options: [
+      "Mycobacterium avium-intracellulare",
+      "Staphylococcus aureus",
+      "Pneumocystis jirovecii",
+      "Aspergillus fumigatus"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Pneumocystis jirovecii"
   },
   {
     id: 173,
-    image: "images/IMG_9032.jpeg",
-    question: "A 32-year-old man from West Africa presents with recurrent transient subcutaneous swellings over the limbs and face. He also complains of a crawling sensation in the eye, and examination shows a worm crossing the subconjunctival tissue. Peripheral smear shows microfilariae with nuclei extending up to the tip of the tail. The vector shown is a day-biting fly. The fly shown is the vector for which of the following parasites?",
-    options: ["Loa loa", "Onchocerca volvulus", "Trypanosoma gambiense", "Dirofilaria immitis"],
-    answerIndex: 0,
-    correctAnswerText: "Loa loa"
+    image: "",
+    question: "A 2-year-old child develops sudden coughing, choking, and wheeze while eating peanuts. On examination, there is unilateral reduced air entry. Chest X-ray is inconclusive because the suspected object is radiolucent. Bronchoscopy is planned for confirmation and removal.\nWhich of the following is the most common site for an aspirated foreign body to lodge in the lower airway?",
+    options: [
+      "Left main bronchus",
+      "Trachea",
+      "Left lower bronchus",
+      "Right main bronchus"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Right main bronchus"
   },
   {
     id: 174,
-    image: "images/IMG_9033.jpeg",
-    question: "A 24-year-old woman presents with severe eye pain, redness, photophobia, watering, and blurred vision. She gives a history of wearing contact lenses while swimming and occasionally cleaning the lenses with tap water. Corneal scraping shows a free-living amoeba with trophozoite and cyst forms. Which of the following is the most likely pathogen?",
-    options: ["Entamoeba nana", "Acanthamoeba", "Naegleria fowleri", "Balamuthia mandrillaris"],
-    answerIndex: 1,
-    correctAnswerText: "Acanthamoeba"
+    image: "",
+    question: "A term neonate is examined on day 1 of life. The baby is active, afebrile, feeding well, and has normal primitive reflexes. Examination shows bluish-gray macules over the lumbosacral region, tiny pearly-white papules over the nose and cheeks, and fine peeling of skin over the hands and feet. There is no hepatosplenomegaly, vesicular eruption, mucosal lesion, or systemic abnormality.\nWhat is the most appropriate diagnosis?",
+    options: [
+      "Transient neonatal skin findings",
+      "Cutaneous candidiasis",
+      "Incontinentia pigmenti",
+      "Neonatal lupus erythematosus"
+    ],
+    answerIndex: 0,
+    correctAnswerText: "Transient neonatal skin findings"
   },
   {
     id: 175,
-    image: "images/IMG_9034.jpeg",
-    question: "A 25-year-old woman with advanced HIV infection presents with recurrent episodes of bloody diarrhea, abdominal pain, and weight loss. Her CD4 count is 50 cells/mm³. Stool cultures for common bacterial causes of dysentery are negative, and assay for Clostridioides difficile toxin is also negative. Colonoscopy shows multiple large ulcerated lesions. Biopsy shows enlarged cells with intranuclear inclusions surrounded by a clear halo. Which of the following is the most likely cause of this condition?",
-    options: ["Cytomegalovirus", "Epstein–Barr virus", "Herpes simplex virus type 1", "Human herpesvirus 8"],
-    answerIndex: 0,
-    correctAnswerText: "Cytomegalovirus"
+    image: "",
+    question: "A 10-year-old school-going child is brought for routine health check-up. The parents say the child has received all vaccines according to the infant immunization schedule. The physician plans to give the recommended booster vaccine as per the National Immunization Schedule of India.\nWhich vaccine should be recommended at this age?",
+    options: [
+      "Typhoid",
+      "Td",
+      "TT",
+      "Chickenpox"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Td"
   },
   {
     id: 176,
-    image: "images/IMG_9035.jpeg",
-    question: "The serological test of a patient shows HBsAg negative, IgM anti-HBc antibody negative, HBV DNA not detectable, anti-HBc IgG antibody positive, and anti-HBs antibody positive. What is the most probable diagnosis?",
-    options: ["Acute hepatitis window period", "Chronic hepatitis in active stage", "Chronic hepatitis with precore mutant", "Recovery from previous infection of hepatitis B"],
-    answerIndex: 3,
-    correctAnswerText: "Recovery from previous infection of hepatitis B"
+    image: "images/IMG_ 9144.jpeg",
+    question: "A full-term neonate is born to a mother who did not receive folic acid supplementation during pregnancy. The baby is asymptomatic at birth, but examination reveals a midline tuft of hair over the lumbosacral region.\nBased on the clinical presentation and image finding, what is the most likely diagnosis?",
+    options: [
+      "Anencephaly",
+      "Meningocele",
+      "Spina bifida occulta",
+      "Tethered cord syndrome"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Spina bifida occulta"
   },
   {
     id: 177,
-    image: "images/IMG_9036.jpeg",
-    question: "Based on the picture, name the staining reaction shown.",
-    options: ["Alcian blue", "GMS", "India ink", "Gram stain"],
-    answerIndex: 2,
-    correctAnswerText: "India ink"
+    image: "images/IMG_9145.jpeg",
+    question: "A child diagnosed with severe pneumonia is started on intravenous antibiotics. On day 5 of illness, he continues to have respiratory distress, and chest X-ray shows a well-defined, thin-walled, air-filled cystic lesion within the lung parenchyma.\nWhat is the next best step in management?",
+    options: [
+      "ECMO",
+      "Surgical bullectomy",
+      "Percutaneous aspiration",
+      "Observation and supportive care"
+    ],
+    answerIndex: 3,
+    correctAnswerText: "Observation and supportive care"
   },
   {
     id: 178,
-    image: "images/IMG_9037.jpeg",
-    question: "A teenager presents with mild fever, aching muscles, and joint pain. He notices an expanding annular rash on the side of his upper leg after outdoor exposure. The rash has a central clearing with a target-like appearance. What is the most likely etiology and route of transmission?",
-    options: ["B. burgdorferi / tick bite", "E. chaffeensis / tick bite", "B. burgdorferi / deer fly bite", "L. interrogans / rodent bite"],
+    image: "images/IMG_ 9146.jpeg",
+    question: "A 4-year-old child is brought with recurrent episodes of icterus and pallor. Peripheral blood smear shows small, densely staining RBCs lacking central pallor.\nWhat is the most probable diagnosis and the investigation used to confirm it?",
+    options: [
+      "Hereditary spherocytosis — Osmotic fragility test",
+      "Autoimmune hemolytic anemia — Direct Coombs test",
+      "Autoimmune hemolytic anemia — Indirect Coombs test",
+      "Hereditary elliptocytosis — Coombs test"
+    ],
     answerIndex: 0,
-    correctAnswerText: "B. burgdorferi / tick bite"
+    correctAnswerText: "Hereditary spherocytosis — Osmotic fragility test"
   },
   {
     id: 179,
-    image: "images/IMG_9038.jpeg",
-    question: "Image shown here detects the presence of which of the following?",
-    options: ["Coagulase", "Hyaluronidase", "Phosphatase", "Lecithinase"],
-    answerIndex: 3,
-    correctAnswerText: "Lecithinase"
+    image: "images/IMG_ 9147.jpeg",
+    question: "A 14-month-old child with hemoglobin 6.3 g/dL has been undergoing repeated blood transfusions. Peripheral smear shows anisopoikilocytosis with target cells. The last transfusion was given at 9 months of age.\nWhich investigation is used for definitive diagnosis?",
+    options: [
+      "HPLC",
+      "Globin gene sequencing",
+      "Ferritin",
+      "Bone marrow aspiration"
+    ],
+    answerIndex: 1,
+    correctAnswerText: "Globin gene sequencing"
   },
   {
     id: 180,
-    image: "images/IMG_9039.jpeg",
-    question: "The animal model shown in the image is used to cultivate which of the following microbes?",
-    options: ["R. prowazekii", "M. leprae", "M. ulcerans", "L. monocytogenes"],
-    answerIndex: 1,
-    correctAnswerText: "M. leprae"
+    image: "images/IMG_ 9148.jpeg",
+    question: "A young boy is brought with a history of recurrent fractures after trivial trauma. Examination shows bluish discoloration of the sclera, normal intelligence, and generalized bone fragility.\nWhich of the following is the most likely diagnosis?",
+    options: [
+      "Rickets",
+      "Scurvy",
+      "Osteogenesis imperfecta",
+      "Osteomalacia"
+    ],
+    answerIndex: 2,
+    correctAnswerText: "Osteogenesis imperfecta"
   }
 ];
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-window.questions = shuffleArray(window.questions);
