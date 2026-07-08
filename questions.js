@@ -2328,7 +2328,7 @@ window.questions = [
   },
   {
     id: 180,
-    image: "images/IMG_9140.jpeg",
+    image: "images/IMG_9148.jpeg",
     question: "A young boy is brought with a history of recurrent fractures after trivial trauma. Examination shows bluish discoloration of the sclera, normal intelligence, and generalized bone fragility.\nWhich of the following is the most likely diagnosis?",
     options: [
       "Rickets",
